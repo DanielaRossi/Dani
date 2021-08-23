@@ -10,8 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hola mundo");
-            Console.ReadLine();
+            Ejercicios E = new Ejercicios();
+            E.Ejercicio6();
+
+            Console.WriteLine("Ingrese enter para salir");
+            Console.Read();
         }
+        
     }
 }
