@@ -11,7 +11,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Ejercicios E = new Ejercicios();
-            E.Ejercicio6();
+            //E.Ejercicio6();
+            E.Ejercicio9();
 
             Console.WriteLine("Ingrese enter para salir");
             Console.Read();

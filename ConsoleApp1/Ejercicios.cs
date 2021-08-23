@@ -27,5 +27,31 @@ namespace ConsoleApp1
             Console.WriteLine("El resultado es: " + Resultado);
 
         }
+        public void Ejercicio8()
+        {
+            DateTime Dia;
+            int Diferencia;
+            Console.Write("Por favor, ingrese una fecha: ");
+            Dia = Convert.ToDateTime(Console.ReadLine());
+            
+
+
+        }
+        public void Ejercicio9()
+        {
+            string Nombre;
+            Console.Write("Por favor, ingrese su nombre: ");
+            Nombre = Console.ReadLine();
+
+            if(string.IsNullOrEmpty(Nombre))
+            {
+                Console.WriteLine("No te conozco.");
+            }
+            else
+            {
+                Console.WriteLine("Hola, " + Nombre);
+            }
+        }
+        
     }
 }
