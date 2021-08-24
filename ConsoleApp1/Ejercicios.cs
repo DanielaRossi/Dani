@@ -52,6 +52,28 @@ namespace ConsoleApp1
                 Console.WriteLine("Hola, " + Nombre);
             }
         }
-        
+        public void Ejercicio13()
+        {
+            int Numero;
+            Console.Write("Por favor, ingrese un numero: ");
+            Numero = Convert.ToInt32(Console.ReadLine());
+
+        }
+        public void Ejercicio16()
+        {
+            int Numero;
+            int Digitos = 1;
+            
+            Console.Write("Por favor, ingrese un numero: ");
+            Numero = Convert.ToInt32(Console.ReadLine());
+            int Numeroingresado = Numero;
+            while (Numero >= 10)
+            {
+                Numero /= 10;
+                Digitos++;
+            }
+            Console.WriteLine("Nùmero ingresado: "+Numeroingresado+"-"+ Digitos + " digitos.");
+        }
+            
     }
 }
