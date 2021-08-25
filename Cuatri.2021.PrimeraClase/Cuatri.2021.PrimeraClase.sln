@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuatri.2021.PrimeraClase.Consola", "Cuatri.2021.PrimeraClase.Consola\Cuatri.2021.PrimeraClase.Consola.csproj", "{1AC0F0C8-0AA7-4024-9D91-21EFB238E325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuatri2021.PrimeraClase.Validación", "..\Cuatri2021.PrimeraClase.Validación\Cuatri2021.PrimeraClase.Validación.csproj", "{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC0F0C8-0AA7-4024-9D91-21EFB238E325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC0F0C8-0AA7-4024-9D91-21EFB238E325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC0F0C8-0AA7-4024-9D91-21EFB238E325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC0F0C8-0AA7-4024-9D91-21EFB238E325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F36F3BC4-F237-4669-9902-8A845EEFB75D}
+	EndGlobalSection
+EndGlobal
