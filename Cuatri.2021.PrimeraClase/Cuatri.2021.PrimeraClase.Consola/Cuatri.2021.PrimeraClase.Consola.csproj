@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Cuatri2021.PrimeraClase.Calculadora\Cuatri2021.PrimeraClase.Calculadora.csproj">
+      <Project>{8e92644c-7a8f-4e55-9ff4-4ae516996a02}</Project>
+      <Name>Cuatri2021.PrimeraClase.Calculadora</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Cuatri2021.PrimeraClase.Validación\Cuatri2021.PrimeraClase.Validación.csproj">
       <Project>{f69969e4-d1f3-4fe4-96e6-f8c80f56cdd8}</Project>
       <Name>Cuatri2021.PrimeraClase.Validación</Name>

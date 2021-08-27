@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Cuatri2021.PrimeraClase.Validación;
+using Cuatri2021.PrimeraClase.Calculadora;
+
 
 namespace Cuatri._2021.PrimeraClase.Consola
 {
@@ -15,16 +17,27 @@ namespace Cuatri._2021.PrimeraClase.Consola
             Console.WriteLine("Ingrese un numero: ");
             string Ingresousuario = Console.ReadLine();
             int NumeroIngresado = Convert.ToInt32(Ingresousuario);
-            bool esValido= Validador.EsValido(NumeroIngresado);
+            
+            
+            bool esValido = Validador.EsValido(NumeroIngresado);
 
             if (esValido)
             {
                 Console.WriteLine("Es valido.");
             }
-            else{
+            else
+            {
                 Console.WriteLine("No es valido.");
 
             }
-        }
+            ClaseCalculadora C = new ClaseCalculadora();
+            C.Pedidodedatos();
+            //C.Operación(2, 4, "+");
+        } 
     }
+
+
 }
+        
+    
+

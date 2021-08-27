@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.PrimeraClase.Calculadora\bin\Debug\Cuatri2021.PrimeraClase.Calculadora.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.PrimeraClase.Calculadora\bin\Debug\Cuatri2021.PrimeraClase.Calculadora.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.PrimeraClase.Calculadora\obj\Debug\Cuatri2021.PrimeraClase.Calculadora.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.PrimeraClase.Calculadora\obj\Debug\Cuatri2021.PrimeraClase.Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.PrimeraClase.Calculadora\obj\Debug\Cuatri2021.PrimeraClase.Calculadora.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.PrimeraClase.Calculadora\obj\Debug\Cuatri2021.PrimeraClase.Calculadora.pdb

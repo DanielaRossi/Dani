@@ -8,3 +8,5 @@ C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri.2021.PrimeraClase\Cuatri.2021
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri.2021.PrimeraClase\Cuatri.2021.PrimeraClase.Consola\bin\Debug\Cuatri2021.PrimeraClase.Validación.dll
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri.2021.PrimeraClase\Cuatri.2021.PrimeraClase.Consola\bin\Debug\Cuatri2021.PrimeraClase.Validación.pdb
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri.2021.PrimeraClase\Cuatri.2021.PrimeraClase.Consola\obj\Debug\Cuatri.2021.PrimeraClase.Consola.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri.2021.PrimeraClase\Cuatri.2021.PrimeraClase.Consola\bin\Debug\Cuatri2021.PrimeraClase.Calculadora.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri.2021.PrimeraClase\Cuatri.2021.PrimeraClase.Consola\bin\Debug\Cuatri2021.PrimeraClase.Calculadora.pdb

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuatri.2021.PrimeraClase.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuatri2021.PrimeraClase.Validación", "..\Cuatri2021.PrimeraClase.Validación\Cuatri2021.PrimeraClase.Validación.csproj", "{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuatri2021.PrimeraClase.Calculadora", "..\Cuatri2021.PrimeraClase.Calculadora\Cuatri2021.PrimeraClase.Calculadora.csproj", "{8E92644C-7A8F-4E55-9FF4-4AE516996A02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F69969E4-D1F3-4FE4-96E6-F8C80F56CDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E92644C-7A8F-4E55-9FF4-4AE516996A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E92644C-7A8F-4E55-9FF4-4AE516996A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E92644C-7A8F-4E55-9FF4-4AE516996A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E92644C-7A8F-4E55-9FF4-4AE516996A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
