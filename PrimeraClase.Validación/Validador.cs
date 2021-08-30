@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace PrimeraClase.Validación
 {
-    class Validador
+    public class Validador
     {
+        public static bool EsValido(int numero)
+        {
+            if(numero==2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

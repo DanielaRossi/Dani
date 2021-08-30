@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PrimeraClase.Validación\PrimeraClase.Validación.csproj">
+      <Project>{9bce5769-3363-46c9-a8d8-e8fe74a18760}</Project>
+      <Name>PrimeraClase.Validación</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

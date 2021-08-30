@@ -8,5 +8,16 @@ namespace PrimeraClase.Validación
 {
     public class Class1
     {
+        public static bool EsValido(int numero)
+        {
+            if (numero == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace Cuatri2021.PrimeraClase.Calculadora
             {
                 resultado = num1 - num2;
             }
+
             else if (op == "*")
             {
                 resultado = num1 * num2;
