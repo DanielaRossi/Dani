@@ -1,0 +1,10 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\bin\Debug\POO.Almacen.Consola.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\bin\Debug\POO.Almacen.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\bin\Debug\POO.Almacen.Consola.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\bin\Debug\POO.almacen.biblioteca.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\bin\Debug\POO.almacen.biblioteca.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\obj\Debug\POO. Almacen.Consola.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\obj\Debug\POO. Almacen.Consola.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\obj\Debug\POO. Almacen.Consola.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\obj\Debug\POO.Almacen.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO. Almacen.Consola\obj\Debug\POO.Almacen.Consola.pdb

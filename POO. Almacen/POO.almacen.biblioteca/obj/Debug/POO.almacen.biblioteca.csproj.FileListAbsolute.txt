@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO.almacen.biblioteca\bin\Debug\POO.almacen.biblioteca.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO.almacen.biblioteca\bin\Debug\POO.almacen.biblioteca.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO.almacen.biblioteca\obj\Debug\POO.almacen.biblioteca.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO.almacen.biblioteca\obj\Debug\POO.almacen.biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO.almacen.biblioteca\obj\Debug\POO.almacen.biblioteca.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO. Almacen\POO.almacen.biblioteca\obj\Debug\POO.almacen.biblioteca.pdb
