@@ -10,34 +10,35 @@ namespace Cuatri2021.PrimeraClase.Calculadora
     {
         float num1;
         float num2;
+        float resultado = 0;
         
-        string op;
         public void Pedidodedatos()
         {
             Console.Write("Ingrese un numero: ");
             num1 = Convert.ToSingle(Console.ReadLine());
             Console.Write("Que operación desea realizar: suma(+),resta(-), multiplicación(*) o división(/) ");
-            op = Console.ReadLine();
+            string operador = Console.ReadLine();
             
             Console.Write("Ingrese otro numero: ");
             num2 = Convert.ToSingle(Console.ReadLine());
 
-            float resultado = 0;
+            
 
-            if (op == "+")
+            if (operador == "+")
             {
                 resultado = num1 + num2;
+                
             }
-            else if (op == "-")
+            else if (operador == "-")
             {
                 resultado = num1 - num2;
             }
 
-            else if (op == "*")
+            else if (operador == "*")
             {
                 resultado = num1 * num2;
             }
-            else if (op == "/")
+            else if (operador == "/")
             {
                 if (num2 == 0)
                 {
@@ -48,7 +49,8 @@ namespace Cuatri2021.PrimeraClase.Calculadora
                     resultado = num1 / num2;
                 }
             }
-            Console.WriteLine("El resultado es: " + resultado);
+            Console.WriteLine(resultado);
+            
 
 
 

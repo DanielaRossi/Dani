@@ -18,7 +18,18 @@ namespace Cuatri2021.SegundaClase.Consola
             //instanciar clase 
             clienteEjemplo = new Cliente();
 
+            //Cliente clienteEjemplo= new Cliente();
+
+
             clienteEjemplo.NumeroDocumento = 1234;
+
+            
+            clienteEjemplo.NumeroDocumento = PedirDocumento();
+        }
+        static int PedirDocumento()
+        {
+            int documento = int.Parse(Console.ReadLine());
+            return documento;
         }
     }
 }

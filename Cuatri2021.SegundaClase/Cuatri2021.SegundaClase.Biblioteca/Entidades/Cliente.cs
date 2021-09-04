@@ -13,7 +13,9 @@ namespace Cuatri2021.SegundaClase.Biblioteca
         private string _nombre;
         private string _apellido;
         private DateTime _edad;
+        private DateTime _fechaNacimiento;
 
+        //propiedades
         public int NumeroDocumento
         {
             get
@@ -23,6 +25,27 @@ namespace Cuatri2021.SegundaClase.Biblioteca
             set
             {
                 _numeroDocumento = value;
+            }
+        }
+        public DateTime FechaNacimiento
+        {
+            get
+            {
+                return _fechaNacimiento;
+            }
+            set
+            {
+                _fechaNacimiento = value;
+            }
+        }
+        public bool EsMayor
+        {
+            get
+            {
+                if ((DateTime.Now.Year - _fechaNacimiento.Year) > 18)
+                    return true;
+                else
+                    return false;
             }
         }
     }
