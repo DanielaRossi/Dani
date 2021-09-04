@@ -1,0 +1,10 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\obj\Debug\Cuatri2021.TerceraClase.Consola.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\obj\Debug\Cuatri2021.TerceraClase.Consola.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\bin\Debug\Cuatri2021.TerceraClase.Consola.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\bin\Debug\Cuatri2021.TerceraClase.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\bin\Debug\Cuatri2021.TerceraClase.Consola.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\bin\Debug\Cuatri2021.TerceraClase.Biblioteca.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\bin\Debug\Cuatri2021.TerceraClase.Biblioteca.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\obj\Debug\Cuatri2021.TerceraClase.Consola.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\obj\Debug\Cuatri2021.TerceraClase.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Cuatri2021.TerceraClase\Cuatri2021.TerceraClase.Consola\obj\Debug\Cuatri2021.TerceraClase.Consola.pdb
