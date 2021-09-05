@@ -36,5 +36,9 @@ namespace Cuatri2021.TerceraClase.Biblioteca
                 return _porcentajeCansancio;
             }
         }
+        public void Correr()
+        {
+            _porcentajeCansancio -= 10;
+        }
     }
 }
