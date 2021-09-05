@@ -20,6 +20,19 @@ namespace Cuatri2021.TerceraClase.Consola
             p1.Correr();
             Console.WriteLine("Hago correr a p1, su estado fìsico es", p1.PorcentajeEstadoFisico.ToString());
 
+            if(p1.Nombre)
+            {
+                Console.WriteLine(p1.Nombre + "esta cansado");
+            }
+
+            else
+            {
+                Console.WriteLine(p1.Nombre + "no esta cansado");
+            }
+            
+            int valor = p1.Multiplicador(2);
+
+            Console.WriteLine(p1.Domicilio);
         }
     }
 }

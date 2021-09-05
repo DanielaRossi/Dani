@@ -12,6 +12,7 @@ namespace Cuatri2021.TerceraClase.Biblioteca
         private string _nombre;
         private int _modificacionNombre;
         private int _porcentajeCansancio;
+        private Dirección _domicilio;
         //propiedad
         public string Nombre
         {
@@ -39,6 +40,50 @@ namespace Cuatri2021.TerceraClase.Biblioteca
         public void Correr()
         {
             _porcentajeCansancio -= 10;
+        }
+        public bool EstaCansado()
+        {
+            if(_porcentajeCansancio<70)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public int Multiplicador(int cantidad)
+        {
+            return _porcentajeCansancio * cantidad;
+        }
+        public void Correr(bool obstaculo)
+        {
+            if(obstaculo)
+            {
+                _porcentajeCansancio -= 20;
+            }
+            else{
+                _porcentajeCansancio -= 10;
+            }
+        }
+        public Persona()
+        {
+            _porcentajeCansancio = 100;
+            _nombre = "Sin nombre";
+            _domicilio = new Dirección();
+        }
+        public Persona(string nombre, string calle, string numero)
+        {
+            
+            _nombre = nombre;
+            _domicilio = new Dirección();
+        }
+        public string Domicilio
+        {
+            get
+            {
+                return _domicilio.DireccionCompleta;
+            }
         }
     }
 }
