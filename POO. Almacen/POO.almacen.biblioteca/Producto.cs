@@ -10,12 +10,20 @@ namespace POO.almacen.biblioteca
     {
         //atributos de clase
         private string _nombreProducto;
-        private int _idProducto;
+        private Idproducto _Id;
         private int _stockProducto;
         private float _precioProducto;
         private string _marcaProducto;
+        
 
         //propiedades
+        public string Id
+        {
+            get
+            {
+                return _Id.IdCompleto;
+            }
+        }
         public string _NombreProducto
         {
             get
@@ -66,6 +74,11 @@ namespace POO.almacen.biblioteca
             {
                 Console.Write("El stock es suficiente.");
             }
+        }
+        public Producto()
+        {
+            _Id = new Idproducto();
+
         }
    
     }
