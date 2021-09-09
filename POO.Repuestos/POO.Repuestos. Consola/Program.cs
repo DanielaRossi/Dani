@@ -24,6 +24,7 @@ namespace POO.Repuestos.Consola
                         Listarrepuestos();
                         break;
                     case "2":
+                        Agregarrepuestos();
                         break;
                     case "x":
                         _consolaActiva = false;
@@ -32,13 +33,15 @@ namespace POO.Repuestos.Consola
                         Console.WriteLine("Opción no valida.");
                             break;
                 }
+                Console.WriteLine("Presione una tecla para continuar");
+                Console.ReadLine();
             }
         }
         static void DesplegarMenu()
         {
-            Console.WriteLine("1) ; 1");
-            Console.WriteLine("2) ; 1");
-            Console.WriteLine("x ; Terminar");
+            Console.WriteLine("1)Listar repuestos");
+            Console.WriteLine("2) Agregar repuestos");
+            Console.WriteLine("x Terminar");
 
         }
         static bool _consolaActiva;
@@ -61,7 +64,34 @@ namespace POO.Repuestos.Consola
             }
             else
             {
-                Console.WriteLine("Aún no hay repuestos cargados.")
+                Console.WriteLine("Aún no hay repuestos cargados.");
+            }
+
+        }
+        private static void Agregarrepuestos()
+        {
+            Console.WriteLine("Ingrese el código del repuesto: ");
+            int código = ConsolaHelper.PedirInt();
+            Console.WriteLine("Ingrese el nombre del repuesto: ");
+            string nombre = ConsolaHelper.PedirString();
+            //Console.WriteLine("Ingrese el precio: ");
+            //double precio = (Convert.ToBase64String(Console.ReadLine));
+            Console.WriteLine("Ingrese el stock: ");
+            int stock = ConsolaHelper.PedirInt();
+
+            Repuesto re = new Repuesto(código, nombre, 0, stock);
+
+            // Alta de repuestos //No se
+            bool resultado = _ventarepuestos.AgregarRepuesto(re);
+
+            if (resultado)
+            {
+                Console.WriteLine("Repuesto agregado.");
+            }
+            else
+            {
+                Console.WriteLine("Error al agregar el repuesto.");
+
             }
 
         }

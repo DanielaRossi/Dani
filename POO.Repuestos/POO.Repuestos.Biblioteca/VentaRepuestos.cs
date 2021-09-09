@@ -39,5 +39,23 @@ namespace POO.Repuestos.Biblioteca
             else
                 return _repuestos;
         }
+        public bool AgregarRepuesto(Repuesto re)
+        {
+            // validar que re no sea null
+            
+           // No lo entiendo
+
+            //int nuevoCodigo = TraerNuevoCodigo();
+
+            //Repuesto repuesto = new Repuesto(re, nuevoCódigo);
+
+            _repuestos.Add(re);
+
+            return true;
+        }
+        //private int TraerNuevoCodigo()
+        //{
+         //   return 0;
+       // }
     }
 }

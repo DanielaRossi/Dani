@@ -1,0 +1,10 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\bin\Debug\POO.Repuestos.Consola.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\bin\Debug\POO.Repuestos.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\bin\Debug\POO.Repuestos.Consola.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\bin\Debug\POO.Repuestos.Biblioteca.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\bin\Debug\POO.Repuestos.Biblioteca.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\obj\Debug\POO.Repuestos. Consola.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\obj\Debug\POO.Repuestos. Consola.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\obj\Debug\POO.Repuestos. Consola.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\obj\Debug\POO.Repuestos.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Repuestos\POO.Repuestos. Consola\obj\Debug\POO.Repuestos.Consola.pdb
