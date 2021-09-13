@@ -58,7 +58,7 @@ namespace POO.Repuestos.Consola
             {
                 foreach(Repuesto repuesto in lst)
                 {
-                    Console.WriteLine(repuesto.Código + repuesto.Nombre);
+                    Console.WriteLine(repuesto.Código + repuesto.Nombre+ repuesto.Precio+ repuesto.Stock+ repuesto.CategoriaCompleta);
                 }
                 
             }
