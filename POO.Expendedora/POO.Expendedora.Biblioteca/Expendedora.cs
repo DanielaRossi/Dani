@@ -68,7 +68,7 @@ namespace POO.Expendedora.Biblioteca
         }
         public void EncenderMaquina()
         {
-
+            bool encendido = true;
         }
         public bool EstaVacia()
         {
