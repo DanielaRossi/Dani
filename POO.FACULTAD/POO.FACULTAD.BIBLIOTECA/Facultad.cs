@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    public class Directivo : Empleado
+    public static class Facultad
     {
-        //public override string GetNombreCompleto()
-        //{
-        //    return "Nombre completo del directivo.";
-        //}
+
     }
 }

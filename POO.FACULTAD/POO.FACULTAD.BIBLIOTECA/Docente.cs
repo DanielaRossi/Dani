@@ -8,15 +8,15 @@ namespace POO.FACULTAD.BIBLIOTECA
 {
     public class Docente : Empleado
     {
-        public Docente(): base(fechaingreso,legajo)
-        {
+        //public Docente(): base(fechaingreso,legajo)
+        //{
 
-        }
+        //}
             
 
-        public virtual string GetNombreCompleto()
-        {
-            return "Nombre completo del docente.";
-        }
+        //public static override string GetNombreCompleto()
+        //{
+        //    return "Nombre completo del docente.";
+        //}
     }
 }

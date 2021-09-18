@@ -8,12 +8,12 @@ namespace POO.FACULTAD.BIBLIOTECA
 {
     public class Bedel : Empleado
     {
-        protected string _apodo;
-        public string Apodo { get => _apodo; }
+        protected  string _apodo;
+        public string Apodo { get => _apodo; set => _apodo = value; }
 
-        public virtual string GetNombreCompleto()
-        {
-            return "Nombre completo del bedel.";
-        }
+        //public override string GetNombreCompleto()
+        //{
+        //    return "Nombre completo del bedel.";
+        //}
     }
 }

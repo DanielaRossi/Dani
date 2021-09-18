@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    public class Directivo : Empleado
+    public class Enum
     {
-        //public override string GetNombreCompleto()
-        //{
-        //    return "Nombre completo del directivo.";
-        //}
+        public enum TipoEmpleado
+        {
+            Bedel,
+            Docente,
+            Directivo
+        }
     }
 }
