@@ -103,6 +103,20 @@ namespace POO.FACULTAD.CONSOLA
                 Console.WriteLine("No existen alumnos en la lista.");
             }
         }
+        public static void ListarEmpleados(Facultad facultad)
+        {
+            if (facultad.TraerEmpleados().Any())
+            {
+                foreach (Empleado e in facultad.TraerEmpleados())
+                {
+                    Console.WriteLine(e.ToString());
+                }
+            }
+            if (facultad.TraerEmpleados() == null)
+            {
+                Console.WriteLine("No existen empleados en la lista.");
+            }
+        }
 
     }
     }

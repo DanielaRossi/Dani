@@ -23,12 +23,12 @@ namespace POO.FACULTAD.BIBLIOTECA
         public  DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
         public  Salario UltimoSalario { get => _ultimoSalario; set => _ultimoSalario = value; }
 
-        //public Empleado(DateTime fechaingreso, int legajo)
-        //{
-        //    this._fechaIngreso = fechaingreso;
-        //    this._legajo = legajo;
-        //    _salarios = new List<Salario>();
-        //}
+        public Empleado(int legajo, Salario ultimosalario, string apellido, string nombre):base(apellido, nombre)
+        {
+            this._ultimoSalario = UltimoSalario;
+            this._legajo = legajo;
+            _salarios = new List<Salario>();
+        }
 
         //public void AgregarSalario(Salario)
         //{
@@ -38,18 +38,18 @@ namespace POO.FACULTAD.BIBLIOTECA
         //{
         //    return
         //}
-        //public string GetCredencial()
-        //{
-
-        //}
-        //public string GetNombreCompleto()
-        //{
-
-        //}
-        //public override string ToString()
-        //{
-
-        //}
+        public string GetCredencial()
+        {
+            return string.Format("{0} - {1} salario $ {3}", this._legajo, GetNombreCompleto(), this._ultimoSalario);
+        }
+        public string GetNombreCompleto()
+        {
+            return _apellido +_nombre;
+        }
+        public override string ToString()
+        {
+            return GetCredencial();
+        }
 
     }
 }

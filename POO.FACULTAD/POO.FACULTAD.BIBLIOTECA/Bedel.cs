@@ -13,7 +13,7 @@ namespace POO.FACULTAD.BIBLIOTECA
 
         //public override string GetNombreCompleto()
         //{
-        //    return "Nombre completo del bedel.";
+        //    return Bedel { apodo};
         //}
     }
 }

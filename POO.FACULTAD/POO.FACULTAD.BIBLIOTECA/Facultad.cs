@@ -62,10 +62,18 @@ namespace POO.FACULTAD.BIBLIOTECA
         //{
         //    return
         //}
-        //public static List<Empleado> TraerEmpleados()
-        //{
-        //    return
-        //}
+        public List<Empleado> TraerEmpleados()
+        {
+            if (_empleados.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return _empleados;
+            }
+            
+        }
         //public static List<Empleado> TrearEmpleadosPorNombre(string)
         //{
         //    return

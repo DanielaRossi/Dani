@@ -12,11 +12,11 @@ namespace POO.FACULTAD.BIBLIOTECA
         //{
 
         //}
-            
 
-        //public static override string GetNombreCompleto()
-        //{
-        //    return "Nombre completo del docente.";
-        //}
+
+        public override string GetNombreCompleto()
+        {
+            return ";
+        }
     }
 }
