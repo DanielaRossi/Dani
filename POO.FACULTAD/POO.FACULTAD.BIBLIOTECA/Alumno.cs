@@ -14,13 +14,19 @@ namespace POO.FACULTAD.BIBLIOTECA
         public string Credencial { get => _credencial; set => _credencial = value; }
         public int Codigo { get => _codigo; set => _codigo = value; }
 
-        //public string GetCredencial()
-        //{
+        public Alumno(int codigo, string apellido, string nombre): base(apellido, nombre)
+        {
+            this._codigo = codigo;
+            
+        }
 
-        //}
-        //public string ToString()
-        //{
-
-        //}
+        public string GetCredencial()
+        {
+            return string.Format("Codigo {0},{1},{3}", this._codigo, this._apellido, this._nombre);
+        }
+        public override string ToString()
+        {
+            return GetCredencial();
+        }
     }
 }

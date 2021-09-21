@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B67E7E0B-AF77-4EDA-B6C5-F4816AC31AB3}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>POO.FACULTAD.CONSOLA</RootNamespace>
-    <AssemblyName>POO.FACULTAD.CONSOLA</AssemblyName>
+    <ProjectGuid>{255D0606-118C-40B3-AEBF-910214EBE33A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POO.FACULTAD.CONSOLAUTILS</RootNamespace>
+    <AssemblyName>POO.FACULTAD.CONSOLAUTILS</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ConsolaUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\POO.FACULTAD.BIBLIOTECA\POO.FACULTAD.BIBLIOTECA.csproj">
-      <Project>{d3c7319c-921f-4d9e-91ae-bf308245e01f}</Project>
-      <Name>POO.FACULTAD.BIBLIOTECA</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\POO.FACULTAD.CONSOLAUTILS\POO.FACULTAD.CONSOLAUTILS.csproj">
-      <Project>{255d0606-118c-40b3-aebf-910214ebe33a}</Project>
-      <Name>POO.FACULTAD.CONSOLAUTILS</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

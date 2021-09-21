@@ -22,6 +22,11 @@ namespace POO.FACULTAD.BIBLIOTECA
             }
             
         }
+        public Persona(string apellido, string nombre)
+        {
+            this._apellido = apellido;
+            this._nombre = nombre;
+        }
 
         //public override string GetCredencial()
         //{
