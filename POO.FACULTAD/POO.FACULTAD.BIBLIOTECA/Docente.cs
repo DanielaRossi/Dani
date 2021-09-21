@@ -14,9 +14,9 @@ namespace POO.FACULTAD.BIBLIOTECA
         //}
 
 
-        public override string GetNombreCompleto()
-        {
-            return ";
-        }
+        //public override string GetNombreCompleto()
+        //{
+        //    return ";
+        //}
     }
 }

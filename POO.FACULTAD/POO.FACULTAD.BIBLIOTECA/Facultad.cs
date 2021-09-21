@@ -26,10 +26,15 @@ namespace POO.FACULTAD.BIBLIOTECA
 
 
 
-        //public static void AgregarAlumno(Alumno)
-        //{
-
-        //}
+        public void AgregarAlumno(int codigo, string apellido, string nombre, DateTime fechanacimiento)
+        {
+            Alumno alumno = new Alumno(codigo, apellido, nombre, fechanacimiento);
+            AgregarAlumno(alumno);
+        }
+        public void AgregarAlumno(Alumno alumno)
+        {
+            _alumnos.Add(alumno);
+        }
         //public static void AgregarEmpleado(Empleado)
         //{
 

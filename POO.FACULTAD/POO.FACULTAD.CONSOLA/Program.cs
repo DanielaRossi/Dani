@@ -117,6 +117,22 @@ namespace POO.FACULTAD.CONSOLA
                 Console.WriteLine("No existen empleados en la lista.");
             }
         }
+        private static void AgregarAlumno(Facultad facultad)
+        {
+            try
+            {
+                int codigo = ConsolaUtils.PedirInt("Código");
+                string nombre = ConsolaUtils.PedirString("Nombre");
+                string apellido = ConsolaUtils.PedirString("Apellido");
+                DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
+                facultad.AgregarAlumno(codigo, apellido, nombre, fechanacimiento);
+                Console.WriteLine("Alumno agregado");
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
 
     }
     }

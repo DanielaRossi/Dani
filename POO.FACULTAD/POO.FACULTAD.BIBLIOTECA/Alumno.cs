@@ -19,6 +19,11 @@ namespace POO.FACULTAD.BIBLIOTECA
             this._codigo = codigo;
             
         }
+        public Alumno(int codigo, string apellido, string nombre, DateTime fechanacimiento): base(apellido, nombre,fechanacimiento)
+        {
+            this._codigo = codigo;
+            
+        }
 
         public string GetCredencial()
         {

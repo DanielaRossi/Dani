@@ -27,6 +27,12 @@ namespace POO.FACULTAD.BIBLIOTECA
             this._apellido = apellido;
             this._nombre = nombre;
         }
+        public Persona(string apellido, string nombre, DateTime fechanacimiento)
+        {
+            this._apellido = apellido;
+            this._nombre = nombre;
+            this._fechaNac = fechanacimiento;
+        }
 
         //public override string GetCredencial()
         //{

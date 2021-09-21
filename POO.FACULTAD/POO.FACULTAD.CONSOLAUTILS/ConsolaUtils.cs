@@ -15,6 +15,19 @@ namespace POO.FACULTAD.CONSOLAUTILS
             string valor = Console.ReadLine();
             return valor;
         }
+
+        public static int PedirInt( string mensaje)
+        {
+            Console.WriteLine("Ingrese" + mensaje);
+            int valor = Convert.ToInt32(Console.ReadLine());
+            return valor;
+        }
+        public static DateTime PedirFecha(string mensaje)
+        {
+            Console.WriteLine("Ingrese" + mensaje);
+            DateTime valor = Convert.ToDateTime(Console.ReadLine());
+            return valor;
+        }
         public static bool EsOpcionValida(string opcionSeleccionada, string [] opcionesValidas)
         {
             if(opcionSeleccionada == opcionesValidas [9])
