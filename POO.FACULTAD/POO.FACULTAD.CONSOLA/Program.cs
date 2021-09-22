@@ -146,8 +146,10 @@ namespace POO.FACULTAD.CONSOLA
         {
             Console.WriteLine("Ingrese un código para modificar el alumno: ");
             int codigo = Convert.ToInt32(Console.ReadLine());
+            
             facultad.EliminarAlumno(codigo);
-            Console.WriteLine("El alumno fue eliminado");
+            AgregarAlumno(facultad);
+            Console.WriteLine("El alumno fue modificado");
 
         }
         private static void AgregarEmpleado(Facultad facultad)

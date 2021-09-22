@@ -52,6 +52,11 @@ namespace POO.FACULTAD.BIBLIOTECA
             _alumnos.Remove(A);
             
         }
+        public void BuscarAlumno( int codigo)
+        {
+            Alumno A = _alumnos.Find(Al => Al.Codigo == codigo);
+            
+        }
         
         //public static void EliminarEmpleado(int)
         //{
