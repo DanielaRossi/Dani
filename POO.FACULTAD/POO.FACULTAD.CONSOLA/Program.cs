@@ -28,8 +28,8 @@ namespace POO.FACULTAD.CONSOLA
                 // validamos si el input es válido (en este caso podemos tmb dejar que el switch se encargue en el default.
                 // lo dejo igual por las dudas si quieren usar el default del switch para otra cosa.
                 String[] opcionesValidas = new String[] { "1", "2", "3", "4", "5", "6", "7","8", "X" };
-                if (ConsolaUtils.EsOpcionValida(opcionSeleccionada, opcionesValidas))
-                {
+                //if (ConsolaUtils.EsOpcionValida(opcionSeleccionada, opcionesValidas))
+                //{
                     if (opcionSeleccionada.ToUpper() == "X")
                     {
                         continuarActivo = false;
@@ -63,11 +63,11 @@ namespace POO.FACULTAD.CONSOLA
                             break;
                         case "7":
                             // modificar
-                            Program.ModificarAlumno(facultad);
+                            //Program.ModificarAlumno(facultad);
                             break;
                         case "8":
                             // borrar
-                            Program.EliminarEmpleado(facultad);
+                            //Program.EliminarEmpleado(facultad);
                             break;
                         case "9":
                             Console.Clear();
@@ -76,11 +76,11 @@ namespace POO.FACULTAD.CONSOLA
                             Console.WriteLine("Opción inválida.");
                             break;
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Opción inválida.");
-                }
+                //}
+                //else
+                //{
+                //    Console.WriteLine("Opción inválida.");
+                //}
                 Console.WriteLine("Ingrese una tecla para continuar.");
                 Console.ReadKey();
                 Console.Clear();
@@ -133,7 +133,43 @@ namespace POO.FACULTAD.CONSOLA
 
             }
         }
+        private static void EliminarAlumno(Facultad facultad)
+        {
+            Console.WriteLine("Ingrese un código para eliminar alumno: ");
+            int codigo = Convert.ToInt32(Console.ReadLine());
+            facultad.EliminarAlumno(codigo);
+            Console.WriteLine("El alumno fue eliminado");
+
+        }
+
+        private static void ModificarAlumno(Facultad facultad)
+        {
+            Console.WriteLine("Ingrese un código para modificar el alumno: ");
+            int codigo = Convert.ToInt32(Console.ReadLine());
+            facultad.EliminarAlumno(codigo);
+            Console.WriteLine("El alumno fue eliminado");
+
+        }
+        private static void AgregarEmpleado(Facultad facultad)
+        {
+            try
+            {
+                
+                string nombre = ConsolaUtils.PedirString("Nombre");
+                string apellido = ConsolaUtils.PedirString("Apellido");
+                DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
+                int legajo = ConsolaUtils.PedirInt("Legajo");
+                DateTime fechaingreso = ConsolaUtils.PedirFecha("Fecha de Ingreso");
+                Double ultimosalario = ConsolaUtils.PedirDouble("Ultimo salario");
+                facultad.AgregarEmpleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario);
+                Console.WriteLine("Empleado agregado");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
 
     }
-    }
+    
 }

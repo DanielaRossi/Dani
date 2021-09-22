@@ -22,22 +22,28 @@ namespace POO.FACULTAD.CONSOLAUTILS
             int valor = Convert.ToInt32(Console.ReadLine());
             return valor;
         }
+        public static double PedirDouble(string mensaje)
+        {
+            Console.WriteLine("Ingrese" + mensaje);
+            double valor = Convert.ToDouble(Console.ReadLine());
+            return valor;
+        }
         public static DateTime PedirFecha(string mensaje)
         {
             Console.WriteLine("Ingrese" + mensaje);
             DateTime valor = Convert.ToDateTime(Console.ReadLine());
             return valor;
         }
-        public static bool EsOpcionValida(string opcionSeleccionada, string [] opcionesValidas)
-        {
-            if(opcionSeleccionada == opcionesValidas [9])
-            {
+        //public static bool EsOpcionValida(string opcionSeleccionada, string [] opcionesValidas)
+        //{
+        //    if(opcionSeleccionada == opcionesValidas [9])
+        //    {
                 
-                return true;
-            }
-            return false;
+        //        return true;
+        //    }
+        //    return false;
             
-        }
+        //}
         
 
 

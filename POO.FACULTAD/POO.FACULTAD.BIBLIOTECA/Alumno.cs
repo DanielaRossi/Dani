@@ -27,7 +27,7 @@ namespace POO.FACULTAD.BIBLIOTECA
 
         public string GetCredencial()
         {
-            return string.Format("Codigo {0},{1},{3}", this._codigo, this._apellido, this._nombre);
+            return string.Format("Codigo {0},{1},{2}", this._codigo, this._apellido, this._nombre);
         }
         public override string ToString()
         {

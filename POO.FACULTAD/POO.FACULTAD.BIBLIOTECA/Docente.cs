@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    public class Docente : Empleado
-    {
+    //public class Docente : Empleado
+    //{
         //public Docente(): base(fechaingreso,legajo)
         //{
 
@@ -18,5 +18,5 @@ namespace POO.FACULTAD.BIBLIOTECA
         //{
         //    return ";
         //}
-    }
+    
 }

@@ -35,14 +35,24 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             _alumnos.Add(alumno);
         }
-        //public static void AgregarEmpleado(Empleado)
-        //{
+        public void AgregarEmpleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, double ultimosalario)
+        {
+            Empleado empleado = new Empleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario);
+            AgregarEmpleado(empleado);
+        }
 
-        //}
-        //public static void EliminarAlumno(int)
-        //{
-
-        //}
+        public void AgregarEmpleado(Empleado empleado)
+        {
+            _empleados.Add(empleado);
+        }
+        public void EliminarAlumno(int codigo)
+        {
+            Alumno A= _alumnos.Find(Al => Al.Codigo == codigo);
+            
+            _alumnos.Remove(A);
+            
+        }
+        
         //public static void EliminarEmpleado(int)
         //{
 
@@ -51,6 +61,10 @@ namespace POO.FACULTAD.BIBLIOTECA
         //{
 
         //}
+        public void ModificarAlumno(Alumno alumno)
+        {
+
+        }
         public List<Alumno> TraerAlumnos()
         {
             if (_alumnos.Count == 0)

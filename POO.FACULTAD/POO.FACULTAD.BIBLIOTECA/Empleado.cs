@@ -13,7 +13,7 @@ namespace POO.FACULTAD.BIBLIOTECA
         private  List<Salario> _salarios;
         private int _antiguedad;
         private  DateTime _fechaNacimiento;
-        private  Salario _ultimoSalario;
+        private  double _ultimoSalario;
 
         public  DateTime FechaIngreso { get => _fechaIngreso; set => _fechaIngreso = value; }
         public   int Legajo { get => _legajo; set => _legajo = value; }
@@ -21,12 +21,13 @@ namespace POO.FACULTAD.BIBLIOTECA
         public int Antiguedad { get => _antiguedad; set => _antiguedad = value; }
 
         public  DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
-        public  Salario UltimoSalario { get => _ultimoSalario; set => _ultimoSalario = value; }
+        //public  Salario UltimoSalario { get => _ultimoSalario; set => _ultimoSalario = value; }
 
-        public Empleado(int legajo, Salario ultimosalario, string apellido, string nombre):base(apellido, nombre)
+        public Empleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, double ultimosalario):base(apellido, nombre, fechanacimiento)
         {
-            this._ultimoSalario = UltimoSalario;
+            this._ultimoSalario = ultimosalario;
             this._legajo = legajo;
+            this._fechaIngreso = fechaingreso;
             _salarios = new List<Salario>();
         }
 

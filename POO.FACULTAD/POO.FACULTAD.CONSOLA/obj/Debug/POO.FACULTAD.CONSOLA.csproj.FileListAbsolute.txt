@@ -1,0 +1,12 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\obj\Debug\POO.FACULTAD.CONSOLA.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\obj\Debug\POO.FACULTAD.CONSOLA.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.CONSOLA.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.CONSOLA.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.CONSOLA.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.BIBLIOTECA.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.CONSOLAUTILS.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.BIBLIOTECA.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\bin\Debug\POO.FACULTAD.CONSOLAUTILS.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\obj\Debug\POO.FACULTAD.CONSOLA.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\obj\Debug\POO.FACULTAD.CONSOLA.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.CONSOLA\obj\Debug\POO.FACULTAD.CONSOLA.pdb

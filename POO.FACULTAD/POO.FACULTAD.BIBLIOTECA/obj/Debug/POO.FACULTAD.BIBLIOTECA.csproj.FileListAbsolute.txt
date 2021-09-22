@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.BIBLIOTECA\obj\Debug\POO.FACULTAD.BIBLIOTECA.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.BIBLIOTECA\obj\Debug\POO.FACULTAD.BIBLIOTECA.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.BIBLIOTECA\bin\Debug\POO.FACULTAD.BIBLIOTECA.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.BIBLIOTECA\bin\Debug\POO.FACULTAD.BIBLIOTECA.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.BIBLIOTECA\obj\Debug\POO.FACULTAD.BIBLIOTECA.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.FACULTAD\POO.FACULTAD.BIBLIOTECA\obj\Debug\POO.FACULTAD.BIBLIOTECA.pdb
