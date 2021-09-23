@@ -20,17 +20,23 @@ namespace POO.Expendedora.Consola
         
         static void Main(string[] args)
         {
+            Lata lata = new Lata();
+
+            Expendedor expendedora = new Expendedor();
+                
+            
+           
             while (_consolaActiva)
             {
                 DesplegarMenu();
                 string opcionMenu = Console.ReadLine();
                 bool encendido = false;
-
+                
                 switch (opcionMenu)
                 {
                     case "0":
-                        
-                        EncenderMaquina();
+
+                        Program.Encender(expendedora);
                         Console.WriteLine("Bienvenido.");
                         break;
                     case "1":
@@ -42,7 +48,7 @@ namespace POO.Expendedora.Consola
                         }
                         else
                         {
-                            IngresarLata();
+                            Program.IngresarLata();
                         }
                         break;
 
@@ -50,22 +56,28 @@ namespace POO.Expendedora.Consola
             }
 
         }
-        static void IngresarLata(Expendedora)
+        private static void Encender(Expendedor expendedora)
         {
-
+            expendedora.EncenderMaquina();
         }
-        static void ExtraerLata(Expendedora)
-        {
 
-        }
-        static void ObtenerBalance(Expendedora)
-        {
 
-        }
-        static void MostrarStock(Expendedora)
-        {
+        //private static void IngresarLata(Expendedora)
+        //{
+            
+        //}
+        //private static void ExtraerLata(Expendedora)
+        //{
 
-        }
+        //}
+        //private static void ObtenerBalance(Expendedora)
+        //{
+
+        //}
+        //private static void MostrarStock(Expendedora)
+        //{
+
+        //}
         static void DesplegarMenu()
         {
             Console.WriteLine("0. Encender");

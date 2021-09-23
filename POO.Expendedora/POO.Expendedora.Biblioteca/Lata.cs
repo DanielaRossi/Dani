@@ -66,14 +66,19 @@ namespace POO.Expendedora.Biblioteca
             volumen = _volumen;
             cantidad = _cantidad;
         }
-        public double GetPrecioPorLitro()
+        public Lata()
         {
-            return 20;
+
         }
-        public override string ToString()
-        {
-            return " Es una lata.";
-        }
+
+        //public double GetPrecioPorLitro()
+        //{
+        //    return 20;
+        //}
+        //public string ToString()
+        //{
+        //    return " Es una lata.";
+        //}
 
 
     }
