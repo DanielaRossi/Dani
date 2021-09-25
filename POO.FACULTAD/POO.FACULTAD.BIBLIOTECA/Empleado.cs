@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    public class Empleado : Persona
+    public class Empleado : Persona 
     {
         private  DateTime _fechaIngreso;
         private  int _legajo;
         private  List<Salario> _salarios;
         private int _antiguedad;
         private  DateTime _fechaNacimiento;
-        private  double _ultimoSalario;
+        private  Salario _ultimoSalario;
 
         public  DateTime FechaIngreso { get => _fechaIngreso; set => _fechaIngreso = value; }
         public   int Legajo { get => _legajo; set => _legajo = value; }
@@ -21,9 +21,9 @@ namespace POO.FACULTAD.BIBLIOTECA
         public int Antiguedad { get => _antiguedad; set => _antiguedad = value; }
 
         public  DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
-        //public  Salario UltimoSalario { get => _ultimoSalario; set => _ultimoSalario = value; }
+        public  Salario UltimoSalario { get => _ultimoSalario; set => _ultimoSalario = value; }
 
-        public Empleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, double ultimosalario):base(apellido, nombre, fechanacimiento)
+        public Empleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, Salario ultimosalario,double bruto, string codigo, double descuento, DateTime fecha):base(apellido, nombre, fechanacimiento): base (bruto, codigo, descuento, fecha)
         {
             this._ultimoSalario = ultimosalario;
             this._legajo = legajo;

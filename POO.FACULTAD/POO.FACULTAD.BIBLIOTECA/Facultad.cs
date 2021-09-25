@@ -24,7 +24,7 @@ namespace POO.FACULTAD.BIBLIOTECA
             this._empleados = new List<Empleado>();
         }
 
-
+        
 
         public void AgregarAlumno(int codigo, string apellido, string nombre, DateTime fechanacimiento)
         {
@@ -35,9 +35,9 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             _alumnos.Add(alumno);
         }
-        public void AgregarEmpleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, double ultimosalario)
+        public void AgregarEmpleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, Salario ultimosalario, Double bruto, string codigo, double descuentos, DateTime fecha)
         {
-            Empleado empleado = new Empleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario);
+            Empleado empleado = new Empleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario, bruto, codigo, descuentos, fecha);
             AgregarEmpleado(empleado);
         }
 

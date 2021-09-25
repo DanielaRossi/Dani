@@ -162,8 +162,12 @@ namespace POO.FACULTAD.CONSOLA
                 DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
                 int legajo = ConsolaUtils.PedirInt("Legajo");
                 DateTime fechaingreso = ConsolaUtils.PedirFecha("Fecha de Ingreso");
-                Double ultimosalario = ConsolaUtils.PedirDouble("Ultimo salario");
-                facultad.AgregarEmpleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario);
+                Salario ultimosalario = ConsolaUtils.PedirSalario("Ultimo salario");
+                double bruto = ConsolaUtils.PedirDouble("Salario Bruto");
+                string codigotransferencia = ConsolaUtils.PedirString("Còdigo de transferencia");
+                double descuentos = ConsolaUtils.PedirDouble(" Descuentos");
+                DateTime fecha = ConsolaUtils.PedirFecha("Fecha de Ingreso");
+                facultad.AgregarEmpleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario, bruto,codigotransferencia,descuentos, fecha);
                 Console.WriteLine("Empleado agregado");
             }
             catch (Exception ex)

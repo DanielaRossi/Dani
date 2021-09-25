@@ -75,10 +75,11 @@ namespace POO.Expendedora.Biblioteca
         //{
         //    return 20;
         //}
-        //public string ToString()
-        //{
-        //    return " Es una lata.";
-        //}
+        public override string ToString()
+        {
+            
+            return string.Format("Codigo {0}),{1},¨{{2}}", this._codigo, this._nombre, this._cantidad);
+        }
 
 
     }

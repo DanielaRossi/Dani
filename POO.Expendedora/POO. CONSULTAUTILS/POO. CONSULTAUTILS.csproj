@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{041F6E22-FA55-4C2E-9F41-CA6860A6B098}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>POO.Expendedora.Consola</RootNamespace>
-    <AssemblyName>POO.Expendedora.Consola</AssemblyName>
+    <ProjectGuid>{E4ACB28C-3AD5-4A6E-AA90-BB338BEE9A66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POO.CONSULTAUTILS</RootNamespace>
+    <AssemblyName>POO.CONSULTAUTILS</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="POO.FACULTAD.CONSOLAUTILS">
-      <HintPath>..\POO.FACULTAD.CONSOLAUTILS\bin\Debug\POO.FACULTAD.CONSOLAUTILS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,21 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CONSOLAUTILS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\POO. Expendedora.Utilidad\POO. Expendedora.Utilidad.csproj">
-      <Project>{892ec03b-e527-4767-8b0c-d50df05ccdc8}</Project>
-      <Name>POO. Expendedora.Utilidad</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\POO.Expendedora.Biblioteca\POO.Expendedora.Biblioteca.csproj">
-      <Project>{4fed807c-a3ce-4b9a-b451-b62389f1257d}</Project>
-      <Name>POO.Expendedora.Biblioteca</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,10 +21,18 @@ namespace POO.FACULTAD.BIBLIOTECA
 
         public  DateTime Fecha { get => _fecha; set => _fecha = value; }
 
-        //public static overide double GetSalarioNeto()
-        //{
+        public Salario(double bruto, string codigo, double descuento, DateTime fecha)
+        {
+            this._bruto = bruto;
+            this._codigoTransferencia = codigo;
+            this._descuentos = descuento;
+            this._fecha = fecha;
+        }
 
-        //}
+        public override double GetSalarioNeto()
+        {
+            return Bruto - Descuento;
+        }
         //public static double Salario(double)
         //{
 

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using POO.Expendedora.Biblioteca;
-
+using POO.Expendedora.Utilidad;
+using POO.FACULTAD.CONSOLAUTILS;
 
 namespace POO.Expendedora.Consola
 {
@@ -20,7 +21,7 @@ namespace POO.Expendedora.Consola
         
         static void Main(string[] args)
         {
-            Lata lata = new Lata();
+            
 
             Expendedor expendedora = new Expendedor();
                 
@@ -40,7 +41,8 @@ namespace POO.Expendedora.Consola
                         Console.WriteLine("Bienvenido.");
                         break;
                     case "1":
-
+                        Program.ListarLatas(expendedora);
+                        break;
                     case "2":
                         if (encendido == false)
                         {
@@ -48,7 +50,7 @@ namespace POO.Expendedora.Consola
                         }
                         else
                         {
-                            Program.IngresarLata();
+                            Program.IngresarLata(expendedora);
                         }
                         break;
 
@@ -60,12 +62,38 @@ namespace POO.Expendedora.Consola
         {
             expendedora.EncenderMaquina();
         }
+        private static void ListarLatas(Expendedor expendedora)
+        {
+            if (expendedora.TraerLatas().Any())
+            {
+                foreach (Lata e in expendedora.TraerLatas())
+                {
+                    Console.WriteLine(e.ToString());
+                }
+            }
+            if (expendedora.TraerLatas() == null)
+            {
+                Console.WriteLine("No existen latas en la lista.");
+            }
+        }
 
 
-        //private static void IngresarLata(Expendedora)
-        //{
-            
-        //}
+        private static void IngresarLata(Expendedor expendedora)
+        {
+            try
+            {
+                int codigo = ConsolaUtils.PedirInt("Codigo")
+                string nombre = ConsolaUtils.PedirString("Nombre");
+                string apellido = ConsolaUtils.PedirString("Apellido");
+                DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
+                facultad.AgregarAlumno(codigo, apellido, nombre, fechanacimiento);
+                Console.WriteLine("Alumno agregado");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         //private static void ExtraerLata(Expendedora)
         //{
 

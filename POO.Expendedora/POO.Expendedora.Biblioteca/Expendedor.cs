@@ -46,6 +46,17 @@ namespace POO.Expendedora.Biblioteca
         {
             bool encendido = true;
         }
+        public List<Lata> TraerLatas()
+        {
+            if (_latas.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return _latas;
+            }
+        }
         //    public bool EstaVacia()
         //    {
         //        return
