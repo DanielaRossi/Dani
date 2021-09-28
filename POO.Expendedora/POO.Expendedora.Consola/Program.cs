@@ -7,6 +7,8 @@ using POO.Expendedora.Biblioteca;
 using POO.Expendedora.Utilidad;
 using POO.FACULTAD.CONSOLAUTILS;
 
+
+
 namespace POO.Expendedora.Consola
 {
     class Program
@@ -82,16 +84,27 @@ namespace POO.Expendedora.Consola
         {
             try
             {
-                int codigo = ConsolaUtils.PedirInt("Codigo")
+                string codigo = ConsolaUtils.PedirString("Codigo");
+              
                 string nombre = ConsolaUtils.PedirString("Nombre");
-                string apellido = ConsolaUtils.PedirString("Apellido");
-                DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
-                facultad.AgregarAlumno(codigo, apellido, nombre, fechanacimiento);
+                string sabor = ConsolaUtils.PedirString("Sabor");
+                double precio = ConsolaUtils.PedirDouble("Precio");
+                double volumen = ConsolaUtils.PedirDouble("Volumen");
+                int cantidad = ConsolaUtils.PedirInt("Cantidad");
+                expendedora.AgregarLata(codigo, nombre, sabor, precio, volumen, cantidad);
                 Console.WriteLine("Alumno agregado");
+            }
+            catch(Elcodigoexiste ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch(LaMaquinaestallena ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine("No es posible ingresar la lata."+ ex.Message);
             }
         }
         //private static void ExtraerLata(Expendedora)

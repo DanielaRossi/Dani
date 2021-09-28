@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace POO.Expendedora.Biblioteca
 {
     public class Expendedor
@@ -26,10 +27,39 @@ namespace POO.Expendedora.Biblioteca
 
         }
 
-        //public void AgregarLata(Lata)
-        //{
+        public void AgregarLata(Lata lata)
+        {
+            
+            _latas.Add(lata);
+        }
+        public void AgregarLata(string codigo,string nombre,string sabor,double precio, double volumen, int cantidad)
+        {
+            Lata lata = new Lata(codigo, nombre, sabor, precio, volumen, cantidad);
+            int TotalLatas = ContarLatas();
 
-        //}
+            Lata L = BuscarLataporcodigo(codigo);
+            if (TotalLatas >= 200)
+            {
+                throw new LaMaquinaestallena();
+            }
+            else if(L!=null)
+            {
+                throw new ElCodigoexiste(codigo);
+            }
+            else
+            {
+                AgregarLata(lata);
+            }
+            
+        }
+        public Lata BuscarLataporcodigo(string codigo)
+        {
+            return _latas.Find(F => F.Codigo == codigo);
+        }
+        public int ContarLatas()
+        {
+            return _latas.Count();
+        }
         //    public Lata ExtraerLata(string, double)
         //    {
 
