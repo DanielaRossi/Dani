@@ -18,6 +18,8 @@ namespace Cuatri2021.SegundaClase.Consola
             //instanciar clase 
             clienteEjemplo = new Cliente();
 
+            Cliente ClienteE = new Cliente();
+
             //Cliente clienteEjemplo= new Cliente();
 
 

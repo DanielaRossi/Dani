@@ -13,23 +13,23 @@ namespace Cuatri._2021.PrimeraClase.Consola
     {
         static void Main(string[] args)
         {
-            //    Console.WriteLine("Hola Mundo");
-            //    Console.WriteLine("Ingrese un numero: ");
-            //    string Ingresousuario = Console.ReadLine();
-            //    int NumeroIngresado = Convert.ToInt32(Ingresousuario);
+            Console.WriteLine("Hola Mundo");
+            Console.WriteLine("Ingrese un numero: ");
+            string Ingresousuario = Console.ReadLine();
+            int NumeroIngresado = Convert.ToInt32(Ingresousuario);
 
 
-            //    bool esValido = Validador.EsValido(NumeroIngresado);
+            bool esValido = Validador.EsValido(NumeroIngresado);
 
-            //    if (esValido)
-            //    {
-            //        Console.WriteLine("Es valido.");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("No es valido.");
+            if (esValido)
+            {
+                Console.WriteLine("Es valido.");
+            }
+            else
+            {
+                Console.WriteLine("No es valido.");
 
-            //    }
+            }
             ClaseCalculadora C = new ClaseCalculadora();
 
             float resultado = 0;

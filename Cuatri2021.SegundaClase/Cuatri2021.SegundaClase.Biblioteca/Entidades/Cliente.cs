@@ -27,6 +27,10 @@ namespace Cuatri2021.SegundaClase.Biblioteca
                 _numeroDocumento = value;
             }
         }
+        public int GetNumeroDocumento()
+        {
+            return _numeroDocumento;
+        }
         public DateTime FechaNacimiento
         {
             get
