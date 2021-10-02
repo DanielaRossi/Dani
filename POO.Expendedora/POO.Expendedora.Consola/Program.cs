@@ -94,7 +94,7 @@ namespace POO.Expendedora.Consola
                 expendedora.AgregarLata(codigo, nombre, sabor, precio, volumen, cantidad);
                 Console.WriteLine("Alumno agregado");
             }
-            catch(Elcodigoexiste ex)
+            catch(Elcodigoyaexiste ex)
             {
                 Console.WriteLine(ex.Message);
             }

@@ -8,7 +8,7 @@ using POO.FACULTAD.CONSOLAUTILS;
 
 namespace POO.FACULTAD.CONSOLA
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -175,7 +175,39 @@ namespace POO.FACULTAD.CONSOLA
 
             }
         }
+        //public override bool Equals(Object o)
+        //{
+        //    if (o == null)
+        //    {
+        //        return false;
+        //    }
+
+        //    if (this._codigo == ((Alumno)o).Codigo)
+        //    {
+        //        return true;
+        //    }
+
+        //    return false;
+        //}
+        //Alumno alumno = this._alumnos.Find(x => x.Equals(new Alumno(codigo)));
+
+        //public void EliminarAlumno(int codigo)
+        //{
+
+        //    Alumno alumno = this._alumnos.Find(x => x.Equals(new Alumno(codigo)));
+
+        //    if (alumno == null)
+        //    {
+        //        throw new AlumnoNoEncontradoException(codigo);
+        //    }
+
+        //    this._alumnos.Remove(alumno);
+
+        //}
+
+
+
 
     }
-    
+
 }

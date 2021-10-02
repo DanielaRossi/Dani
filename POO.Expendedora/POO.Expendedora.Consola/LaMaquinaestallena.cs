@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace POO.Expendedora.Consola
 {
-    public class LaMaquinaestallena: Exception
-    {
-        public LaMaquinaestallena() : base ("La maquina està llena")
-        {
+    //public class LaMaquinaestallena: Exception
+    //{
+    //    public LaMaquinaestallena() : base ("La maquina està llena")
+    //    {
 
-        }
-    }
+    //    }
+    //}
 }

@@ -44,7 +44,7 @@ namespace POO.Expendedora.Biblioteca
             }
             else if(L!=null)
             {
-                throw new ElCodigoexiste(codigo);
+                throw new Elcodigoyaexiste(codigo);
             }
             else
             {

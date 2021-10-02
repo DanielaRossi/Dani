@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace POO.Expendedora.Consola
 {
-    public class Elcodigoexiste : Exception
-    {
-        public Elcodigoexiste(string codigo): base("El codigo ya existe")
-        {
+    //public class Elcodigoexiste : Exception
+    //{
+    //    public Elcodigoexiste(string codigo): base("El codigo ya existe")
+    //    {
 
-        }
-    }
+    //    }
+    //}
 }

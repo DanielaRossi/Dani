@@ -16,7 +16,7 @@ namespace POO.FACULTAD.CONSOLAUTILS
             return valor;
         }
 
-        public static int PedirInt( string mensaje)
+        public static int PedirInt(string mensaje)
         {
             Console.WriteLine("Ingrese" + mensaje);
             int valor = Convert.ToInt32(Console.ReadLine());
