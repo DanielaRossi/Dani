@@ -70,13 +70,13 @@ namespace Cuatri2021.TerceraClase.Biblioteca
         {
             _porcentajeCansancio = 100;
             _nombre = "Sin nombre";
-            _domicilio = new Dirección();
+            Dirección _domicilio = new Dirección("Cuenca", 2000);
         }
-        public Persona(string nombre, string calle, string numero)
+        public Persona(string nombre, string calle, int numero)
         {
             
             _nombre = nombre;
-            _domicilio = new Dirección();
+            _domicilio = new Dirección(calle, numero);
         }
         public string Domicilio
         {

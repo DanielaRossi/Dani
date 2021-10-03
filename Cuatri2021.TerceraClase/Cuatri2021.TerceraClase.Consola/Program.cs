@@ -15,12 +15,13 @@ namespace Cuatri2021.TerceraClase.Consola
             Persona p1 = new Persona();
             p1.Nombre = "Daniela";
             Console.WriteLine(p1.Nombre);
+            
 
             Console.WriteLine("Hago correr a p1, su estado fìsico es" , p1.PorcentajeEstadoFisico.ToString());
             p1.Correr();
             Console.WriteLine("Hago correr a p1, su estado fìsico es", p1.PorcentajeEstadoFisico.ToString());
 
-            if(p1.Nombre)
+            if(p1.EstaCansado())
             {
                 Console.WriteLine(p1.Nombre + "esta cansado");
             }
