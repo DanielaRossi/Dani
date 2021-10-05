@@ -34,17 +34,27 @@ namespace POO.FACULTAD.CONSOLAUTILS
             DateTime valor = Convert.ToDateTime(Console.ReadLine());
             return valor;
         }
+        public static bool ValidarInt(string input)
+        {
+            return true;
+        }
+        public static int ConvertirNumero(string valor)
+        {
+            int res = Convert.ToInt32(valor);
+
+            return res;
+        }
         //public static bool EsOpcionValida(string opcionSeleccionada, string [] opcionesValidas)
         //{
         //    if(opcionSeleccionada == opcionesValidas [9])
         //    {
-                
+
         //        return true;
         //    }
         //    return false;
-            
+
         //}
-        
+
 
 
     }
