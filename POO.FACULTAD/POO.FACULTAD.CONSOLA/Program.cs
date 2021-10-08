@@ -36,6 +36,7 @@ namespace POO.FACULTAD.CONSOLA
                         continue;
                     }
                     switch (opcionSeleccionada)
+
                     {
                         case "1":
                             // listar
