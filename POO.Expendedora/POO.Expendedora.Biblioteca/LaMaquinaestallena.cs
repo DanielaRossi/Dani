@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POO.Expendedora.Biblioteca
 {
-    public class LaMaquinaestallena: Exception
+    public class LaMaquinaestallena : Exception
     {
         public LaMaquinaestallena() : base("La maquina està llena")
         {

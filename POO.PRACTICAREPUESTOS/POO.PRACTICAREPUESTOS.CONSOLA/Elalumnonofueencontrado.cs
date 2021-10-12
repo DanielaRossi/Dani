@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace POO.PRACTICAREPUESTOS.CONSOLA
 {
-    public class Elalumnonofueencontrado: Exception
-    {
-        public Elalumnonofueencontrado(): base(" El alumno no fue encontrado")
-        {
+    //public class Elalumnonofueencontrado: Exception
+    //{
+    //    public Elalumnonofueencontrado(): base(" El alumno no fue encontrado")
+    //    {
 
-        }
+    //    }
         
-    }
+    //}
 }

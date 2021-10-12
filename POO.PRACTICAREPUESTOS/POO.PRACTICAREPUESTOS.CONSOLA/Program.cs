@@ -115,29 +115,34 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
         }
         private static void EliminarRepuestos()
         {
-            
+            List<Repuesto> lst = ventarepuesto.TraerRepuestos();
 
-            //List<Repuesto> lst = ventarepuesto.TraerRepuestos();
-            try
+            if (lst!= null)
             {
-                Console.WriteLine("Ingrese el codigo del repuesto que quiere eliminar: ");
-                 int codigo = ConsolaHelper.PedirInt();
-                //if (lst != null)
-                //{
-                //    Console.WriteLine("Ingrese el codigo del repuesto que quiere eliminar: ");
-                //    int codigo = ConsolaHelper.PedirInt();
-                ventarepuesto.QuitarRepuesto(codigo);
+                Listarrepuestos();
+                Console.WriteLine("Seleccione un codigo de la lista a eliminar");
 
-
-                //}
-                //else
-                //{
-                //    Console.WriteLine("No hay elementos en la lista para eliminar.");
-                //}
-            }
-            catch (Elalumnonofueencontrado ex)
+                try
                 {
-                Console.WriteLine(ex.Message);
+                    Console.WriteLine("Ingrese el codigo del repuesto que quiere eliminar: ");
+                    int codigo = ConsolaHelper.PedirInt();
+                    
+                    ventarepuesto.QuitarRepuesto(codigo);
+                    Console.WriteLine("Alumno eliminado");
+
+                }
+                catch (Elalumnofueencontrado ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("No es posible eliminar el repuesto.");
+                }
+            }
+            else 
+            {
+                Console.WriteLine("No hay elementos en la lista para eliminar.");
             }
         }
         private static void Listarrepuestosporcategoria()

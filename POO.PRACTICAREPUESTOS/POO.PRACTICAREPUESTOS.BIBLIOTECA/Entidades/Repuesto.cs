@@ -41,7 +41,23 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
         {
 
         }
+        public Repuesto(int codigo)
+        {
+            this._codigo = codigo;
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (this._codigo == (((Repuesto)obj).Codigo))
+            {
+                return true;
+            }
+            return false;
+        }
 
-       
+
     }
 }

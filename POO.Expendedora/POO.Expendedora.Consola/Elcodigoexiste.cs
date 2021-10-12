@@ -8,7 +8,7 @@ namespace POO.Expendedora.Consola
 {
     //public class Elcodigoexiste : Exception
     //{
-    //    public Elcodigoexiste(string codigo): base("El codigo ya existe")
+    //    public Elcodigoexiste(string codigo) : base("El codigo ya existe")
     //    {
 
     //    }

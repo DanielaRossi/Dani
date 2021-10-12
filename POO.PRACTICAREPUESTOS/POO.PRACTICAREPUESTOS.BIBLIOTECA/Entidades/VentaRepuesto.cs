@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using POO.PRACTICAREPUESTOS.BIBLIOTECA.Utilidades;
 
 
+
 namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
 {
     public class VentaRepuesto
@@ -37,24 +38,33 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
         }
         public void QuitarRepuesto(int codigo)
         {
-            Repuesto repuestoaeliminar = new Repuesto();
-            
-            foreach (Repuesto repuesto in _listaProductos)
+            Repuesto repuestoaeliminar = this._listaProductos.Find(x => x.Equals(new Repuesto(codigo)));
+
+            if (repuestoaeliminar == null)
             {
-                if (repuesto.Codigo == codigo)
-                {
-                    if (repuesto.Stock == 0)
-                    {
-                        repuestoaeliminar = repuesto;
-                    }
-                    //else
-                    //{
-                    //    //Capaz hacer una excepción
-                    //    repuestoaeliminar= null;
-                    //}
-                }
+                throw new Elalumnofueencontrado();
             }
             this._listaProductos.Remove(repuestoaeliminar);
+
+            //Repuesto repuestoaeliminar= new Repuesto();
+            
+            //foreach (Repuesto repuesto in _listaProductos)
+            //{
+            //    if (repuesto.Codigo == codigo)
+            //    {
+            //        if (repuesto.Stock == 0)
+            //        {
+            //            repuestoaeliminar = repuesto;
+            //        }
+            //        //else
+            //        //{
+            //        //    //Capaz hacer una excepción
+            //        //    repuestoaeliminar= null;
+            //        //}
+            //    }
+            //}
+            //this._listaProductos.Remove(repuestoaeliminar);
+
 
         }
         public void ModificarPrecio(int codigo, double precio)

@@ -33,5 +33,18 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             return GetCredencial();
         }
+        //Validar existencia de Alumno o empleado utilizando el metodo Equals(hacer override en empleado donde en caso de que el legajo sea igual retorne true).
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (this._codigo == (((Alumno)obj).Codigo))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
