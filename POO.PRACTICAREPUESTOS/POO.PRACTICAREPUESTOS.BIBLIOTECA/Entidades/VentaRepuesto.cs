@@ -47,11 +47,11 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
                     {
                         repuestoaeliminar = repuesto;
                     }
-                    else
-                    {
-                        //Capaz hacer una excepción
-                        repuestoaeliminar= null;
-                    }
+                    //else
+                    //{
+                    //    //Capaz hacer una excepción
+                    //    repuestoaeliminar= null;
+                    //}
                 }
             }
             this._listaProductos.Remove(repuestoaeliminar);

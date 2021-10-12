@@ -41,17 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumno.cs" />
-    <Compile Include="Bedel.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Directivo.cs" />
-    <Compile Include="Docente.cs" />
-    <Compile Include="Empleado.cs" />
+    <Compile Include="Ente\Alumno.cs" />
+    <Compile Include="Ente\Bedel.cs" />
+    <Compile Include="Ente\Class1.cs" />
+    <Compile Include="Ente\Directivo.cs" />
+    <Compile Include="Ente\Docente.cs" />
+    <Compile Include="Ente\Empleado.cs" />
+    <Compile Include="Entidades.cs" />
     <Compile Include="Enum.cs" />
-    <Compile Include="Facultad.cs" />
-    <Compile Include="Persona.cs" />
+    <Compile Include="Ente\Facultad.cs" />
+    <Compile Include="Ente\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Salario.cs" />
+    <Compile Include="Ente\Salario.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

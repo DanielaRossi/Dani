@@ -63,27 +63,34 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
         }
         private static void Agregarrepuesto()
         {
-            Console.WriteLine("Ingrese un codigo:");
-            int codigo = ConsolaHelper.PedirInt();
-            Console.WriteLine("Ingrese un nombre:");
-            string nombre = ConsolaHelper.PedirString();
-            Console.WriteLine("Ingrese un precio:");
-            double precio = ConsolaHelper.PedirDouble();
-            Console.WriteLine("Ingrese un stock:");
-            int stock = ConsolaHelper.PedirInt();
-            Console.WriteLine("Ingrese el nombre de la categoria");
-            string nombrecategoria = ConsolaHelper.PedirString();
+            try
+            {
+                Console.WriteLine("Ingrese un codigo:");
+                int codigo = ConsolaHelper.PedirInt();
+                Console.WriteLine("Ingrese un nombre:");
+                string nombre = ConsolaHelper.PedirString();
+                Console.WriteLine("Ingrese un precio:");
+                double precio = ConsolaHelper.PedirDouble();
+                Console.WriteLine("Ingrese un stock:");
+                int stock = ConsolaHelper.PedirInt();
+                Console.WriteLine("Ingrese el nombre de la categoria");
+                string nombrecategoria = ConsolaHelper.PedirString();
 
-            Console.WriteLine("Ingrese el codigo de la categoria:");
-            int codigocategoria = ConsolaHelper.PedirInt();
+                Console.WriteLine("Ingrese el codigo de la categoria:");
+                int codigocategoria = ConsolaHelper.PedirInt();
 
-            //Crear categoria
+                //Crear categoria
 
-            Categoria cat = new Categoria(codigocategoria,nombrecategoria);
-            //Categoria c = CategoriaHelper.GetCategorias();
-            // Crear repuesto
+                Categoria cat = new Categoria(codigocategoria, nombrecategoria);
+                //Categoria c = CategoriaHelper.GetCategorias();
+                // Crear repuesto
 
-            ventarepuesto.AgregarRepuesto(codigo, nombre, precio, stock, cat);
+                ventarepuesto.AgregarRepuesto(codigo, nombre, precio, stock, cat);
+            }
+            catch(Exception ex)
+            {
+
+            }
             
 
             
@@ -110,21 +117,27 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
         {
             
 
-            List<Repuesto> lst = ventarepuesto.TraerRepuestos();
-            
-
-
-            if (lst != null)
+            //List<Repuesto> lst = ventarepuesto.TraerRepuestos();
+            try
             {
                 Console.WriteLine("Ingrese el codigo del repuesto que quiere eliminar: ");
-                int codigo = ConsolaHelper.PedirInt();
+                 int codigo = ConsolaHelper.PedirInt();
+                //if (lst != null)
+                //{
+                //    Console.WriteLine("Ingrese el codigo del repuesto que quiere eliminar: ");
+                //    int codigo = ConsolaHelper.PedirInt();
                 ventarepuesto.QuitarRepuesto(codigo);
-                
 
+
+                //}
+                //else
+                //{
+                //    Console.WriteLine("No hay elementos en la lista para eliminar.");
+                //}
             }
-            else
-            {
-                Console.WriteLine("No hay elementos en la lista para eliminar.");
+            catch (Elalumnonofueencontrado ex)
+                {
+                Console.WriteLine(ex.Message);
             }
         }
         private static void Listarrepuestosporcategoria()
