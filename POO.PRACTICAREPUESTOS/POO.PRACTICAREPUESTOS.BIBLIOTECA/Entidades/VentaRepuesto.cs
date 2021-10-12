@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using POO.PRACTICAREPUESTOS.BIBLIOTECA.Utilidades;
+
 
 namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
 {
@@ -33,14 +35,38 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
            
             _listaProductos.Add(re);
         }
-        //public void QuitarRepuesto(int)
-        //{
+        public void QuitarRepuesto(int codigo)
+        {
+            Repuesto repuestoaeliminar = new Repuesto();
+            
+            foreach (Repuesto repuesto in _listaProductos)
+            {
+                if (repuesto.Codigo == codigo)
+                {
+                    if (repuesto.Stock == 0)
+                    {
+                        repuestoaeliminar = repuesto;
+                    }
+                    else
+                    {
+                        //Capaz hacer una excepción
+                        repuestoaeliminar= null;
+                    }
+                }
+            }
+            this._listaProductos.Remove(repuestoaeliminar);
 
-        //}
-        //public void ModificarPrecio(int, double)
-        //{
-
-        //}
+        }
+        public void ModificarPrecio(int codigo, double precio)
+        {
+            foreach (Repuesto repuesto in _listaProductos)
+            {
+                if (repuesto.Codigo == codigo)
+                {
+                    repuesto.Precio = precio;
+                }
+            }
+        }
         //public void AgregarStock(int, int)
         //{
 
@@ -49,10 +75,18 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
         //{
 
         //}
-        //public List<Repuesto> TraerPorCategoria(int)
-        //{
-
-        //}
+        public List<Repuesto> TraerRepuestosPorCategoria(int codigo)
+        {
+            List<Repuesto> lista = new List<Repuesto>();
+            foreach (Repuesto r in _listaProductos)
+            {
+                if (r.Categoria.Codigo == codigo)
+                {
+                    lista.Add(r);
+                }
+            }
+            return lista;
+        }
         public List<Repuesto> TraerRepuestos()
         {
             if (_listaProductos.Count == 0 )

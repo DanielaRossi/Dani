@@ -14,10 +14,10 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
         public int Codigo { get => _codigo; set => _codigo = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
 
-        public string GetCategoria()
-        {
-            return _codigo +_nombre;
-        }
+        //public string GetCategoria()
+        //{
+        //    return _codigo +_nombre;
+        //}
         public Categoria(int codigo, string nombre)
         {
             this._codigo = codigo;

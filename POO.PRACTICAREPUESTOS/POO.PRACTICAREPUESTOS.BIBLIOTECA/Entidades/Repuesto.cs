@@ -20,7 +20,14 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
 
         public int Stock { get => _stock; set => _stock = value; }
 
-        public string Categoria { get => _categoria.GetCategoria(); }
+        
+        public Categoria Categoria
+        {
+            get
+            {
+                return _categoria;
+            }
+        }
 
         public Repuesto(int codigo, string nombre, double precio, int stock, Categoria categoria)
         {
@@ -30,6 +37,11 @@ namespace POO.PRACTICAREPUESTOS.BIBLIOTECA.Entidades
             this._stock = stock;
             this._categoria = categoria;
         }
+        public Repuesto()
+        {
+
+        }
+
        
     }
 }
