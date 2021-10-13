@@ -20,13 +20,11 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
             this._apellido = apellido;
         }
 
-        //public string ToString()
-        //{
-
-        //}
-        //internal abstract string Display()
-        //{
-
-        //}
+        public string ToString()
+        {
+            return Display();
+        }
+        internal abstract string Display();
+       
     }
 }

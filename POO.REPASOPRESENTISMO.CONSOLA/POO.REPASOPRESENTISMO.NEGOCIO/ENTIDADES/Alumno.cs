@@ -16,9 +16,9 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
             this._registro = registro;
         }
 
-        //internal string Display()
-        //{
-
-        //}
+        internal string Display()
+        {
+            return string.Format("{ 0},{ (1)}", _nombre, _registro);
+        }
     }
 }

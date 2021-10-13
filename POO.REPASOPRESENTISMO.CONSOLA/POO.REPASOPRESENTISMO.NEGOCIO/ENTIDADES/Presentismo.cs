@@ -27,29 +27,55 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
             _preceptores.Add(new Preceptor(5, "Jorgelina", "Ramos"));
         }
 
-            //private bool AsistenciaRegistrada(string fecha)
-            //{
-            //    return 
-            //}
-            //private int GetCantidadAlumnosRegulares()
-            //{
-            //    return
-            //}
-            //public Preceptor GetPreceptoractivo()
-            //{
-            //    return
-            //}
-            //public List<Alumno> GetListaAlumno(string)
-            //{
-            //    return
-            //}
-            //public void AgregarAsistencia(List<Asistencia>, string)
-            //{
-
-            //}
-            //public List<Asistencia> GetAsistenciasPorFecha(string)
-            //{
-            //    return
-            //}
+        //private bool AsistenciaRegistrada(string fecha)
+        //{
+        //    return 
+        //}
+        //private int GetCantidadAlumnosRegulares()
+        //{
+        //    return
+        //}
+        public Preceptor GetPreceptoractivo()
+        {
+            foreach(Preceptor preceptor in _preceptores)
+            {
+                if(_preceptores!=null)
+                {
+                    return preceptor;
+                }
+            }
+            return null;
         }
+        //public List<Alumno> GetListaAlumno(string fecha)
+        //{
+        //    foreach (Alumno a in _alumnos)
+        //    {
+        //        if (a.)
+        //    }
+        //}
+        public List<Alumno> GetListaAlumno()
+        {
+            if(_alumnos.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return _alumnos;
+            }
+        }
+        public void AgregarAsistencia(List<Asistencia>_asistencias, string fecha)
+        {
+
+        }
+        public void AgregarAsistencia(string fecha, DateTime fechareal, Preceptor preceptor, Alumno alumno, bool presente)
+        {
+            Asistencia a = new Asistencia(fecha, fechareal, preceptor, alumno, presente);
+            _asistencias.Add(a);
+        }
+        //public List<Asistencia> GetAsistenciasPorFecha(string)
+        //{
+        //    return
+        //}
+    }
     }

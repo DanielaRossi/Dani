@@ -11,9 +11,14 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
         private int _legajo;
         public int Legaje { get => _legajo; set => _legajo = value; }
 
-        //internal string Display()
-        //{
-        //    return
-        //}
+        public Preceptor(int legajo, string nombre, string apellido): base (nombre, apellido)
+        {
+            this._legajo = legajo;
+        }
+
+        internal string Display()
+        {
+            return string.Format("{ 0},{ -(1)}", _apellido, _legajo);
+        }
     }
 }

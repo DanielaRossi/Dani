@@ -27,7 +27,7 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
             {
 
 
-                Preceptor preceptorActivo = _presentismo.GetPreceptorActivo();
+                Preceptor preceptorActivo = _presentismo.GetPreceptoractivo();
                 DesplegarOpcionesMenu();
                 string opcionMenu = ConsolaUtils.PedirString("Opciòn");
                 switch (opcionMenu)
@@ -63,6 +63,31 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
             // para cada alumno solo preguntar si está presente
             // agrego la lista de asistencia
             // Error: mostrar el error y que luego muestre el menu nuevamente
+            try
+            {
+                string fecha = ConsolaUtils.PedirString("Fecha");
+                if (_presentismo.GetListaAlumno().Any())
+                {
+                    foreach(Alumno a in _presentismo.GetListaAlumno())
+                    {
+                        Console.WriteLine(a.ToString());
+                        Console.WriteLine("El alumno està presente?");
+                        bool estapresente = Convert.ToBoolean(Console.ReadLine());
+
+                        _presentismo.AgregarAsistencia(fecha, DateTime.Now, p, a, estapresente);
+                    }
+                }
+                if (_presentismo.GetListaAlumno() == null)
+                {
+                    Console.WriteLine("No existen alumnos.");
+                }
+
+                
+            }
+            catch
+            {
+
+            }
         }
         static void MostrarAsistencia()
         {
@@ -72,4 +97,4 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
     }
 
 }
-}
+
