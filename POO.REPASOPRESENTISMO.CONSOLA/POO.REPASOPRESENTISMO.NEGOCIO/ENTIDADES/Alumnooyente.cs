@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
 {
-    class Alumnooyente
+    public class Alumnooyente: Alumno
     {
+        public Alumnooyente(int registro, string nombre, string apellido): base(registro, nombre, apellido)
+        {
+
+        }
     }
 }
