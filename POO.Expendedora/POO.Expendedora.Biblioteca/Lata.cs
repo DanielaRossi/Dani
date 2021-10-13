@@ -75,7 +75,7 @@ namespace POO.Expendedora.Biblioteca
         //{
         //    return 20;
         //}
-        public override string ToString()
+        public virtual string ToString()
         {
             
             return string.Format("Codigo {0}),{1},¨{{2}}", this._codigo, this._nombre, this._cantidad);

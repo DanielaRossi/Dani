@@ -205,10 +205,16 @@ namespace POO.FACULTAD.CONSOLA
         //    this._alumnos.Remove(alumno);
 
         //}
+        public void Castear()
+        {
+            foreach(Alumno a in _lista)
+        }
+        
 
 
 
 
     }
+    
 
 }

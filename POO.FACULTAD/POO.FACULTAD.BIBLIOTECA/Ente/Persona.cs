@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    public class Persona
+    public abstract class Persona
     {
         protected string _apellido;
         protected DateTime _fechaNac;
@@ -34,14 +34,12 @@ namespace POO.FACULTAD.BIBLIOTECA
             this._fechaNac = fechanacimiento;
         }
 
-        //public override string GetCredencial()
-        //{
 
-        //}
-        //    public override string GetNombreCompleto()
-        //    {
-
-        //    }
-        //}
+        public virtual string GetNombreCompleto()
+        {
+            return string.Format("{0},{1}", _apellido, _nombre);
+        }
     }
+
+}
 }

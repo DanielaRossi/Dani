@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using POO.Expendedora.Consola;
+
 
 
 namespace POO.Expendedora.Biblioteca
@@ -21,6 +21,7 @@ namespace POO.Expendedora.Biblioteca
             capacidad = _capacidad;
             dinero = _dinero;
             encendida = _encendida;
+            //_latas = new List<Lata>();
             _latas = new List<Lata>();
         }
         public Expendedor()
@@ -28,34 +29,44 @@ namespace POO.Expendedora.Biblioteca
 
         }
 
-        public void AgregarLata(Lata lata)
+        public void AgregarLata(Lata l)
         {
             
-            _latas.Add(lata);
+          _latas.Add(l);
         }
         public void AgregarLata(string codigo,string nombre,string sabor,double precio, double volumen, int cantidad)
         {
-            Lata lata = new Lata(codigo, nombre, sabor, precio, volumen, cantidad);
-            int TotalLatas = ContarLatas();
-
-            Lata L = BuscarLataporcodigo(codigo);
-            if (TotalLatas >= 200)
-            {
-                throw new LaMaquinaestallena();
-            }
-            else if(L!=null)
-            {
-                throw new Elcodigoyaexiste(codigo);
-            }
-            else
-            {
-                AgregarLata(lata);
-            }
             
+            //int TotalLatas = ContarLatas();
+
+            //Lata L = BuscarLataporcodigo(codigo);
+            //if (TotalLatas >= 200)
+            //{
+            //    throw new LaMaquinaestallena();
+            //}
+            //else if(L!=null)
+            //{
+            //    throw new Elcodigoyaexiste(codigo);
+            //}
+            //else
+            //{
+                
+            //}
+            Lata l = new Lata(codigo, nombre, sabor, precio, volumen, cantidad);
+            AgregarLata(l);
+
         }
         public Lata BuscarLataporcodigo(string codigo)
         {
-            return _latas.Find(F => F.Codigo == codigo);
+            foreach(Lata lata in _latas)
+            {
+                if(lata.Codigo == codigo)
+                {
+                    return lata;
+                }
+            }
+            return null;
+            //return _latas.Find(F => F.Codigo == codigo);
         }
         public int ContarLatas()
         {

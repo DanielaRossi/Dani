@@ -1,0 +1,16 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\obj\Debug\POO.Expendedora.Consola.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\obj\Debug\POO.Expendedora.Consola.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Consola.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Consola.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.EXCEPCIONES.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Biblioteca.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Utilidad.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.FACULTAD.CONSOLAUTILS.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Utilidad.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.EXCEPCIONES.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.Expendedora.Biblioteca.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\bin\Debug\POO.FACULTAD.CONSOLAUTILS.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\obj\Debug\POO.Expendedora.Consola.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\obj\Debug\POO.Expendedora.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.Expendedora.Consola\obj\Debug\POO.Expendedora.Consola.pdb

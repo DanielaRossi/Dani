@@ -135,6 +135,10 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
                 {
                     Console.WriteLine(ex.Message);
                 }
+                catch(ElrepuestonopuedesereliminadoporquetienestockExcepcion ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
                 catch(Exception ex)
                 {
                     Console.WriteLine("No es posible eliminar el repuesto.");

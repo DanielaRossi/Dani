@@ -46,14 +46,10 @@ namespace POO.Expendedora.Consola
                         Program.ListarLatas(expendedora);
                         break;
                     case "2":
-                        if (encendido == false)
-                        {
-                            Console.WriteLine("Primero debe encender la maquina.");
-                        }
-                        else
-                        {
+                        
+                        
                             Program.IngresarLata(expendedora);
-                        }
+                        
                         break;
 
                 }

@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO. Expendedora.Utilidad\bin\Debug\POO.Expendedora.Utilidad.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO. Expendedora.Utilidad\bin\Debug\POO.Expendedora.Utilidad.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO. Expendedora.Utilidad\obj\Debug\POO. Expendedora.Utilidad.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO. Expendedora.Utilidad\obj\Debug\POO. Expendedora.Utilidad.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO. Expendedora.Utilidad\obj\Debug\POO.Expendedora.Utilidad.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO. Expendedora.Utilidad\obj\Debug\POO.Expendedora.Utilidad.pdb

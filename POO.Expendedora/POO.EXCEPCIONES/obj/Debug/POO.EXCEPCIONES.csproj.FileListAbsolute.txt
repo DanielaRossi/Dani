@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.EXCEPCIONES\bin\Debug\POO.EXCEPCIONES.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.EXCEPCIONES\bin\Debug\POO.EXCEPCIONES.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.EXCEPCIONES\obj\Debug\POO.EXCEPCIONES.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.EXCEPCIONES\obj\Debug\POO.EXCEPCIONES.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.EXCEPCIONES\obj\Debug\POO.EXCEPCIONES.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.Expendedora\POO.EXCEPCIONES\obj\Debug\POO.EXCEPCIONES.pdb

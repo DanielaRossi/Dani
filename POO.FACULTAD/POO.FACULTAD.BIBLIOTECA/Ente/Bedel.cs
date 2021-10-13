@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    //public class Bedel : Empleado
-    //{
-    //    protected  string _apodo;
-    //    public string Apodo { get => _apodo; set => _apodo = value; }
+    public class Bedel : Empleado
+    {
+        protected string _apodo;
+        public string Apodo { get => _apodo; set => _apodo = value; }
 
-    //public override string GetNombreCompleto()
-    //{
-    //    return Bedel { apodo};
-    //}
-}
+        public virtual string GetNombreCompleto()
+        {
+            return string.Format("Bedel" + _apodo);
+        }
+    }
 

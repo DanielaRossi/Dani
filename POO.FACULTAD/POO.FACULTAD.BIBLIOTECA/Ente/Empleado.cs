@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace POO.FACULTAD.BIBLIOTECA
 {
-    public class Empleado : Persona 
+    public abstract class Empleado : Persona 
     {
         private  DateTime _fechaIngreso;
         private  int _legajo;
         private  List<Salario> _salarios;
+        
         //private int _antiguedad;
         //private  DateTime _fechaNacimiento;
         //private  Salario _ultimoSalario;
@@ -47,7 +48,7 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             return _apellido +_nombre;
         }
-        public override string ToString()
+        public virtual string ToString()
         {
             return GetCredencial();
         }

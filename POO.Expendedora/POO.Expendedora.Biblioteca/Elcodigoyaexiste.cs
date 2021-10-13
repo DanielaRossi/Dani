@@ -8,7 +8,7 @@ namespace POO.Expendedora.Biblioteca
 {
     public class Elcodigoyaexiste : Exception
     {
-        public Elcodigoexiste(string codigo) : base("El codigo ya existe")
+        public Elcodigoyaexiste(string codigo) : base("El codigo ya existe")
         {
 
         }
