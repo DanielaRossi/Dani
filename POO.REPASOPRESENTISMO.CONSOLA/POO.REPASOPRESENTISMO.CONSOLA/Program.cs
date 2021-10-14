@@ -66,6 +66,7 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
             try
             {
                 string fecha = ConsolaUtils.PedirString("Fecha");
+                
                 if (_presentismo.GetListaAlumno().Any())
                 {
                     foreach(Alumno a in _presentismo.GetListaAlumno())
@@ -82,17 +83,32 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
                     Console.WriteLine("No existen alumnos.");
                 }
 
+                //_presentismo.AgregarAsistencia(_asistencias, fecha);
+
                 
             }
-            catch
+            catch (AsistenciaInconsistenteExcepcion ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
         }
         static void MostrarAsistencia()
         {
             // ingreso fecha
             // muestro el toString de cada asistencia
+            string fecha = ConsolaUtils.PedirString("Fecha");
+            if (_presentismo.GetAsistenciasPorFecha(fecha).Any())
+            {
+                foreach(Asistencia a in _presentismo.GetAsistenciasPorFecha(fecha))
+                {
+                    Console.WriteLine(a.ToString());
+                }
+            }
+            if (_presentismo.GetAsistenciasPorFecha(fecha) == null)
+            {
+                Console.WriteLine("No hay asistencia.");
+            }
+            
         }
     }
 

@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
 {
-    //public class Alumnooyente: Alumno
-    //{
-    //    public Alumnooyente(int registro, string nombre, string apellido): base(registro, nombre, apellido)
-    //    {
+    public class Alumnooyente : Alumno
+    {
+        public Alumnooyente(int registro, string nombre, string apellido) : base(registro, nombre, apellido)
+        {
 
-    //    }
-    //}
+        }
+        internal override string Display()
+        {
+            return string.Format("{ 0},{ (1)}", _nombre);
+        }
+    }
 }

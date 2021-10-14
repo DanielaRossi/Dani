@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using POO.REPASOPRESENTISMO.NEGOCIO.EXCEPCIONES;
 
 namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
 {
@@ -27,22 +28,34 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
             _preceptores.Add(new Preceptor(5, "Jorgelina", "Ramos"));
         }
 
-        //private bool AsistenciaRegistrada(string fecha)
-        //{
-        //    return 
-        //}
-        //private int GetCantidadAlumnosRegulares()
-        //{
-        //    return
-        //}
+        private bool AsistenciaRegistrada(string fecha)
+        {
+            foreach(string f in _fechas)
+            {
+                if(f == fecha)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        private int GetCantidadAlumnosRegulares()
+        {
+            int Cantidad = 0;
+            foreach(Alumno a in _alumnos)
+            {
+                if(a is Alumnoregular)
+                {
+                    Cantidad++;
+                }
+            }
+            return Cantidad;
+        }
         public Preceptor GetPreceptoractivo()
         {
-            foreach(Preceptor preceptor in _preceptores)
+            if (_preceptores.Any())
             {
-                if(_preceptores!=null)
-                {
-                    return preceptor;
-                }
+                return _preceptores.Last();
             }
             return null;
         }
@@ -66,16 +79,48 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
         }
         public void AgregarAsistencia(List<Asistencia>_asistencias, string fecha)
         {
-
+            if(this.GetCantidadAlumnosRegulares() == _asistencias.Count)
+            {
+                if(!this.AsistenciaRegistrada(fecha))
+                {
+                    foreach(Asistencia a in _asistencias)
+                    {
+                        _asistencias.Add(a);
+                    }
+                }
+                else
+                {
+                    throw new AsistenciaExistenteEseDiaExcepcion();
+                }
+            }
+            else
+            {
+                throw new AsistenciaInconsistenteExcepcion();
+            }
         }
         public void AgregarAsistencia(string fecha, DateTime fechareal, Preceptor preceptor, Alumno alumno, bool presente)
         {
             Asistencia a = new Asistencia(fecha, fechareal, preceptor, alumno, presente);
             _asistencias.Add(a);
         }
-        //public List<Asistencia> GetAsistenciasPorFecha(string)
-        //{
-        //    return
-        //}
+        public List<Asistencia> GetAsistenciasPorFecha(string fecha)
+        {
+            List<Asistencia> Lista = new List<Asistencia>();
+            if (_asistencias.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                foreach (Asistencia a in _asistencias)
+                {
+                    if (a.FechaReferencia == fecha)
+                    {
+                        Lista.Add(a);
+                    }
+                }
+            }
+            return Lista;
+        }
     }
-    }
+}

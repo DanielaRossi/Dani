@@ -114,6 +114,36 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
             }
             return flag;
         }
+        internal static DateTime Pedirfecha(string mensaje)
+        {
+            bool flag = true;
+            string valor;
+            do
+            {
+                Console.WriteLine("Ingrese" + mensaje);
+                valor = Console.ReadLine();
+                flag = ValidarFecha(valor);
+            } while (flag == false);
+
+            return Convert.ToDateTime(valor);
+
+        }
+        internal static bool ValidarFecha(string valor)
+        {
+            bool flag = false;
+            if (!DateTime.TryParse(valor, out DateTime Salida))
+            {
+                Console.WriteLine("El valor ingresado no es una fecha valida.");
+            }
+            
+
+            else
+            {
+                flag = true;
+            }
+            return flag;
+        }
+
 
     }
 }

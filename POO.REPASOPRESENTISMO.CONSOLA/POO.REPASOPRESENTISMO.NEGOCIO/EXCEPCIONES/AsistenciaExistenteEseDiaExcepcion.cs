@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace POO.REPASOPRESENTISMO.NEGOCIO.EXCEPCIONES
 {
-    class AsistenciaExistenteEseDiaExcepcion
+    public class AsistenciaExistenteEseDiaExcepcion: Exception
     {
+        public AsistenciaExistenteEseDiaExcepcion(): base("La fecha ingresada ya existe.")
+        {
+
+        }
     }
 }

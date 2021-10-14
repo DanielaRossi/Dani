@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace POO.REPASOPRESENTISMO.NEGOCIO.EXCEPCIONES
 {
-    class AsistenciaInconsistenteExcepcion
+    public class AsistenciaInconsistenteExcepcion: Exception
     {
+        public AsistenciaInconsistenteExcepcion():base("La existencia es inconsistente")
+        {
+
+        }
     }
 }
