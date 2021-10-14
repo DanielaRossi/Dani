@@ -65,16 +65,16 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
         {
             try
             {
-                Console.WriteLine("Ingrese un codigo:");
-                int codigo = ConsolaHelper.PedirInt();
-                Console.WriteLine("Ingrese un nombre:");
-                string nombre = ConsolaHelper.PedirString();
-                Console.WriteLine("Ingrese un precio:");
-                double precio = ConsolaHelper.PedirDouble();
-                Console.WriteLine("Ingrese un stock:");
-                int stock = ConsolaHelper.PedirInt();
-                Console.WriteLine("Ingrese el nombre de la categoria");
-                string nombrecategoria = ConsolaHelper.PedirString();
+                //Console.WriteLine("Ingrese un codigo:");
+                int codigo = ConsolaHelper.PedirInt("codigo");
+                //Console.WriteLine("Ingrese un nombre:");
+                string nombre = ConsolaHelper.PedirString("Nombre");
+                //Console.WriteLine("Ingrese un precio:");
+                double precio = ConsolaHelper.PedirDouble("Precio");
+                //Console.WriteLine("Ingrese un stock:");
+                int stock = ConsolaHelper.PedirInt("stock");
+                //Console.WriteLine("Ingrese el nombre de la categoria");
+                string nombrecategoria = ConsolaHelper.PedirString("Nombre de la categoria");
 
                 Console.WriteLine("Ingrese el codigo de la categoria:");
                 int codigocategoria = ConsolaHelper.PedirInt();

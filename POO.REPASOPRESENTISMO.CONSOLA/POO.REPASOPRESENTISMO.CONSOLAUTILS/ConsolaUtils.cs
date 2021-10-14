@@ -8,12 +8,12 @@ namespace POO.REPASOPRESENTISMO.CONSOLAUTILS
 {
     public static class ConsolaUtils
     {
-        public static string PedirString(string mensaje)
-        {
-            Console.WriteLine("Ingrese" + mensaje);
-            string valor = Console.ReadLine();
-            return valor;
-        }
+        //public static string PedirString(string mensaje)
+        //{
+        //    Console.WriteLine("Ingrese" + mensaje);
+        //    string valor = Console.ReadLine();
+        //    return valor;
+        //}
 
         public static int PedirInt(string mensaje)
         {
@@ -42,6 +42,29 @@ namespace POO.REPASOPRESENTISMO.CONSOLAUTILS
             int res = Convert.ToInt32(valor);
 
             return res;
+        }
+        public static string PedirString(string mensaje)
+        {
+            bool flag = true;
+            string valor;
+            do
+            {
+                Console.WriteLine("Ingrese" + mensaje);
+                valor = Console.ReadLine();
+                flag = ValidarVacio(valor);
+            } while (flag == false);
+
+            return valor;
+            
+        }
+        public static bool ValidarVacio(string valor)
+        {
+            bool flag= true;
+            if (string.IsNullOrEmpty(valor))
+            {
+                flag = false;
+            }
+            return flag;
         }
     }
 }
