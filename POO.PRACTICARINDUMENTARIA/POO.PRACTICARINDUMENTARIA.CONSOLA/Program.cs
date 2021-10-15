@@ -14,9 +14,11 @@ namespace POO.PRACTICARINDUMENTARIA.CONSOLA
     class Program
     {
         static TiendaRopa _tiendaropa;
-        Program()
+        
+        static Program()
         {
-            _tiendaropa = new TiendaRopa();
+            _tiendaropa =  new TiendaRopa();
+            
         }
         
         static void Main(string[] args)
@@ -103,9 +105,9 @@ namespace POO.PRACTICARINDUMENTARIA.CONSOLA
         {
             if (_tiendaropa.Listar().Any())
             {
-                foreach(Indumentaria i in _tiendaropa.Listar())
+                foreach (Indumentaria i in _tiendaropa.Listar())
                 {
-                    Console.WriteLine(i.ToString());
+                    Console.WriteLine(i.GetDetalle());
                 }
             }
             else
@@ -129,12 +131,18 @@ namespace POO.PRACTICARINDUMENTARIA.CONSOLA
                 string manga = Validacion.PedirString("Tipo de manga");
 
                 TipoIndumentaria t = new TipoIndumentaria(orden, porcentajealgodon);
+                //Camisa camisaNegra = new Camisa(codigo, stock, talle, precio, t, estampado, manga);
+
+                //Indumentaria indumentaria = camisaNegra;
+                //_tiendaropa.AgregarCamisa(indumentaria);
+                
                 _tiendaropa.AgregarCamisa(codigo, stock, talle, precio, t, estampado, manga);
+                
 
             }
             catch(Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
         }
     }

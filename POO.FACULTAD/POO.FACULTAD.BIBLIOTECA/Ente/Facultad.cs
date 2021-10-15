@@ -35,15 +35,15 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             _alumnos.Add(alumno);
         }
-        public void AgregarEmpleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso, Salario ultimosalario, Double bruto, string codigo, double descuentos, DateTime fecha)
-        {
-            Empleado empleado = new Empleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario, bruto, codigo, descuentos, fecha);
-            AgregarEmpleado(empleado);
-        }
+        //public void AgregarEmpleado(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso)
+        //{
+        //    Empleado empleado = new Empleado(apellido, nombre, fechanacimiento, legajo, fechaingreso);
+        //    AgregarEmpleado(empleado);
+        //}
 
-        public void AgregarEmpleado(Empleado empleado)
+        public void AgregarEmpleado(Empleado e)
         {
-            _empleados.Add(empleado);
+            _empleados.Add(e);
         }
         public void EliminarAlumno(int codigo)
         {
@@ -98,13 +98,25 @@ namespace POO.FACULTAD.BIBLIOTECA
             }
             
         }
-        
+        public void ObternerBedeles()
+        {
+            List<Bedel>bedeles = new List<Bedel>();
+            foreach (Empleado d in _empleados)
+            {
+                if (d is Bedel)
+                {
+                    bedeles.Add((Bedel)d);
+                    
+                }
+            }
+        }
+
 
         //public static List<Empleado> TrearEmpleadosPorNombre(string)
         //{
         //    return
         //}
-        
+
 
 
     }

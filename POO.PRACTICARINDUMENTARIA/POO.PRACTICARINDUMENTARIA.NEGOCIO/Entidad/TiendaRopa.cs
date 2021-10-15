@@ -14,6 +14,14 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
 
         public int UltimoCodigo { get => _ultimoCodigo; set => _ultimoCodigo = value; }
 
+        public TiendaRopa()
+        {
+            _Inventario = new List<Indumentaria>();
+            _Ventas = new List<Venta>();
+            
+
+        }
+
         //private int GetProximoCodigo()
         //{
         //    return
@@ -26,16 +34,17 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
         //    indumentarias.Add(camisaNegra);
         //    indumentarias.Add(pantalonNegro);
         //}
-        public void AgregarCamisa(int codigo, int stock, string talle, double precio, TipoIndumentaria t,bool estampado, string manga)
+        public void AgregarCamisa(int codigo, int stock, string talle, double precio, TipoIndumentaria t, bool estampado, string manga)
         {
-            Camisa camisaNegra = new Camisa(codigo, stock, talle, precio, t, estampado, manga);
-            AgregarCamisa(camisaNegra);
+            //Camisa camisaNegra = new Camisa(codigo, stock, talle, precio, t, estampado, manga);
+            //Indumentaria Indumentaria = Camisa;
+            //AgregarCamisa(a);
+            _Inventario.Add(new Camisa(codigo, stock, talle, precio, t, estampado, manga));
 
         }
-        public void AgregarCamisa(Camisa a)
+        public void AgregarCamisa(Indumentaria a)
         {
             _Inventario.Add(a);
-
         }
         //public void Modificar(Indumentaria)
         //{
@@ -51,7 +60,7 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
         //}
         public List<Indumentaria> Listar()
         {
-            if(_Inventario.Count == 0)
+            if (_Inventario.Count == 0)
             {
                 return null;
             }

@@ -8,9 +8,13 @@ namespace POO.FACULTAD.BIBLIOTECA
 {
     public class Directivo : Empleado
     {
-        public override string GetNombreCompleto()
+        public string GetNombreCompleto()
         {
             return "Nombre completo del directivo.";
+        }
+        public Directivo(string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso) : base(apellido, nombre, fechanacimiento, legajo, fechaingreso)
+        {
+            
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using POO.FACULTAD.BIBLIOTECA;
 using POO.FACULTAD.CONSOLAUTILS;
 
+
 namespace POO.FACULTAD.CONSOLA
 {
     public class Program
@@ -117,7 +118,11 @@ namespace POO.FACULTAD.CONSOLA
             {
                 Console.WriteLine("No existen empleados en la lista.");
             }
+
+            
+
         }
+
         private static void AgregarAlumno(Facultad facultad)
         {
             try
@@ -163,12 +168,31 @@ namespace POO.FACULTAD.CONSOLA
                 DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
                 int legajo = ConsolaUtils.PedirInt("Legajo");
                 DateTime fechaingreso = ConsolaUtils.PedirFecha("Fecha de Ingreso");
-                Salario ultimosalario = ConsolaUtils.PedirSalario("Ultimo salario");
-                double bruto = ConsolaUtils.PedirDouble("Salario Bruto");
-                string codigotransferencia = ConsolaUtils.PedirString("Còdigo de transferencia");
-                double descuentos = ConsolaUtils.PedirDouble(" Descuentos");
-                DateTime fecha = ConsolaUtils.PedirFecha("Fecha de Ingreso");
-                facultad.AgregarEmpleado(apellido, nombre, fechanacimiento, legajo, fechaingreso, ultimosalario, bruto,codigotransferencia,descuentos, fecha);
+                //Salario ultimosalario = ConsolaUtils.PedirSalario("Ultimo salario");
+                //double bruto = ConsolaUtils.PedirDouble("Salario Bruto");
+                //string codigotransferencia = ConsolaUtils.PedirString("Còdigo de transferencia");
+                //double descuentos = ConsolaUtils.PedirDouble(" Descuentos");
+                //DateTime fecha = ConsolaUtils.PedirFecha("Fecha de Ingreso");
+                string strTipoEmpleado = ConsolaUtils.PedirString("TipoEmpleado 0)Bedel 1)Docente 2)Directivo");
+                Empleado e = null;
+                if (strTipoEmpleado.ToUpper() == POO.FACULTAD.BIBLIOTECA.Enum.TipoEmpleado.BEDEL.ToString())
+                {
+                    string apodo = ConsolaUtils.PedirString("Apodo");
+                    e = new Bedel(apodo, apellido, nombre, fechanacimiento, legajo, fechaingreso);
+                }
+
+                
+                if (strTipoEmpleado.ToUpper() == POO.FACULTAD.BIBLIOTECA.Enum.TipoEmpleado.DOCENTE.ToString())
+                {
+                    e = new Docente(apellido, nombre, fechanacimiento, legajo, fechaingreso);
+                }
+                if (strTipoEmpleado.ToUpper() == POO.FACULTAD.BIBLIOTECA.Enum.TipoEmpleado.DIRECTIVO.ToString())
+                {
+                    e = new Directivo(apellido, nombre, fechanacimiento, legajo, fechaingreso);
+                }
+
+
+                facultad.AgregarEmpleado(e);
                 Console.WriteLine("Empleado agregado");
             }
             catch (Exception ex)
@@ -176,6 +200,7 @@ namespace POO.FACULTAD.CONSOLA
 
             }
         }
+
         //public override bool Equals(Object o)
         //{
         //    if (o == null)
@@ -205,10 +230,10 @@ namespace POO.FACULTAD.CONSOLA
         //    this._alumnos.Remove(alumno);
 
         //}
-        public void Castear()
-        {
-            foreach(Alumno a in _lista)
-        }
+        //public void Castear()
+        //{
+        //    foreach(Alumno a in _lista)
+        //}
         
 
 

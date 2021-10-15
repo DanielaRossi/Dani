@@ -71,7 +71,7 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
                 {
                     foreach(Alumno a in _presentismo.GetListaAlumno())
                     {
-                        Console.WriteLine(a.ToString());
+                        Console.WriteLine(a.Nombre+ a.Apellido);
                         Console.WriteLine("El alumno està presente?");
                         bool estapresente = Convert.ToBoolean(Console.ReadLine());
 
@@ -83,7 +83,7 @@ namespace POO.REPASOPRESENTISMO.CONSOLA
                     Console.WriteLine("No existen alumnos.");
                 }
 
-                //_presentismo.AgregarAsistencia(_asistencias, fecha);
+                //_presentismo.AgregarAsistencia(fecha, DateTime fechareal, Preceptor preceptor, Alumno alumno, bool presente);
 
                 
             }

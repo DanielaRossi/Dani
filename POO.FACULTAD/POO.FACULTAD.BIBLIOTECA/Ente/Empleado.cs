@@ -42,7 +42,9 @@ namespace POO.FACULTAD.BIBLIOTECA
         //}
         public string GetCredencial()
         {
-            return string.Format("{0} - {1} - {3} - {4}", this._legajo, GetNombreCompleto(), FechaIngreso,_salarios );
+            string mensaje = "";
+            mensaje = "Nombre" + this._nombre + "Apellido" + this._apellido;
+            return mensaje;
         }
         public string GetNombreCompleto()
         {
@@ -52,6 +54,9 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             return GetCredencial();
         }
+        
+
+}
 
     }
-}
+

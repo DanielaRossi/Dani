@@ -15,5 +15,10 @@ namespace POO.FACULTAD.BIBLIOTECA
         {
             return string.Format("Bedel" + _apodo);
         }
+        public Bedel(string apodo, string apellido, string nombre, DateTime fechanacimiento, int legajo, DateTime fechaingreso) : base(apellido, nombre, fechanacimiento, legajo, fechaingreso)
+        {
+            this._apodo = apodo;
+        }
     }
+}
 

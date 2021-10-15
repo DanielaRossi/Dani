@@ -30,26 +30,30 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
             this._tipo = tipo;
 
         }
+        public Indumentaria()
+        {
+
+        }
 
         public string ToString()
         {
             return GetDetalle();
         }
-        //public override bool Equals(object obj)
-        //{
-        //    if(obj == null)
-        //    {
-        //        return false;
-        //    }
-        //    if(this._codigo ==())
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (this._codigo == ((Indumentaria)obj).Codigo)
+            {
+                return true;
+            }
+            return false;
+        }
         public string GetDetalle()
         {
-            return string.Format("{0}-{1}-{2}-{3}-{4}", _tipo, _codigo, _stock, _talle, _precio);
+            return string.Format("Tipo{0}-Codigo{1}- Stock{2}-Talle{3}-Precio{4}",this._codigo, this._stock, this._talle, this._precio);
         }
 
     }

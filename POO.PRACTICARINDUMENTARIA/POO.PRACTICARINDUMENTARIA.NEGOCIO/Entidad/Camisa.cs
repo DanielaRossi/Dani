@@ -18,10 +18,16 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
         {
             return string.Format("{ 0}-{1}", _tieneEstampado, _tipoManga);
         }
+        public Camisa()
+        {
+
+        }
         public Camisa(int codigo, int stock, string talle, double precio, TipoIndumentaria t, bool estampado, string manga): base(codigo,stock, talle, precio, t)
         {
             this._tieneEstampado = estampado;
             this._tipoManga = manga;
+            //Indumentaria camisa= 
         }
+        
     }
 }

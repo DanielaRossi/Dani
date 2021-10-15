@@ -16,7 +16,7 @@ namespace POO.REPASOPRESENTISMO.NEGOCIO.ENTIDADES
             this._legajo = legajo;
         }
 
-        internal string Display()
+        internal override string Display()
         {
             return string.Format("{ 0},{ -(1)}", _apellido, _legajo);
         }

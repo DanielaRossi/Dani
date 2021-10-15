@@ -29,10 +29,10 @@ namespace POO.FACULTAD.BIBLIOTECA
             this._fecha = fecha;
         }
 
-        public override double GetSalarioNeto()
-        {
-            return Bruto - Descuento;
-        }
+        //public override double GetSalarioNeto()
+        //{
+        //    return Bruto - Descuento;
+        //}
         //public static double Salario(double)
         //{
 

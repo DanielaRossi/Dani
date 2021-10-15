@@ -10,9 +10,9 @@ namespace POO.FACULTAD.BIBLIOTECA
     {
         public enum TipoEmpleado
         {
-            Bedel,
-            Docente,
-            Directivo
+            BEDEL,
+            DOCENTE,
+            DIRECTIVO
         }
     }
 }
