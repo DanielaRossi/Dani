@@ -126,8 +126,9 @@ namespace POO.PRACTICARINDUMENTARIA.CONSOLA
                 string talle = Validacion.PedirString("Talle");
                 double precio = Validacion.PedirDouble("Precio");
                 string orden = Validacion.PedirString("Orden");
+                //string orden2 = ConsolaUtils.PedirString("Orden");
                 double porcentajealgodon = Validacion.PedirDouble("Porcentaje algodon");
-                bool estampado = Convert.ToBoolean(Validacion.PedirString("Estampado"));
+                bool estampado = Validacion.PedirBool("Estampado");
                 string manga = Validacion.PedirString("Tipo de manga");
 
                 TipoIndumentaria t = new TipoIndumentaria(orden, porcentajealgodon);

@@ -8,7 +8,7 @@ namespace POO.PRACTICARINDUMENTARIA.CONSOLAUTILS
 {
     public class ConsolaUtils
     {
-        internal static string PedirString(string mensaje)
+        public static string PedirString(string mensaje)
         {
             bool flag = true;
             string valor;

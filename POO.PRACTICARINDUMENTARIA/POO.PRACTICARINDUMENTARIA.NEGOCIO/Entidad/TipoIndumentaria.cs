@@ -19,9 +19,11 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
             this._orden = orden;
             this._porcentajeAlgodon = porcentaje;
         }
-    //    public void GetTipo()
-    //    {
-    //        string.Format("Orden {0}-Algodon{1}", this._orden, this._porcentajeAlgodon);
-    //    }
-    //}
+        public string GetTipo { get => this._orden + this._porcentajeAlgodon; }
+        public TipoIndumentaria()
+        {
+
+        }
+        
+    }
 }

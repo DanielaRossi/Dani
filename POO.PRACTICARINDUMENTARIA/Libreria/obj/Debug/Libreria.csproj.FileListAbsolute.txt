@@ -4,3 +4,9 @@ C:\Users\danir\source\repos\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreri
 C:\Users\danir\source\repos\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.csproj.CoreCompileInputs.cache
 C:\Users\danir\source\repos\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.dll
 C:\Users\danir\source\repos\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.PRACTICARINDUMENTARIA\Libreria\bin\Debug\Libreria.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.PRACTICARINDUMENTARIA\Libreria\bin\Debug\Libreria.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\POO.PRACTICARINDUMENTARIA\Libreria\obj\Debug\Libreria.pdb

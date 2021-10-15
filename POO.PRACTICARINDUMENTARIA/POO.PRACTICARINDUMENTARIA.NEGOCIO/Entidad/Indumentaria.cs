@@ -14,7 +14,7 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
         private string _talle;
         private double _precio;
 
-        public TipoIndumentaria Tipo { get => _tipo; set => _tipo = value; }
+        public string Tipo { get => _tipo.GetTipo; }
         public int Codigo { get => _codigo; set => _codigo = value; }
         public int Stock { get => _stock; set => _stock = value; }
 
@@ -28,6 +28,7 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
             this._talle = talle;
             this._precio = precio;
             this._tipo = tipo;
+            _tipo = new TipoIndumentaria();
 
         }
         public Indumentaria()
@@ -53,7 +54,7 @@ namespace POO.PRACTICARINDUMENTARIA.NEGOCIO.Entidad
         }
         public string GetDetalle()
         {
-            return string.Format("Tipo{0}-Codigo{1}- Stock{2}-Talle{3}-Precio{4}",this._codigo, this._stock, this._talle, this._precio);
+            return this._codigo+ this._stock+ this._talle+ this._precio;
         }
 
     }

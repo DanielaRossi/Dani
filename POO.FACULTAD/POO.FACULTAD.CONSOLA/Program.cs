@@ -11,6 +11,12 @@ namespace POO.FACULTAD.CONSOLA
 {
     public class Program
     {
+        static Facultad facultad;
+        static Program()
+        {
+            facultad = new Facultad("fce");
+        }
+
         static void Main(string[] args)
         {
             // variables de estado de consola, flag de control de la aplicación
@@ -18,7 +24,7 @@ namespace POO.FACULTAD.CONSOLA
             // menú que se va a mostrar luego de CADA acción
             string menu = "1) Listar Alumnos \n2) Listar Empleados\n 3)Agregar Alumno \n 4)Modificar Alumno \n 5)Eliminar Alumno \n 6)Agregar Empleado \n7) Modificar empleado \n8)Eliminar Empleado \n9)Borrar ";
             // Creo el objeto con el que voy a trabajar en este programa
-            Facultad facultad = new Facultad("FCE");
+            //Facultad facultad = new Facultad("FCE");
             // pantalla de bienvenida
             Console.WriteLine("Bienvenido a " + facultad.Nombre);
             do
@@ -131,6 +137,7 @@ namespace POO.FACULTAD.CONSOLA
                 string nombre = ConsolaUtils.PedirString("Nombre");
                 string apellido = ConsolaUtils.PedirString("Apellido");
                 DateTime fechanacimiento = ConsolaUtils.PedirFecha("Fecha de Nacimiento");
+                
                 facultad.AgregarAlumno(codigo, apellido, nombre, fechanacimiento);
                 Console.WriteLine("Alumno agregado");
             }

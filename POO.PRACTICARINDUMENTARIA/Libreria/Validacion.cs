@@ -8,28 +8,28 @@ namespace Libreria
 {
     public class Validacion
     {
-        public static string PedirString()
-        {
-            // SE DEBE VALIDAR
-            return Console.ReadLine();
-        }
+        //public static string PedirString()
+        //{
+        //    // SE DEBE VALIDAR
+        //    return Console.ReadLine();
+        //}
 
-        public static int PedirInt()
-        {
-            // SE DEBE VALIDAR
-            return Convert.ToInt32(Console.ReadLine());
-        }
-        public static double PedirDouble()
-        {
-            return Convert.ToDouble(Console.ReadLine());
-        }
+        //public static int PedirInt()
+        //{
+        //    // SE DEBE VALIDAR
+        //    return Convert.ToInt32(Console.ReadLine());
+        //}
+        //public static double PedirDouble()
+        //{
+        //    return Convert.ToDouble(Console.ReadLine());
+        //}
         public static string PedirString(string mensaje)
         {
             bool flag = true;
             string valor;
             do
             {
-                Console.WriteLine("Ingrese" + mensaje);
+                Console.WriteLine("Ingrese " + mensaje);
                 valor = Console.ReadLine();
                 flag = ValidarVacio(valor);
             } while (flag == false);
@@ -56,7 +56,7 @@ namespace Libreria
             string valor;
             do
             {
-                Console.WriteLine("Ingrese" + mensaje);
+                Console.WriteLine("Ingrese " + mensaje);
                 valor = Console.ReadLine();
                 flag = ValidarInt(valor);
             } while (flag == false);
@@ -88,7 +88,7 @@ namespace Libreria
             string valor;
             do
             {
-                Console.WriteLine("Ingrese" + mensaje);
+                Console.WriteLine("Ingrese " + mensaje);
                 valor = Console.ReadLine();
                 flag = ValidarDouble(valor);
             } while (flag == false);
@@ -120,7 +120,7 @@ namespace Libreria
             string valor;
             do
             {
-                Console.WriteLine("Ingrese" + mensaje);
+                Console.WriteLine("Ingrese " + mensaje);
                 valor = Console.ReadLine();
                 flag = ValidarFecha(valor);
             } while (flag == false);
@@ -134,6 +134,35 @@ namespace Libreria
             if (!DateTime.TryParse(valor, out DateTime Salida))
             {
                 Console.WriteLine("El valor ingresado no es una fecha valida.");
+            }
+
+
+            else
+            {
+                flag = true;
+            }
+            return flag;
+        }
+        public static bool PedirBool(string mensaje)
+        {
+            bool flag = true;
+            string valor;
+            do
+            {
+                Console.WriteLine("Ingrese true o false de " + mensaje);
+                valor = Console.ReadLine();
+                flag = ValidarBool(valor);
+            } while (flag == false);
+
+            return Convert.ToBoolean(valor);
+
+        }
+        public static bool ValidarBool(string valor)
+        {
+            bool flag = false;
+            if (!Boolean.TryParse(valor, out Boolean Salida))
+            {
+                Console.WriteLine("El valor ingresado no es un bool.");
             }
 
 
