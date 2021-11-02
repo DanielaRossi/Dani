@@ -77,7 +77,7 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
                 string nombrecategoria = ConsolaHelper.PedirString("Nombre de la categoria");
 
                 Console.WriteLine("Ingrese el codigo de la categoria:");
-                int codigocategoria = ConsolaHelper.PedirInt();
+                int codigocategoria = ConsolaHelper.PedirInt("Codigo categoria");
 
                 //Crear categoria
 
@@ -125,7 +125,7 @@ namespace POO.PRACTICAREPUESTOS.CONSOLA
                 try
                 {
                     Console.WriteLine("Ingrese el codigo del repuesto que quiere eliminar: ");
-                    int codigo = ConsolaHelper.PedirInt();
+                    int codigo = ConsolaHelper.PedirInt("Codigo");
                     
                     ventarepuesto.QuitarRepuesto(codigo);
                     Console.WriteLine("Alumno eliminado");

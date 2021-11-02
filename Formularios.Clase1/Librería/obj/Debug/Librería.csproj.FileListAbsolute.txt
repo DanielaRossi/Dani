@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Librería\bin\Debug\Librería.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Librería\bin\Debug\Librería.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Librería\obj\Debug\Librería.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Librería\obj\Debug\Librería.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Librería\obj\Debug\Librería.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Librería\obj\Debug\Librería.pdb
