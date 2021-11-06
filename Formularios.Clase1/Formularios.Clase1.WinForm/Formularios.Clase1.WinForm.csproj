@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAgregarDocente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAgregarDocente.Designer.cs">
-      <DependentUpon>FrmAgregarDocente.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmMaster.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMaster.Designer.cs">
       <DependentUpon>FrmMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarDocente.Designer.cs">
+      <DependentUpon>FrmAgregarDocente.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListarDocente.cs">
       <SubType>Form</SubType>
@@ -72,14 +72,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAgregarDocente.resx">
-      <DependentUpon>FrmAgregarDocente.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMaster.resx">
+      <DependentUpon>FrmMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListarDocente.resx">
       <DependentUpon>FrmListarDocente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMaster.resx">
-      <DependentUpon>FrmMaster.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAgregarDocente.resx">
+      <DependentUpon>FrmAgregarDocente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +104,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Formularios.Clase1.Entidades\Formularios.Clase1.Entidades.csproj">
+      <Project>{2f170478-a4a3-4674-9c96-c6fcb60f77fe}</Project>
+      <Name>Formularios.Clase1.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Formularios.Clase1.Negocio\Formularios.Clase1.Negocio.csproj">
+      <Project>{66933124-cac9-4a0b-a597-2983b313a318}</Project>
+      <Name>Formularios.Clase1.Negocio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Librería\Librería.csproj">
       <Project>{20790ef1-2589-40ad-9f0c-175316b622ef}</Project>
       <Name>Librería</Name>

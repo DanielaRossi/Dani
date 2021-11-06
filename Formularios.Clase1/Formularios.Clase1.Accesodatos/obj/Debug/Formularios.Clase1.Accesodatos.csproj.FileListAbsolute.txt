@@ -1,0 +1,9 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\bin\Debug\Formularios.Clase1.Accesodatos.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\bin\Debug\Formularios.Clase1.Accesodatos.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\bin\Debug\Formularios.Clase1.Entidades.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\bin\Debug\Formularios.Clase1.Entidades.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\obj\Debug\Formularios.Clase1.Accesodatos.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\obj\Debug\Formularios.Clase1.Accesodatos.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\obj\Debug\Formularios.Clase1.Accesodatos.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\obj\Debug\Formularios.Clase1.Accesodatos.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.Accesodatos\obj\Debug\Formularios.Clase1.Accesodatos.pdb

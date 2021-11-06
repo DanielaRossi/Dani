@@ -13,3 +13,7 @@ C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\obj\Debug\Formularios.Clase1.WinForm.FrmAgregarDocente.resources
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\obj\Debug\Formularios.Clase1.WinForm.FrmListarDocente.resources
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\obj\Debug\Formularios.Clase1.WinForm.FrmMaster.resources
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\bin\Debug\Formularios.Clase1.Entidades.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\bin\Debug\Formularios.Clase1.Negocio.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\bin\Debug\Formularios.Clase1.Entidades.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase1\Formularios.Clase1.WinForm\bin\Debug\Formularios.Clase1.Negocio.pdb

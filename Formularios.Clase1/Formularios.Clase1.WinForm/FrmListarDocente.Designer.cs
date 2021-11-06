@@ -32,6 +32,8 @@ namespace Formularios.Clase1.WinForm
             this.label1 = new System.Windows.Forms.Label();
             this.lstDocentes = new System.Windows.Forms.ListBox();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnVerDetalle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,24 +51,47 @@ namespace Formularios.Clase1.WinForm
             this.lstDocentes.ItemHeight = 16;
             this.lstDocentes.Location = new System.Drawing.Point(69, 99);
             this.lstDocentes.Name = "lstDocentes";
-            this.lstDocentes.Size = new System.Drawing.Size(120, 84);
+            this.lstDocentes.Size = new System.Drawing.Size(193, 132);
             this.lstDocentes.TabIndex = 1;
+            this.lstDocentes.SelectedIndexChanged += new System.EventHandler(this.lstDocentes_SelectedIndexChanged);
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(141, 215);
+            this.btnVolver.Location = new System.Drawing.Point(189, 263);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.Size = new System.Drawing.Size(94, 33);
             this.btnVolver.TabIndex = 2;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(288, 84);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(155, 38);
+            this.btnAgregar.TabIndex = 3;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnVerDetalle
+            // 
+            this.btnVerDetalle.Location = new System.Drawing.Point(69, 263);
+            this.btnVerDetalle.Name = "btnVerDetalle";
+            this.btnVerDetalle.Size = new System.Drawing.Size(101, 33);
+            this.btnVerDetalle.TabIndex = 4;
+            this.btnVerDetalle.Text = "Ver detalle";
+            this.btnVerDetalle.UseVisualStyleBackColor = true;
+            this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
             // 
             // FrmListarDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVerDetalle);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.lstDocentes);
             this.Controls.Add(this.label1);
@@ -83,5 +108,7 @@ namespace Formularios.Clase1.WinForm
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstDocentes;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnVerDetalle;
     }
 }

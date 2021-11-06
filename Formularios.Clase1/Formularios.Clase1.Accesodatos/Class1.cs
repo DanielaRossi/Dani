@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Librería
+namespace Formularios.Clase1.Accesodatos
 {
-    public class Docente: Persona
+    public class Class1
     {
-
-        
-
     }
 }
