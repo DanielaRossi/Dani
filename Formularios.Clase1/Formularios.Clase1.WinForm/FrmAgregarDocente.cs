@@ -13,18 +13,30 @@ namespace Formularios.Clase1.WinForm
 {
     public partial class FrmAgregarDocente : Form
     {
+        private List<TipoDocumento> lstDocumentos;
         
         public FrmAgregarDocente(Form propietario)
         {
             
             this.Owner = propietario;
+            lstDocumentos = new List<TipoDocumento>();
+            lstDocumentos.Add(new TipoDocumento(0, "-- SELECCIONE--"));
+            lstDocumentos.Add(new TipoDocumento(1, "Soltero"));
+            lstDocumentos.Add(new TipoDocumento(2, "Casado"));
             //CompletarControles();
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            InicializarControles();
+        }
+        private void InicializarControles()
+        { 
+            cmbTipoDocumento.DataSource = null;
+            cmbTipoDocumento.DataSource = this.lstDocumentos;
+            cmbTipoDocumento.DisplayMember = "Descripción";
+            cmbTipoDocumento.ValueMember = "Codigo";
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
@@ -49,9 +61,11 @@ namespace Formularios.Clase1.WinForm
 
         private void bntLimpiar_Click(object sender, EventArgs e)
         {
-            this.txtResultado.Text = string.Empty;
+            //this.txtResultado.Text = string.Empty;
             this.txtNombre.Text = string.Empty;
             this.txtApellido.Text = string.Empty;
+            this.txtLegajo.Text = string.Empty;
+            InicializarControles();
         }
         
 
@@ -89,6 +103,42 @@ namespace Formularios.Clase1.WinForm
         {
             this.Hide();
             this.Owner.Show();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Validaciones();
+                Docente d1 = new Docente(Convert.ToInt32(this.txtLegajo.Text), this.txtNombre.Text, this.txtApellido.Text, (TipoDocumento)this.cmbTipoDocumento.SelectedItem);
+                ((FrmListarDocente)this.Owner).AgregarDocente(d1);
+                //limpiar();
+
+                this.Hide();
+                this.Owner.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void Validaciones()
+        {
+            
+
+                if ((int)cmbTipoDocumento.SelectedValue == 0)
+                    throw new Exception("Seleccione un valor");
+            
+        }
+
+        private void bntLimpiar_Click_1(object sender, EventArgs e)
+        {
+            this.txtNombre.Text = string.Empty;
+            this.txtApellido.Text = string.Empty;
+            this.txtLegajo.Text = string.Empty;
+            InicializarControles();
         }
     }
 }

@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Formularios.Clase1.Entidades;
+using Formularios.Clase1.Negocio;
 
 namespace Formularios.Clase1.WinForm
 {
     public partial class FrmListarDocente: Form
     {
-        private List<Docente> _docentes;
+        //private List<Docente> _docentes;
+        private DocenteServicio _docenteServicio;
         private FrmAgregarDocente _frmAgregarDocente;
         private void btnVolver_Click(object sender, EventArgs e)
         {
@@ -24,19 +26,42 @@ namespace Formularios.Clase1.WinForm
         {
             this.Owner = propietario;
             _frmAgregarDocente = new FrmAgregarDocente(this);
-            
-            _docentes = new List<Docente>();
-            _docentes.Add(new Docente(1, "Rodolfo", "Zavala", new TipoDocumento(1, "Soltero")));
-            _docentes.Add(new Docente(2, "Suyai", "Pecoraro", new TipoDocumento(1, "Soltero")));
-            _docentes.Add(new Docente(3, "Blanco", "Marcelo", new TipoDocumento(1, "Soltero")));
 
+            //_docentes = new List<Docente>();
+            //_docentes.Add(new Docente(1, "Rodolfo", "Zavala", new TipoDocumento(1, "Soltero")));
+            //_docentes.Add(new Docente(2, "Suyai", "Pecoraro", new TipoDocumento(1, "Soltero")));
+            //_docentes.Add(new Docente(3, "Blanco", "Marcelo", new TipoDocumento(1, "Soltero")));
+
+            _docenteServicio = new DocenteServicio();
             InitializeComponent();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            _frmAgregarDocente.Show();
+            try
+            {
+                this.Hide();
+                _frmAgregarDocente.Show();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+        public void AgregarDocente(Docente docente)
+        {
+            try
+            {
+                //this._docentes.Add(docente);
+                _docenteServicio.AddDocente(docente);
+                CargarListaDocente();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
 
@@ -47,7 +72,8 @@ namespace Formularios.Clase1.WinForm
         private void CargarListaDocente()
         {
             lstDocentes.DataSource = null;
-            lstDocentes.DataSource = this._docentes;
+            //lstDocentes.DataSource = this._docentes;
+            lstDocentes.DataSource = this._docenteServicio.GetDocentes();
             lstDocentes.ValueMember = "";
             lstDocentes.DisplayMember = "Mostrar";
             lstDocentes.ValueMember = "Legajo";

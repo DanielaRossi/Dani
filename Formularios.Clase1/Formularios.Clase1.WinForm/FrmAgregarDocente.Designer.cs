@@ -42,6 +42,7 @@ namespace Formularios.Clase1.WinForm
             this.txtLegajo = new System.Windows.Forms.TextBox();
             this.btnAgregarDocente = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMostrar
@@ -52,7 +53,6 @@ namespace Formularios.Clase1.WinForm
             this.btnMostrar.TabIndex = 0;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
-            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // txtNombre
             // 
@@ -60,7 +60,6 @@ namespace Formularios.Clase1.WinForm
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(172, 22);
             this.txtNombre.TabIndex = 1;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // cmbTipoDocumento
             // 
@@ -111,17 +110,17 @@ namespace Formularios.Clase1.WinForm
             this.txtResultado.ReadOnly = true;
             this.txtResultado.Size = new System.Drawing.Size(261, 22);
             this.txtResultado.TabIndex = 8;
-            this.txtResultado.TextChanged += new System.EventHandler(this.txtResultado_TextChanged);
             // 
             // bntLimpiar
             // 
-            this.bntLimpiar.Location = new System.Drawing.Point(308, 244);
+            this.bntLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bntLimpiar.Location = new System.Drawing.Point(537, 59);
             this.bntLimpiar.Name = "bntLimpiar";
-            this.bntLimpiar.Size = new System.Drawing.Size(140, 43);
+            this.bntLimpiar.Size = new System.Drawing.Size(174, 32);
             this.bntLimpiar.TabIndex = 9;
             this.bntLimpiar.Text = "Limpiar";
-            this.bntLimpiar.UseVisualStyleBackColor = true;
-            this.bntLimpiar.Click += new System.EventHandler(this.bntLimpiar_Click);
+            this.bntLimpiar.UseVisualStyleBackColor = false;
+            this.bntLimpiar.Click += new System.EventHandler(this.bntLimpiar_Click_1);
             // 
             // label1
             // 
@@ -141,14 +140,14 @@ namespace Formularios.Clase1.WinForm
             // 
             // btnAgregarDocente
             // 
+            this.btnAgregarDocente.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgregarDocente.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnAgregarDocente.Location = new System.Drawing.Point(394, 340);
+            this.btnAgregarDocente.Location = new System.Drawing.Point(537, 105);
             this.btnAgregarDocente.Name = "btnAgregarDocente";
-            this.btnAgregarDocente.Size = new System.Drawing.Size(225, 54);
+            this.btnAgregarDocente.Size = new System.Drawing.Size(174, 34);
             this.btnAgregarDocente.TabIndex = 11;
             this.btnAgregarDocente.Text = "Agregar Docente";
-            this.btnAgregarDocente.UseVisualStyleBackColor = true;
-            this.btnAgregarDocente.Click += new System.EventHandler(this.btnAgregarDocente_Click_1);
+            this.btnAgregarDocente.UseVisualStyleBackColor = false;
             // 
             // btnVolver
             // 
@@ -159,7 +158,17 @@ namespace Formularios.Clase1.WinForm
             this.btnVolver.TabIndex = 12;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGuardar.Location = new System.Drawing.Point(537, 152);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(174, 37);
+            this.btnGuardar.TabIndex = 13;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmAgregarDocente
             // 
@@ -167,6 +176,7 @@ namespace Formularios.Clase1.WinForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnAgregarDocente);
             this.Controls.Add(this.txtLegajo);
@@ -204,6 +214,7 @@ namespace Formularios.Clase1.WinForm
         private System.Windows.Forms.TextBox txtLegajo;
         private System.Windows.Forms.Button btnAgregarDocente;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }
 
