@@ -30,6 +30,7 @@ namespace Formularios.Clase2.Cliente
         private void InitializeComponent()
         {
             this.btnListarCliente = new System.Windows.Forms.Button();
+            this.btnListarCuentas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnListarCliente
@@ -42,11 +43,22 @@ namespace Formularios.Clase2.Cliente
             this.btnListarCliente.UseVisualStyleBackColor = true;
             this.btnListarCliente.Click += new System.EventHandler(this.btnListarCliente_Click);
             // 
+            // btnListarCuentas
+            // 
+            this.btnListarCuentas.Location = new System.Drawing.Point(92, 139);
+            this.btnListarCuentas.Name = "btnListarCuentas";
+            this.btnListarCuentas.Size = new System.Drawing.Size(220, 47);
+            this.btnListarCuentas.TabIndex = 1;
+            this.btnListarCuentas.Text = "Listar Cuentas";
+            this.btnListarCuentas.UseVisualStyleBackColor = true;
+            this.btnListarCuentas.Click += new System.EventHandler(this.btnListarCuentas_Click);
+            // 
             // FrmMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnListarCuentas);
             this.Controls.Add(this.btnListarCliente);
             this.Name = "FrmMaster";
             this.Text = "Formulario de inicio";
@@ -57,6 +69,7 @@ namespace Formularios.Clase2.Cliente
         #endregion
 
         private System.Windows.Forms.Button btnListarCliente;
+        private System.Windows.Forms.Button btnListarCuentas;
     }
 }
 

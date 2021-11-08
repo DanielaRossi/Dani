@@ -63,7 +63,7 @@ namespace Formularios.Clase2.Cliente
             try
             {
                 
-                //Formularios.Clase2.Entidades.Cliente c1 = new Formularios.Clase2.Entidades.Cliente(Convert.ToInt32(this.txtId.Text),checksi.Checked, this.txtNombre.Text, this.txtApellido.Text, this.txtDireccion.Text, this.txtTelefono.Text, this.txtEmail.Text, Convert.ToDateTime(this.txtFechaNacimiento.Text), Convert.ToInt64(this.txtCuit.Text));
+                //Cliente c1 = new Cliente(Convert.ToInt32(this.txtId.Text),checksi.Checked, this.txtNombre.Text, this.txtApellido.Text, this.txtDireccion.Text, this.txtTelefono.Text, this.txtEmail.Text, Convert.ToDateTime(this.txtFechaNacimiento.Text), Convert.ToInt64(this.txtCuit.Text));
                 //((FrmListarCliente)this.Owner).AgregarCliente(c1);
                 Limpiar();
 

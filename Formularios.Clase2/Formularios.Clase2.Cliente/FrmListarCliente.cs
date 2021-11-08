@@ -49,10 +49,10 @@ namespace Formularios.Clase2.Cliente
             this.Hide();
             _frmAgregarCliente.Show();
         }
-        public void AgregarCliente(Cliente cliente)
-        {
-            _clienteservice.AddCliente(cliente);
-            CargarListaCliente();
-        }
+        //public void AgregarCliente(Cliente cliente)
+        //{
+        //    _clienteservice.AddCliente(cliente);
+        //    CargarListaCliente();
+        //}
     }
 }

@@ -13,9 +13,11 @@ namespace Formularios.Clase2.Cliente
     public partial class FrmMaster : Form
     {
         private FrmListarCliente _frmListarCliente;
+        private FrmListarCuentas _frmListarCuentas;
         public FrmMaster()
         {
             _frmListarCliente = new FrmListarCliente(this);
+            _frmListarCuentas = new FrmListarCuentas(this);
             InitializeComponent();
         }
 
@@ -31,6 +33,12 @@ namespace Formularios.Clase2.Cliente
                 MessageBox.Show(ex.Message);
             }
             
+        }
+
+        private void btnListarCuentas_Click(object sender, EventArgs e)
+        {
+            _frmListarCuentas.Show();
+            this.Hide();
         }
     }
 }

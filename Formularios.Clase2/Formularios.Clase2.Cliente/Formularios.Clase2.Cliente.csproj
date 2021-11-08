@@ -52,11 +52,23 @@
     <Compile Include="FormAgregarCliente.Designer.cs">
       <DependentUpon>FormAgregarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAgregarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarCuentas.Designer.cs">
+      <DependentUpon>FrmAgregarCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmListarCliente.Designer.cs">
       <DependentUpon>FrmListarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarCuentas.Designer.cs">
+      <DependentUpon>FrmListarCuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMaster.cs">
       <SubType>Form</SubType>
@@ -71,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListarCliente.resx">
       <DependentUpon>FrmListarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarCuentas.resx">
+      <DependentUpon>FrmListarCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMaster.resx">
       <DependentUpon>FrmMaster.cs</DependentUpon>
