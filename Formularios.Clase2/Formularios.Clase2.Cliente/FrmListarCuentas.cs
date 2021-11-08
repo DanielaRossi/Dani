@@ -7,17 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Formularios.Clase2.Negocio;
+using Formularios.Clase2.Entidades;
 
 namespace Formularios.Clase2.Cliente
 {
     public partial class FrmListarCuentas : Form
     {
         private FrmAgregarCuentas frmAgregarCuentas;
+        private CuentasService _cuentasservice;
         public FrmListarCuentas(Form propietario)
         {
             this.Owner = propietario;
             InitializeComponent();
             frmAgregarCuentas = new FrmAgregarCuentas(this);
+            _cuentasservice = new CuentasService();
         }
 
         private void FrmListarCuentas_Load(object sender, EventArgs e)
@@ -27,8 +31,9 @@ namespace Formularios.Clase2.Cliente
         private void CargarListaCuentas()
         {
             lstCuentas.DataSource = null;
-            //lstCuentas.DataSource=
-            //lstCuentas.DisplayMember = "";
+            lstCuentas.DataSource = _cuentasservice.GetCuentas();
+            lstCuentas.DisplayMember = "Id";
+            lstCuentas.ValueMember = "NroCuenta";
 
         }
 

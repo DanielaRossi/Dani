@@ -19,7 +19,12 @@ namespace Formularios.Clase2.Entidades
             this._activo = activo;
         }
 
+        public string Mostrar()
+        {
+            return $"{this._id},{this._apellido}, {this._nombre}, {this._cuit}";
+        }
 
-        
+
+
     }
 }

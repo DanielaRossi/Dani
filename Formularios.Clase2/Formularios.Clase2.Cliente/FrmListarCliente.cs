@@ -11,6 +11,7 @@ using Formularios.Clase2.Negocio;
 using Formularios.Clase2.Entidades;
 
 
+
 namespace Formularios.Clase2.Cliente
 {
     public partial class FrmListarCliente : Form
@@ -34,8 +35,8 @@ namespace Formularios.Clase2.Cliente
         {
             lstClientes.DataSource = null;
             lstClientes.DataSource = _clienteservice.GetCliente();
-            lstClientes.DisplayMember = "Nombre";
-            lstClientes.ValueMember = "Id";
+            lstClientes.DisplayMember = "Id";
+            lstClientes.ValueMember = "Mostrar";
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

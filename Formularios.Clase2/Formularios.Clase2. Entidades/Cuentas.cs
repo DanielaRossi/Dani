@@ -34,9 +34,15 @@ namespace Formularios.Clase2.Entidades
             this._descripcion = descripcion;
             this._saldo = saldo;
             this._fechaApertura = fechaapertura;
+            this._fechaModificacion = fechamodificacion;
             this._activo = activo;
             this._idCliente = idcliente;
 
+        }
+        public string Mostrar()
+        {
+            return  this._id + this._nroCuenta+this._descripcion+ this._idCliente;
+            return $"Id {this._id}, Nro Cuenta {this._nroCuenta}, Descripcion {this._descripcion}, IdCliente{this._idCliente}";
         }
 
     }

@@ -16,7 +16,7 @@ namespace Formularios.Clase2.Negocio
             _cuentasMapper = new CuentasMapper();
 
         }
-        public List<Cuentas> GetCliente()
+        public List<Cuentas> GetCuentas()
         {
             return _cuentasMapper.TraerCuentas();
         }
