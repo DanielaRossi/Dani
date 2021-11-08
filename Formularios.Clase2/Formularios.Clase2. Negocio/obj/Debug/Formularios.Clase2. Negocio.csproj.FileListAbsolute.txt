@@ -1,0 +1,16 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Negocio.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Negocio.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Negocio.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Accesodatos.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Entidades.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Accesodatos.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Accesodatos.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Entidades.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\bin\Debug\Formularios.Clase2.Entidades.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2. Negocio.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2.Negocio.Properties.Resources.resources
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2. Negocio.csproj.GenerateResource.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2. Negocio.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2. Negocio.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2.Negocio.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Negocio\obj\Debug\Formularios.Clase2.Negocio.pdb

@@ -1,0 +1,9 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\bin\Debug\Formularios.Clase2.Entidades.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\bin\Debug\Formularios.Clase2.Entidades.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\bin\Debug\Formularios.Clase2.Entidades.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\obj\Debug\Formularios.Clase2. Entidades.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\obj\Debug\Formularios.Clase2.Entidades.Properties.Resources.resources
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\obj\Debug\Formularios.Clase2. Entidades.csproj.GenerateResource.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\obj\Debug\Formularios.Clase2. Entidades.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\obj\Debug\Formularios.Clase2.Entidades.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Entidades\obj\Debug\Formularios.Clase2.Entidades.pdb
