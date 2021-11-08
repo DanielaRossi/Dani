@@ -12,9 +12,21 @@ namespace Formularios.Clase2.Cliente
 {
     public partial class FrmAgregarCuentas : Form
     {
-        public FrmAgregarCuentas()
+        public FrmAgregarCuentas(Form propietario)
         {
             InitializeComponent();
+            this.Owner = propietario;
+        }
+
+        private void FrmAgregarCuentas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Owner.Show();
         }
     }
 }

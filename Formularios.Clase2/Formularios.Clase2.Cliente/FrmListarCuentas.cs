@@ -12,10 +12,12 @@ namespace Formularios.Clase2.Cliente
 {
     public partial class FrmListarCuentas : Form
     {
+        private FrmAgregarCuentas frmAgregarCuentas;
         public FrmListarCuentas(Form propietario)
         {
             this.Owner = propietario;
             InitializeComponent();
+            frmAgregarCuentas = new FrmAgregarCuentas(this);
         }
 
         private void FrmListarCuentas_Load(object sender, EventArgs e)
@@ -26,7 +28,7 @@ namespace Formularios.Clase2.Cliente
         {
             lstCuentas.DataSource = null;
             //lstCuentas.DataSource=
-            lstCuentas.DisplayMember= ""
+            //lstCuentas.DisplayMember = "";
 
         }
 
@@ -34,6 +36,13 @@ namespace Formularios.Clase2.Cliente
         {
             this.Hide();
             this.Owner.Show();
+
+        }
+
+        private void btnAgregarCliente_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAgregarCuentas.Show();
 
         }
     }

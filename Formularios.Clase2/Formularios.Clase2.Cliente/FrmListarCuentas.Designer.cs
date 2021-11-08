@@ -61,6 +61,7 @@ namespace Formularios.Clase2.Cliente
             this.btnAgregarCliente.TabIndex = 2;
             this.btnAgregarCliente.Text = "Agregar Cliente";
             this.btnAgregarCliente.UseVisualStyleBackColor = true;
+            this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
             // 
             // FrmListarCuentas
             // 

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteService.cs" />
+    <Compile Include="CuentasService.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

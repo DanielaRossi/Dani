@@ -21,3 +21,4 @@ C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2.Cliente\bin\Debug\Formularios.Clase2.Accesodatos.exe.config
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2.Cliente\obj\Debug\Formularios.Clase2.Cliente.FormAgregarCliente.resources
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2.Cliente\obj\Debug\Formularios.Clase2.Cliente.FrmListarCuentas.resources
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2.Cliente\obj\Debug\Formularios.Clase2.Cliente.FrmAgregarCuentas.resources
