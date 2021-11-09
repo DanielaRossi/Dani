@@ -32,8 +32,8 @@ namespace Formularios.Clase2.Cliente
         {
             lstCuentas.DataSource = null;
             lstCuentas.DataSource = _cuentasservice.GetCuentas();
-            lstCuentas.DisplayMember = "Id";
-            lstCuentas.ValueMember = "NroCuenta";
+            lstCuentas.DisplayMember = "Mostrar";
+            lstCuentas.ValueMember = "Id";
 
         }
 

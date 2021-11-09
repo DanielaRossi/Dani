@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using Formularios.Clase2.Entidades;
-using Formularios.Clase2.Negocio;
+
 
 namespace Formularios.Clase2.Cliente
 {
@@ -63,8 +64,10 @@ namespace Formularios.Clase2.Cliente
             try
             {
                 
-                //Cliente c1 = new Cliente(Convert.ToInt32(this.txtId.Text),checksi.Checked, this.txtNombre.Text, this.txtApellido.Text, this.txtDireccion.Text, this.txtTelefono.Text, this.txtEmail.Text, Convert.ToDateTime(this.txtFechaNacimiento.Text), Convert.ToInt64(this.txtCuit.Text));
-                //((FrmListarCliente)this.Owner).AgregarCliente(c1);
+                Clientes c1 = new Clientes(Convert.ToInt32(this.txtId.Text),checksi.Checked,this.txtNombre.Text, this.txtApellido.Text,this.txtDireccion.Text,this.txtTelefono.Text, this.txtEmail.Text, Convert.ToDateTime(this.txtFechaNacimiento.Text), Convert.ToInt64(this.txtCuit.Text));
+                ((FrmListarCliente)this.Owner).AgregarCliente(c1);
+
+               
                 Limpiar();
 
                 this.Hide();

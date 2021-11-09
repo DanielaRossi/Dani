@@ -50,7 +50,7 @@ namespace Formularios.Clase2.Cliente
             this.lstClientes.ItemHeight = 16;
             this.lstClientes.Location = new System.Drawing.Point(72, 53);
             this.lstClientes.Name = "lstClientes";
-            this.lstClientes.Size = new System.Drawing.Size(175, 100);
+            this.lstClientes.Size = new System.Drawing.Size(474, 132);
             this.lstClientes.TabIndex = 1;
             // 
             // btnAgregarCliente

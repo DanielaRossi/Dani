@@ -39,10 +39,14 @@ namespace Formularios.Clase2.Entidades
             this._idCliente = idcliente;
 
         }
-        public string Mostrar()
+        public string Mostrar
         {
-            return  this._id + this._nroCuenta+this._descripcion+ this._idCliente;
-            return $"Id {this._id}, Nro Cuenta {this._nroCuenta}, Descripcion {this._descripcion}, IdCliente{this._idCliente}";
+            get 
+            {
+
+
+                return $"Id {this._id}, Nro Cuenta {this._nroCuenta}, Descripcion {this._descripcion}, IdCliente{this._idCliente}";
+            }
         }
 
     }

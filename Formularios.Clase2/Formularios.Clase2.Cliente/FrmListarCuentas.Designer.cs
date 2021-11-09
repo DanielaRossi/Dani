@@ -50,12 +50,12 @@ namespace Formularios.Clase2.Cliente
             this.lstCuentas.ItemHeight = 16;
             this.lstCuentas.Location = new System.Drawing.Point(43, 41);
             this.lstCuentas.Name = "lstCuentas";
-            this.lstCuentas.Size = new System.Drawing.Size(212, 148);
+            this.lstCuentas.Size = new System.Drawing.Size(524, 180);
             this.lstCuentas.TabIndex = 1;
             // 
             // btnAgregarCliente
             // 
-            this.btnAgregarCliente.Location = new System.Drawing.Point(303, 41);
+            this.btnAgregarCliente.Location = new System.Drawing.Point(62, 324);
             this.btnAgregarCliente.Name = "btnAgregarCliente";
             this.btnAgregarCliente.Size = new System.Drawing.Size(139, 45);
             this.btnAgregarCliente.TabIndex = 2;

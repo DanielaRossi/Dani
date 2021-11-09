@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C15C8F28-F82A-4995-A40A-42279FB6C292}</ProjectGuid>
+    <ProjectGuid>{667433F0-43D5-4686-B719-C9DD9C519850}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Formularios.Clase2.Entidades</RootNamespace>
-    <AssemblyName>Formularios.Clase2.Entidades</AssemblyName>
+    <RootNamespace>Formularios.Clase2.Cliente</RootNamespace>
+    <AssemblyName>Formularios.Clase2.Cliente</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,17 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clientes.cs" />
-    <Compile Include="Cuentas.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormAgregarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormAgregarCliente.Designer.cs">
+      <DependentUpon>FormAgregarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Persona.cs" />
+    <Compile Include="FrmAgregarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarCuentas.Designer.cs">
+      <DependentUpon>FrmAgregarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarCliente.Designer.cs">
+      <DependentUpon>FrmListarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarCuentas.Designer.cs">
+      <DependentUpon>FrmListarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaster.Designer.cs">
+      <DependentUpon>FrmMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgregarCliente.resx">
+      <DependentUpon>FormAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarCuentas.resx">
+      <DependentUpon>FrmAgregarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarCliente.resx">
+      <DependentUpon>FrmListarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarCuentas.resx">
+      <DependentUpon>FrmListarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaster.resx">
+      <DependentUpon>FrmMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,6 +114,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Formularios.Clase2. Entidades\Formularios.Clase2. Entidades.csproj">
+      <Project>{c15c8f28-f82a-4995-a40a-42279fb6c292}</Project>
+      <Name>Formularios.Clase2. Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Formularios.Clase2. Negocio\Formularios.Clase2. Negocio.csproj">
+      <Project>{48901c3c-902a-49a6-b177-d8b30425e3c3}</Project>
+      <Name>Formularios.Clase2. Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

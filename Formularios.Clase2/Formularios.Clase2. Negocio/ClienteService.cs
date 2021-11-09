@@ -16,11 +16,11 @@ namespace Formularios.Clase2.Negocio
             _clienteMapper = new ClienteMapper();
 
         }
-        public List<Cliente> GetCliente()
+        public List<Clientes> GetCliente()
         {
             return _clienteMapper.TraerCliente();
         }
-        public void AddCliente(Cliente cliente)
+        public void AddCliente(Clientes cliente)
         {
             _clienteMapper.Agregar(cliente);
         }

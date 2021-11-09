@@ -62,6 +62,7 @@ namespace Formularios.Clase2.Cliente
             this.Controls.Add(this.btnListarCliente);
             this.Name = "FrmMaster";
             this.Text = "Formulario de inicio";
+            this.Load += new System.EventHandler(this.FrmMaster_Load);
             this.ResumeLayout(false);
 
         }

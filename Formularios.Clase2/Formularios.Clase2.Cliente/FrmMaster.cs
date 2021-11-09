@@ -40,5 +40,10 @@ namespace Formularios.Clase2.Cliente
             _frmListarCuentas.Show();
             this.Hide();
         }
+
+        private void FrmMaster_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

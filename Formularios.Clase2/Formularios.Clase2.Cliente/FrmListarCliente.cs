@@ -35,8 +35,8 @@ namespace Formularios.Clase2.Cliente
         {
             lstClientes.DataSource = null;
             lstClientes.DataSource = _clienteservice.GetCliente();
-            lstClientes.DisplayMember = "Id";
-            lstClientes.ValueMember = "Mostrar";
+            lstClientes.DisplayMember = "Mostrar";
+            lstClientes.ValueMember = "Id";
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -50,10 +50,10 @@ namespace Formularios.Clase2.Cliente
             this.Hide();
             _frmAgregarCliente.Show();
         }
-        //public void AgregarCliente(Cliente cliente)
-        //{
-        //    _clienteservice.AddCliente(cliente);
-        //    CargarListaCliente();
-        //}
+        public void AgregarCliente(Clientes cliente)
+        {
+            _clienteservice.AddCliente(cliente);
+            CargarListaCliente();
+        }
     }
 }

@@ -15,11 +15,13 @@ namespace Formularios.Clase2.Cliente
     {
         
         private CuentasService _cuentasservice;
+        private ClienteService _clienteService;
         public FrmAgregarCuentas(Form propietario)
         {
             InitializeComponent();
             this.Owner = propietario;
             _cuentasservice = new CuentasService();
+            _clienteService = new ClienteService();
         }
 
         private void FrmAgregarCuentas_Load(object sender, EventArgs e)
@@ -28,10 +30,16 @@ namespace Formularios.Clase2.Cliente
         }
         private void CargarIdCliente()
         {
+            //cmbIDCLIENTE.DataSource = null;
+            //cmbIDCLIENTE.DataSource = clienteService.GetCliente();
+            //cmbIDCLIENTE.DisplayMember = "Id";
+            //cmbIDCLIENTE.ValueMember = "Mostrar";
+
             cmbIDCLIENTE.DataSource = null;
-            cmbIDCLIENTE.DataSource = _cuentasservice.GetCuentas();
-            cmbIDCLIENTE.DisplayMember = "Id";
-            cmbIDCLIENTE.ValueMember = "Descripcion";
+            
+            cmbIDCLIENTE.DataSource = _clienteService.GetCliente();
+            cmbIDCLIENTE.DisplayMember = "Mostrar";
+            cmbIDCLIENTE.ValueMember = "Id";
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
