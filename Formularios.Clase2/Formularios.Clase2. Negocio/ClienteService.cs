@@ -22,7 +22,12 @@ namespace Formularios.Clase2.Negocio
         }
         public void AddCliente(Clientes cliente)
         {
-            _clienteMapper.Agregar(cliente);
+            
+             TransactionResult resultado = _clienteMapper.Agregar(cliente);
+
+            if (resultado.IsOk == false)
+                throw new Exception("No se pudo insertar el cliente. Motivo " + resultado.Error);
+
         }
     }
 }

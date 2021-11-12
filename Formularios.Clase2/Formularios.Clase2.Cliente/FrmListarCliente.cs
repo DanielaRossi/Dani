@@ -55,5 +55,17 @@ namespace Formularios.Clase2.Cliente
             _clienteservice.AddCliente(cliente);
             CargarListaCliente();
         }
+
+        private void btnRefrescarLista_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CargarListaCliente();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

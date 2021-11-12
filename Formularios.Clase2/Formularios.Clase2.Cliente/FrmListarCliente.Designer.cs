@@ -32,6 +32,7 @@ namespace Formularios.Clase2.Cliente
             this.btnVolver = new System.Windows.Forms.Button();
             this.lstClientes = new System.Windows.Forms.ListBox();
             this.btnAgregarCliente = new System.Windows.Forms.Button();
+            this.btnRefrescarLista = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVolver
@@ -63,11 +64,22 @@ namespace Formularios.Clase2.Cliente
             this.btnAgregarCliente.UseVisualStyleBackColor = true;
             this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
             // 
+            // btnRefrescarLista
+            // 
+            this.btnRefrescarLista.Location = new System.Drawing.Point(86, 290);
+            this.btnRefrescarLista.Name = "btnRefrescarLista";
+            this.btnRefrescarLista.Size = new System.Drawing.Size(161, 42);
+            this.btnRefrescarLista.TabIndex = 3;
+            this.btnRefrescarLista.Text = "Refrescar Lista";
+            this.btnRefrescarLista.UseVisualStyleBackColor = true;
+            this.btnRefrescarLista.Click += new System.EventHandler(this.btnRefrescarLista_Click);
+            // 
             // FrmListarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRefrescarLista);
             this.Controls.Add(this.btnAgregarCliente);
             this.Controls.Add(this.lstClientes);
             this.Controls.Add(this.btnVolver);
@@ -83,5 +95,6 @@ namespace Formularios.Clase2.Cliente
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.ListBox lstClientes;
         private System.Windows.Forms.Button btnAgregarCliente;
+        private System.Windows.Forms.Button btnRefrescarLista;
     }
 }
