@@ -63,7 +63,7 @@ namespace Formularios.Clase2.Cliente
         {
             try
             {
-                
+                Validaciones();
                 Clientes c1 = new Clientes(Convert.ToInt32(this.txtId.Text),checksi.Checked,this.txtNombre.Text, this.txtApellido.Text,this.txtDireccion.Text,this.txtTelefono.Text, this.txtEmail.Text, Convert.ToDateTime(this.txtFechaNacimiento.Text), Convert.ToInt64(this.txtCuit.Text));
                 ((FrmListarCliente)this.Owner).AgregarCliente(c1);
 
@@ -80,6 +80,19 @@ namespace Formularios.Clase2.Cliente
                 MessageBox.Show(ex.Message);
             }
 
+        }
+        private void Validaciones()
+        {
+            if (string.IsNullOrEmpty(this.txtId.Text))
+                throw new Exception("El ID no puede ser vacío");
+
+            if (string.IsNullOrEmpty(this.txtNombre.Text))
+                throw new Exception("Nombre no puede ser vacío");
+            if (string.IsNullOrEmpty(this.txtApellido.Text))
+                throw new Exception("Apellido no puede ser vacío");
+
+
+            
         }
     }
 }

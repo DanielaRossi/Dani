@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using Formularios.Clase2.Negocio;
 using Formularios.Clase2.Entidades;
 
+
+
 namespace Formularios.Clase2.Cliente
 {
     public partial class FrmListarCuentas : Form
@@ -47,8 +49,11 @@ namespace Formularios.Clase2.Cliente
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
             this.Hide();
+            
             frmAgregarCuentas.Show();
 
         }
+        
+
     }
 }

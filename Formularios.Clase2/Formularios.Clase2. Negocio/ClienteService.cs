@@ -10,10 +10,10 @@ namespace Formularios.Clase2.Negocio
 {
     public class ClienteService
     {
-        private ClienteMapper _clienteMapper;
+        private ClienteMapperHTTP _clienteMapper;
         public ClienteService()
         {
-            _clienteMapper = new ClienteMapper();
+            _clienteMapper = new ClienteMapperHTTP();
 
         }
         public List<Clientes> GetCliente()

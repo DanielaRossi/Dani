@@ -15,8 +15,9 @@ namespace Formularios.Clase2.Entidades
         protected string _email;
         protected DateTime _fechaNacimiento;
         protected long _cuit;
-
         
+
+
 
 
         public string Nombre { get => _nombre; set => _nombre = value; }
@@ -26,6 +27,7 @@ namespace Formularios.Clase2.Entidades
         public string Email { get => _email; set => _email = value; }
         public DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
         public long Cuit { get => _cuit; set => _cuit = value; }
+        
 
         public Persona(string nombre, string apellido, string direcciòn, string telefono, string email, DateTime fechanacimiento, long cuit)
         {
@@ -38,6 +40,9 @@ namespace Formularios.Clase2.Entidades
             this._cuit = cuit;
             
         }
+
+        
+
         public override string ToString()
         {
             return $"{this._apellido}, {this._nombre}, {this._dirección}, {this._telefono}, {this._email}, {this._fechaNacimiento}, {this._cuit}";

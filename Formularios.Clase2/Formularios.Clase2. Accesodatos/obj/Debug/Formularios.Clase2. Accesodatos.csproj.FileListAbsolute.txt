@@ -11,3 +11,5 @@ C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Accesodatos\obj\Debug\Formularios.Clase2. Accesodatos.csproj.CopyComplete
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Accesodatos\obj\Debug\Formularios.Clase2.Accesodatos.exe
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Accesodatos\obj\Debug\Formularios.Clase2.Accesodatos.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Accesodatos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.Clase2\Formularios.Clase2. Accesodatos\bin\Debug\Newtonsoft.Json.xml
