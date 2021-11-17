@@ -35,23 +35,23 @@ namespace Formulario.Deuda2
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtPunitorio = new System.Windows.Forms.TextBox();
-            this.txtImporteadeudado = new System.Windows.Forms.TextBox();
-            this.txtfechavencimiento = new System.Windows.Forms.TextBox();
-            this.txtFechapago = new System.Windows.Forms.TextBox();
-            this.txtInterespunitorio = new System.Windows.Forms.TextBox();
-            this.txtImportetotal = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.cmbServicio = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtImportetotal = new System.Windows.Forms.TextBox();
+            this.txtInterespunitorio = new System.Windows.Forms.TextBox();
+            this.txtFechapago = new System.Windows.Forms.TextBox();
+            this.txtfechavencimiento = new System.Windows.Forms.TextBox();
+            this.txtImporteadeudado = new System.Windows.Forms.TextBox();
+            this.txtPunitorio = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lstPagos = new System.Windows.Forms.ListBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtDíasatraso = new System.Windows.Forms.TextBox();
             this.txtInteréspromedio = new System.Windows.Forms.TextBox();
+            this.txtDíasatraso = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lstPagos = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -126,74 +126,15 @@ namespace Formulario.Deuda2
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Pago Tardío";
             // 
-            // label6
+            // cmbServicio
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 308);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Interès Punitorio";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 344);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Importe Total";
-            // 
-            // txtPunitorio
-            // 
-            this.txtPunitorio.Location = new System.Drawing.Point(178, 77);
-            this.txtPunitorio.Name = "txtPunitorio";
-            this.txtPunitorio.Size = new System.Drawing.Size(121, 22);
-            this.txtPunitorio.TabIndex = 7;
-            // 
-            // txtImporteadeudado
-            // 
-            this.txtImporteadeudado.Location = new System.Drawing.Point(178, 129);
-            this.txtImporteadeudado.Name = "txtImporteadeudado";
-            this.txtImporteadeudado.Size = new System.Drawing.Size(121, 22);
-            this.txtImporteadeudado.TabIndex = 8;
-            // 
-            // txtfechavencimiento
-            // 
-            this.txtfechavencimiento.Location = new System.Drawing.Point(178, 165);
-            this.txtfechavencimiento.Name = "txtfechavencimiento";
-            this.txtfechavencimiento.Size = new System.Drawing.Size(121, 22);
-            this.txtfechavencimiento.TabIndex = 9;
-            // 
-            // txtFechapago
-            // 
-            this.txtFechapago.Location = new System.Drawing.Point(178, 201);
-            this.txtFechapago.Name = "txtFechapago";
-            this.txtFechapago.Size = new System.Drawing.Size(121, 22);
-            this.txtFechapago.TabIndex = 10;
-            // 
-            // txtInterespunitorio
-            // 
-            this.txtInterespunitorio.Location = new System.Drawing.Point(178, 308);
-            this.txtInterespunitorio.Name = "txtInterespunitorio";
-            this.txtInterespunitorio.Size = new System.Drawing.Size(121, 22);
-            this.txtInterespunitorio.TabIndex = 11;
-            // 
-            // txtImportetotal
-            // 
-            this.txtImportetotal.Location = new System.Drawing.Point(178, 344);
-            this.txtImportetotal.Name = "txtImportetotal";
-            this.txtImportetotal.Size = new System.Drawing.Size(121, 22);
-            this.txtImportetotal.TabIndex = 12;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(22, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmbServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServicio.FormattingEnabled = true;
+            this.cmbServicio.Location = new System.Drawing.Point(178, 35);
+            this.cmbServicio.Name = "cmbServicio";
+            this.cmbServicio.Size = new System.Drawing.Size(121, 24);
+            this.cmbServicio.TabIndex = 15;
+            this.cmbServicio.SelectedIndexChanged += new System.EventHandler(this.cmbServicio_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -204,13 +145,78 @@ namespace Formulario.Deuda2
             this.button2.Text = "Pagar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // cmbServicio
+            // button1
             // 
-            this.cmbServicio.FormattingEnabled = true;
-            this.cmbServicio.Location = new System.Drawing.Point(178, 35);
-            this.cmbServicio.Name = "cmbServicio";
-            this.cmbServicio.Size = new System.Drawing.Size(121, 24);
-            this.cmbServicio.TabIndex = 15;
+            this.button1.Location = new System.Drawing.Point(22, 247);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(256, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Calcular";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // txtImportetotal
+            // 
+            this.txtImportetotal.Enabled = false;
+            this.txtImportetotal.Location = new System.Drawing.Point(178, 344);
+            this.txtImportetotal.Name = "txtImportetotal";
+            this.txtImportetotal.Size = new System.Drawing.Size(121, 22);
+            this.txtImportetotal.TabIndex = 12;
+            // 
+            // txtInterespunitorio
+            // 
+            this.txtInterespunitorio.Enabled = false;
+            this.txtInterespunitorio.Location = new System.Drawing.Point(178, 308);
+            this.txtInterespunitorio.Name = "txtInterespunitorio";
+            this.txtInterespunitorio.Size = new System.Drawing.Size(121, 22);
+            this.txtInterespunitorio.TabIndex = 11;
+            // 
+            // txtFechapago
+            // 
+            this.txtFechapago.Location = new System.Drawing.Point(178, 201);
+            this.txtFechapago.Name = "txtFechapago";
+            this.txtFechapago.Size = new System.Drawing.Size(121, 22);
+            this.txtFechapago.TabIndex = 10;
+            // 
+            // txtfechavencimiento
+            // 
+            this.txtfechavencimiento.Location = new System.Drawing.Point(178, 165);
+            this.txtfechavencimiento.Name = "txtfechavencimiento";
+            this.txtfechavencimiento.Size = new System.Drawing.Size(121, 22);
+            this.txtfechavencimiento.TabIndex = 9;
+            // 
+            // txtImporteadeudado
+            // 
+            this.txtImporteadeudado.Location = new System.Drawing.Point(178, 129);
+            this.txtImporteadeudado.Name = "txtImporteadeudado";
+            this.txtImporteadeudado.Size = new System.Drawing.Size(121, 22);
+            this.txtImporteadeudado.TabIndex = 8;
+            // 
+            // txtPunitorio
+            // 
+            this.txtPunitorio.Enabled = false;
+            this.txtPunitorio.Location = new System.Drawing.Point(178, 77);
+            this.txtPunitorio.Name = "txtPunitorio";
+            this.txtPunitorio.Size = new System.Drawing.Size(121, 22);
+            this.txtPunitorio.TabIndex = 7;
+            this.txtPunitorio.TextChanged += new System.EventHandler(this.txtPunitorio_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 344);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Importe Total";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(22, 308);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 17);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Interès Punitorio";
             // 
             // groupBox2
             // 
@@ -226,23 +232,21 @@ namespace Formulario.Deuda2
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Reporte de Moras";
             // 
-            // lstPagos
+            // txtInteréspromedio
             // 
-            this.lstPagos.FormattingEnabled = true;
-            this.lstPagos.ItemHeight = 16;
-            this.lstPagos.Location = new System.Drawing.Point(24, 44);
-            this.lstPagos.Name = "lstPagos";
-            this.lstPagos.Size = new System.Drawing.Size(269, 244);
-            this.lstPagos.TabIndex = 0;
+            this.txtInteréspromedio.Enabled = false;
+            this.txtInteréspromedio.Location = new System.Drawing.Point(203, 345);
+            this.txtInteréspromedio.Name = "txtInteréspromedio";
+            this.txtInteréspromedio.Size = new System.Drawing.Size(100, 22);
+            this.txtInteréspromedio.TabIndex = 4;
             // 
-            // label8
+            // txtDíasatraso
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(33, 316);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(163, 17);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Días de atraso promedio";
+            this.txtDíasatraso.Enabled = false;
+            this.txtDíasatraso.Location = new System.Drawing.Point(203, 316);
+            this.txtDíasatraso.Name = "txtDíasatraso";
+            this.txtDíasatraso.Size = new System.Drawing.Size(100, 22);
+            this.txtDíasatraso.TabIndex = 3;
             // 
             // label9
             // 
@@ -253,19 +257,23 @@ namespace Formulario.Deuda2
             this.label9.TabIndex = 2;
             this.label9.Text = "Interés promedio";
             // 
-            // txtDíasatraso
+            // label8
             // 
-            this.txtDíasatraso.Location = new System.Drawing.Point(203, 316);
-            this.txtDíasatraso.Name = "txtDíasatraso";
-            this.txtDíasatraso.Size = new System.Drawing.Size(100, 22);
-            this.txtDíasatraso.TabIndex = 3;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(33, 316);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(163, 17);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Días de atraso promedio";
             // 
-            // txtInteréspromedio
+            // lstPagos
             // 
-            this.txtInteréspromedio.Location = new System.Drawing.Point(203, 345);
-            this.txtInteréspromedio.Name = "txtInteréspromedio";
-            this.txtInteréspromedio.Size = new System.Drawing.Size(100, 22);
-            this.txtInteréspromedio.TabIndex = 4;
+            this.lstPagos.FormattingEnabled = true;
+            this.lstPagos.ItemHeight = 16;
+            this.lstPagos.Location = new System.Drawing.Point(24, 44);
+            this.lstPagos.Name = "lstPagos";
+            this.lstPagos.Size = new System.Drawing.Size(269, 244);
+            this.lstPagos.TabIndex = 0;
             // 
             // Form1
             // 
@@ -276,6 +284,7 @@ namespace Formulario.Deuda2
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Rapi Cobranzas SA";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

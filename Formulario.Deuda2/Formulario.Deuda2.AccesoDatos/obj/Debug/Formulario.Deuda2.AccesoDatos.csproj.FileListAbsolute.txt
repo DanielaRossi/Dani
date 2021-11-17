@@ -1,0 +1,9 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\bin\Debug\Formulario.Deuda2.AccesoDatos.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\bin\Debug\Formulario.Deuda2.AccesoDatos.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\bin\Debug\Formulario.Deuda2.Entidades.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\bin\Debug\Formulario.Deuda2.Entidades.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\obj\Debug\Formulario.Deuda2.AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\obj\Debug\Formulario.Deuda2.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\obj\Debug\Formulario.Deuda2.AccesoDatos.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\obj\Debug\Formulario.Deuda2.AccesoDatos.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.AccesoDatos\obj\Debug\Formulario.Deuda2.AccesoDatos.pdb
