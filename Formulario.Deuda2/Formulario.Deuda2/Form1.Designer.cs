@@ -125,6 +125,7 @@ namespace Formulario.Deuda2
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario de Pago Tardío";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cmbServicio
             // 
@@ -153,6 +154,7 @@ namespace Formulario.Deuda2
             this.button1.TabIndex = 13;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtImportetotal
             // 
@@ -231,6 +233,7 @@ namespace Formulario.Deuda2
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Reporte de Moras";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txtInteréspromedio
             // 

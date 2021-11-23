@@ -36,13 +36,52 @@ namespace Formulario.Deuda2
         {
             cmbServicio.DataSource = null;
             cmbServicio.DataSource = this._lstServicios;
-            _cmbTipoDocumento.DisplayMember = "Descripcion";
-            _cmbTipoDocumento.ValueMember = "Codigo";
+           
 
         }
 
         private void cmbServicio_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(cmbServicio.SelectedIndex > -1)
+            {
+                Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
+                txtPunitorio.Text = servicioseleccionado.PunitoiroDiario.ToString();
+            }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime Fechafinal = Convert.ToDateTime(txtFechapago.Text);
+            DateTime Fechaincial = Convert.ToDateTime(txtfechavencimiento.Text);
+
+            int dias = (Fechafinal - Fechafinal).Days;
+
+
+            Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
+            double interesdia = servicioseleccionado.PunitoiroDiario;
+
+            double resultadodia = dias * interesdia;
+
+            //double importetotal = Convert.ToDouble(txtImporteadeudado);
+
+            double resultado = resultadodia * Convert.ToDouble(txtImporteadeudado);
+
+
+            txtInterespunitorio.Text = (resultadodia).ToString("0.00");
+
+
+
+            txtImportetotal.Text = (resultado).ToString("0.00");
 
         }
     }

@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.TarjetaCredito\TarjetaCredito.Entidades\bin\Debug\TarjetaCredito.Entidades.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.TarjetaCredito\TarjetaCredito.Entidades\bin\Debug\TarjetaCredito.Entidades.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.TarjetaCredito\TarjetaCredito.Entidades\obj\Debug\TarjetaCredito.Entidades.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.TarjetaCredito\TarjetaCredito.Entidades\obj\Debug\TarjetaCredito.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.TarjetaCredito\TarjetaCredito.Entidades\obj\Debug\TarjetaCredito.Entidades.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formularios.TarjetaCredito\TarjetaCredito.Entidades\obj\Debug\TarjetaCredito.Entidades.pdb
