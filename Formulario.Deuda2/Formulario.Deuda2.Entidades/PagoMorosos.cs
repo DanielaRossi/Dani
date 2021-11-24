@@ -29,5 +29,7 @@ namespace Formulario.Deuda2.Entidades
         public double ImporteTotal { get => _importeTotal; set => _importeTotal = value; }
         public string Usuario { get => _usuario; set => _usuario = value; }
         public Servicio Servicio { get => _servicio; set => _servicio = value; }
+
+        //public List<Servicio> CargarServicio { get }
     }
 }

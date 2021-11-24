@@ -9,3 +9,5 @@ C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.Negocio\obj\Debug\Formulario.Deuda2.Negocio.csproj.CopyComplete
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.Negocio\obj\Debug\Formulario.Deuda2.Negocio.dll
 C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.Negocio\obj\Debug\Formulario.Deuda2.Negocio.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Formulario.Deuda2\Formulario.Deuda2.Negocio\bin\Debug\Newtonsoft.Json.xml

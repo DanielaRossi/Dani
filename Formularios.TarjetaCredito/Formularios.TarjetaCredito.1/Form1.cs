@@ -72,7 +72,7 @@ namespace Formularios.TarjetaCredito._1
         {
             OperadorFormulario operadorformulario = new OperadorFormulario(_tarjetas);
             txtcantidadplastico.Text = operadorformulario.Cantidad.ToString();
-            txtlimitepromedio.Text = operadorformulario.LimitePromedio.ToString(0.00);
+            txtlimitepromedio.Text = operadorformulario.LimitePromedio.ToString("0.00");
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)

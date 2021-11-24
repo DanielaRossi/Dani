@@ -145,6 +145,7 @@ namespace Formulario.Deuda2
             this.button2.TabIndex = 14;
             this.button2.Text = "Pagar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -277,6 +278,7 @@ namespace Formulario.Deuda2
             this.lstPagos.Name = "lstPagos";
             this.lstPagos.Size = new System.Drawing.Size(269, 244);
             this.lstPagos.TabIndex = 0;
+            this.lstPagos.SelectedIndexChanged += new System.EventHandler(this.lstPagos_SelectedIndexChanged);
             // 
             // Form1
             // 

@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="PagoNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Formulario.Deuda2.AccesoDatos\Formulario.Deuda2.AccesoDatos.csproj">
