@@ -45,6 +45,7 @@
     <Compile Include="PagoNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioHelper.cs" />
+    <Compile Include="Validaciones.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Formulario.Deuda2.AccesoDatos\Formulario.Deuda2.AccesoDatos.csproj">

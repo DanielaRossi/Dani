@@ -14,7 +14,7 @@ namespace Formulario.Deuda2
 {
     public partial class Form1 : Form
     {
-        private List<Servicio> _lstServicios;
+        //private List<Servicio> _lstServicios;
         private PagoNegocio pagoNegocio;
         private List<PagoMorosos> listapago;
         private PagoModel pagoModel;
@@ -22,10 +22,10 @@ namespace Formulario.Deuda2
         public Form1()
         {
             InitializeComponent();
-            _lstServicios = new List<Servicio>();
-            _lstServicios.Add(new Servicio(1, "Edenor", 8.45));
-            _lstServicios.Add(new Servicio(2, "Expensas", 5.20));
-            _lstServicios.Add(new Servicio(3, "Telecom", 2.21));
+            //_lstServicios = new List<Servicio>();
+            //_lstServicios.Add(new Servicio(1, "Edenor", 8.45));
+            //_lstServicios.Add(new Servicio(2, "Expensas", 5.20));
+            //_lstServicios.Add(new Servicio(3, "Telecom", 2.21));
             pagoNegocio = new PagoNegocio();
             listapago = new List<PagoMorosos>();
             pagoModel = new PagoModel(listapago);
@@ -47,11 +47,14 @@ namespace Formulario.Deuda2
             listapago = pagoNegocio.Traer();
             lstPagos.DataSource = null;
             lstPagos.DataSource = listapago;
+            int diasAtrasoTotales = 0;
         }
         private void InicializarControles()
         {
+            //cmbServicio.DataSource = null;
+            //cmbServicio.DataSource = this._lstServicios;
             cmbServicio.DataSource = null;
-            cmbServicio.DataSource = this._lstServicios;
+            cmbServicio.DataSource = ServicioHelper.GetServicos();
 
 
         }
@@ -102,9 +105,11 @@ namespace Formulario.Deuda2
             {
                 DateTime SalidaF = DateTime.Now;
                 DateTime SalidaV = DateTime.Now;
-                ValidarFecha(txtFechapago.Text, ref SalidaF);
-                ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
-                //int dias = (SalidaF - SalidaV).Days;
+                Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
+                Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
+
+                int dias = (SalidaF - SalidaV).Days;
+
                 Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
                 double interesdia = servicioseleccionado.PunitoiroDiario;
 
@@ -112,7 +117,7 @@ namespace Formulario.Deuda2
                 txtInterespunitorio.Text = resultadodia.ToString("0.00");
 
                 double SalidaD = 0;
-                ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
+                Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
                 double resultado = resultadodia + SalidaD;
                 txtImportetotal.Text = (resultado).ToString("0.00");
 
@@ -126,50 +131,7 @@ namespace Formulario.Deuda2
 
 
         }
-        private void ValidarVacio(string Valor, string Campo)
-        {
-            if (string.IsNullOrEmpty(Valor))
-            {
-                throw new Exception("El campo" + Campo + " no debe estar vacio" + System.Environment.NewLine);
-            }
-        }
-        private void ValidarInt(string Valor, ref int Salida)
-        {
-            
-
-            if (!int.TryParse(Valor, out Salida))
-            {
-                throw new Exception("El valor debe ser númerico" + System.Environment.NewLine);
-            }
-            else if (Salida <= 0)
-            {
-                throw new Exception("El valor debe ser positivo" + System.Environment.NewLine);
-            }
-        }
-        private void ValidarDouble(string Valor, ref double Salida)
-        {
-            
-
-            if (!double.TryParse(Valor, out Salida))
-            {
-                throw new Exception("El valor debe ser númerico" + System.Environment.NewLine);
-            }
-            else if (Salida <= 0)
-            {
-                throw new Exception("El valor debe ser positivo" + System.Environment.NewLine);
-            }
-        }
-        private void ValidarFecha(string Valor, ref DateTime Salida)
-        {
-            
-
-            if (!DateTime.TryParse(Valor, out Salida))
-            {
-                throw new Exception("El valor debe ser una fecha" + System.Environment.NewLine);
-            }
-
-        }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -181,10 +143,10 @@ namespace Formulario.Deuda2
                 DateTime fechav = Convert.ToDateTime(txtfechavencimiento.Text);
                 DateTime fechapago = Convert.ToDateTime(txtFechapago.Text);
             double SalidaD = 0;
-            ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
+            Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
             double importeadeudado = SalidaD;
             double SalidaI = 0;
-            ValidarDouble(txtInterespunitorio.Text, ref SalidaI);
+            Validaciones.ValidarDouble(txtInterespunitorio.Text, ref SalidaI);
             double interesespunitorio = SalidaD;
             //double interesespunitorio = Convert.ToDouble(txtInterespunitorio);
                 TransactionResult resultado = null;
@@ -207,6 +169,7 @@ namespace Formulario.Deuda2
         private void CargarDatos()
         {
             txtInteréspromedio.Text = pagoModel.InteresPromedio.ToString("0.00");
+            txtDíasatraso.Text = pagoModel.Diasatraso.ToString("0.00");
             
                 
         }

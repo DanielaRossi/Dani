@@ -24,7 +24,7 @@ namespace Formulario.Deuda2.Negocio
             listapagos= _pagoMapper.TraerTodos();
             foreach(PagoMorosos p in listapagos)
             {
-                //p.CargarServicio();
+                p.Servicio = ServicioHelper.GetServicioPorId(p.IdServicio);
                
             }
             return listapagos;
@@ -38,7 +38,8 @@ namespace Formulario.Deuda2.Negocio
             pagomorosos.FechaVencimiento = fechav;
             pagomorosos.FechaPago = fechapago;
             pagomorosos.ImporteAdeudado = importeadeudado;
-            pagomorosos.InteresesPunitorios = interespunitorio;
+            
+            //pagomorosos.InteresesPunitorios = interespunitorio;
             TransactionResult result = _pagoMapper.Insertar(pagomorosos);
             return result;
 

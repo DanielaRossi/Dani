@@ -9,8 +9,8 @@ namespace Formulario.Deuda2.Entidades
     public class PagoModel
     {
         private List<PagoMorosos> _listapagos;
-        private int _cantidad;
-        private int _cantidaddìaspromedio;
+        
+        private int _dìasdeatraso;
         private double _interesPromedio;
         public PagoModel(List<PagoMorosos> lst)
         {
@@ -56,27 +56,28 @@ namespace Formulario.Deuda2.Entidades
                 else
                     return 0;
             }
-        //    public double DiasPromedio
-        //{
-        //    get
-        //    {
-        //        if (_listapagos != null)
-        //        {
-        //            double promedio = 0;
-        //            double total = 0;
+        }
+            public double Diasatraso
+        {
+            get
+            {
+                if (_listapagos != null)
+                {
+                    double promedio = 0;
+                    double total = 0;
 
-        //            foreach (PagoMorosos p in _listapagos)
-        //            {
-        //                total += p.;
-        //            }
-        //            promedio = total / _listapagos.Count;
+                    foreach (PagoMorosos p in _listapagos)
+                    {
+                        total += (p.FechaPago-p.FechaVencimiento).Days;
+                    }
+                    promedio = total / _listapagos.Count;
 
-        //            return promedio;
-        //        }
-        //        else
-        //            return 0;
-        //    }
-        //}
+                    return promedio;
+                }
+                else
+                    return 0;
+            }
+        }
     }
     }
-}
+

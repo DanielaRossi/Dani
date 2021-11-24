@@ -24,7 +24,7 @@ namespace Formulario.Deuda2.AccesoDatos
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
 
-        public static string Get(string url)
+        internal static string Get(string url)
         {
             var uri = rutaBase + url;
 
@@ -33,7 +33,7 @@ namespace Formulario.Deuda2.AccesoDatos
             return responseString;
         }
 
-        public static string Post(string url, NameValueCollection parametros)
+        internal static string Post(string url, NameValueCollection parametros)
         {
             string uri = rutaBase + url;
 
@@ -51,7 +51,7 @@ namespace Formulario.Deuda2.AccesoDatos
             }
         }
 
-        public static string Put(string url, NameValueCollection parametros)
+        internal static string Put(string url, NameValueCollection parametros)
         {
             string uri = rutaBase + url;
 
@@ -69,7 +69,7 @@ namespace Formulario.Deuda2.AccesoDatos
             }
         }
 
-        public static string Delete(string url, NameValueCollection parametros)
+        internal static string Delete(string url, NameValueCollection parametros)
         {
             string uri = rutaBase + url;
 
@@ -88,4 +88,5 @@ namespace Formulario.Deuda2.AccesoDatos
         }
     }
 }
+
 

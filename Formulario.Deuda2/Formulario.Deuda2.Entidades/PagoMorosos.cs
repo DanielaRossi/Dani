@@ -14,8 +14,9 @@ namespace Formulario.Deuda2.Entidades
         private DateTime _fechaVencimiento;
         private DateTime _fechaPago;
         private double _importeAdeudado;
-        private double _interesesPunitorios;
-        private double _importeTotal;
+        private double _interesespunitorios;
+        private double _importetotal;
+        
         private string _usuario;
         private Servicio _servicio;
 
@@ -34,6 +35,7 @@ namespace Formulario.Deuda2.Entidades
                 return (FechaPago - FechaVencimiento).Days * Servicio.PunitoiroDiario ;
             }
         }
+        
         public double ImporteTotal
         {
             get
