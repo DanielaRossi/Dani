@@ -17,6 +17,7 @@ namespace Formulario.Deuda2
         private List<Servicio> _lstServicios;
         private PagoNegocio pagoNegocio;
         private List<PagoMorosos> listapago;
+        private PagoModel pagoModel;
 
         public Form1()
         {
@@ -27,6 +28,7 @@ namespace Formulario.Deuda2
             _lstServicios.Add(new Servicio(3, "Telecom", 2.21));
             pagoNegocio = new PagoNegocio();
             listapago = new List<PagoMorosos>();
+            pagoModel = new PagoModel(listapago);
         }
 
         private void txtPunitorio_TextChanged(object sender, EventArgs e)
@@ -38,6 +40,7 @@ namespace Formulario.Deuda2
         {
             InicializarControles();
             CargarLista();
+            CargarDatos();
         }
         private void CargarLista()
         {
@@ -185,6 +188,7 @@ namespace Formulario.Deuda2
                 TransactionResult resultado = null;
                 resultado = pagoNegocio.Insertar(id, idcliente, fechav, fechapago, importeadeudado, interesespunitorio);
                 CargarLista();
+                CargarDatos();
 
 
         }
@@ -197,6 +201,12 @@ namespace Formulario.Deuda2
         private void lstPagos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        private void CargarDatos()
+        {
+            txtInteréspromedio.Text = pagoModel.InteresPromedio.ToString("0.00");
+            
+                
         }
     }
 }
