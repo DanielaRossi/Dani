@@ -104,9 +104,10 @@ namespace Formulario.Deuda2
                 DateTime SalidaV = DateTime.Now;
                 ValidarFecha(txtFechapago.Text, ref SalidaF);
                 ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
-                int dias = (SalidaF - SalidaV).Days;
+                //int dias = (SalidaF - SalidaV).Days;
                 Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
                 double interesdia = servicioseleccionado.PunitoiroDiario;
+
                 double resultadodia = dias * interesdia;
                 txtInterespunitorio.Text = resultadodia.ToString("0.00");
 
@@ -114,6 +115,7 @@ namespace Formulario.Deuda2
                 ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
                 double resultado = resultadodia + SalidaD;
                 txtImportetotal.Text = (resultado).ToString("0.00");
+
             }
             catch (Exception ex)
             {

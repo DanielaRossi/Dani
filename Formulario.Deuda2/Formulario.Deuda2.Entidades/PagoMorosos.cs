@@ -25,8 +25,22 @@ namespace Formulario.Deuda2.Entidades
         public DateTime FechaVencimiento { get => _fechaVencimiento; set => _fechaVencimiento = value; }
         public DateTime FechaPago { get => _fechaPago; set => _fechaPago = value; }
         public double ImporteAdeudado { get => _importeAdeudado; set => _importeAdeudado = value; }
-        public double InteresesPunitorios { get => _interesesPunitorios; set => _interesesPunitorios = value; }
-        public double ImporteTotal { get => _importeTotal; set => _importeTotal = value; }
+        //public double InteresesPunitorios { get => _interesesPunitorios; set => _interesesPunitorios = value; }
+        //public double ImporteTotal { get => _importeTotal; set => _importeTotal = value; }
+        public double InteresesPunitorios
+        {
+            get
+            {
+                return (FechaPago - FechaVencimiento).Days * Servicio.PunitoiroDiario ;
+            }
+        }
+        public double ImporteTotal
+        {
+            get
+            {
+                return ImporteAdeudado + InteresesPunitorios;
+            }
+        }
         public string Usuario { get => _usuario; set => _usuario = value; }
         public Servicio Servicio { get => _servicio; set => _servicio = value; }
 
