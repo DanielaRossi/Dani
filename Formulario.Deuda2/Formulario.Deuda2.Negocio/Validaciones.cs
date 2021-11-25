@@ -41,7 +41,7 @@ namespace Formulario.Deuda2.Negocio
                 throw new Exception("El valor debe ser positivo" + System.Environment.NewLine);
             }
         }
-        public static void ValidarFecha(string Valor, ref DateTime Salida)
+        public static DateTime ValidarFecha(string Valor, ref DateTime Salida)
         {
 
 
@@ -49,6 +49,7 @@ namespace Formulario.Deuda2.Negocio
             {
                 throw new Exception("El valor debe ser una fecha" + System.Environment.NewLine);
             }
+            return Salida;
 
         }
 

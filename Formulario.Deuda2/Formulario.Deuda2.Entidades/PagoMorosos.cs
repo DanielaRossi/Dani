@@ -28,6 +28,7 @@ namespace Formulario.Deuda2.Entidades
             _fechaVencimiento = fechaVencimiento;
             _fechaPago = fechaPago;
             _importeAdeudado = importeAdeudado;
+            _servicio = new Servicio();
             
         }
 
@@ -41,18 +42,18 @@ namespace Formulario.Deuda2.Entidades
         //public double ImporteTotal { get => _importeTotal; set => _importeTotal = value; }
         public string Usuario { get => _usuario; set => _usuario = value; }
         public Servicio Servicio { get => _servicio; set => _servicio = value; }
-        //public Servicio Servicio
+        //public double Servicio
         //{
         //    get
         //    {
-        //        return _servicio.
+        //        return _servicio.PunitoiroDiario;
         //    }
         //}
         public double InteresesPunitorios
         {
             get
             {
-                return (FechaPago - FechaVencimiento).Days * _servicio.PunitoiroDiario ;
+                return (FechaPago - FechaVencimiento).Days * Servicio.PunitoiroDiario ;
             }
         }
         

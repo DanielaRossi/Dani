@@ -18,6 +18,10 @@ namespace Formulario.Deuda2.Entidades
             _punitoiroDiario = punitoiroDiario;
             _nombre = nombre;
         }
+        public Servicio()
+        {
+
+        }
 
         public int Id { get => _id; set => _id = value; }
         public double PunitoiroDiario { get => _punitoiroDiario; set => _punitoiroDiario = value; }

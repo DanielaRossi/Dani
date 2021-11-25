@@ -135,14 +135,18 @@ namespace Formulario.Deuda2
                 Servicio servicio = (Servicio)cmbServicio.SelectedItem;
                 double SalidaD = 0;
                 Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
-                DateTime SalidaF = DateTime.Now;
-                    DateTime SalidaV = DateTime.Now;
-                   Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
-                    Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
+                //DateTime SalidaF = DateTime.Now;
+                //    DateTime SalidaV = DateTime.Now;
+                DateTime salida = DateTime.Now;
+                DateTime salidaV = DateTime.Now;
+                DateTime SalidaF = Validaciones.ValidarFecha(txtFechapago.Text, ref salida);
+                DateTime SalidaV = Validaciones.ValidarFecha(txtfechavencimiento.Text, ref salidaV);
+
+
 
                 PagoMorosos pagomorosos = new PagoMorosos(servicio.Id,SalidaV,SalidaF,SalidaD);
 
-                //txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
+                txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
                 txtImportetotal.Text = pagomorosos.ImporteTotal.ToString();
                     
 
