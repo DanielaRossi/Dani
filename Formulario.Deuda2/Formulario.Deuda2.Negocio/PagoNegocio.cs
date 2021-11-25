@@ -30,23 +30,23 @@ namespace Formulario.Deuda2.Negocio
             return listapagos;
         }
 
-        public TransactionResult Insertar(Servicio servicio, DateTime fechav, DateTime fechapago, double importeadeudado)
+        public TransactionResult Insertar(PagoMorosos pagomorosos)
         {
-            PagoMorosos pagomorosos = new PagoMorosos();
-            pagomorosos.IdServicio = idservicio;
-            
-            pagomorosos.FechaVencimiento = fechav;
-            pagomorosos.FechaPago = fechapago;
-            pagomorosos.ImporteAdeudado = importeadeudado;
-            
-            //pagomorosos.InteresesPunitorios = interespunitorio;
+            //PagoMorosos pagomorosos = new PagoMorosos();
+            //pagomorosos.IdServicio = idservicio;
+
+            //pagomorosos.FechaVencimiento = fechav;
+            //pagomorosos.FechaPago = fechapago;
+            //pagomorosos.ImporteAdeudado = importeadeudado;
+
+            ////pagomorosos.InteresesPunitorios = interespunitorio;
             TransactionResult result = _pagoMapper.Insertar(pagomorosos);
             return result;
 
         }
-        
-        
 
-        }
+
+
+    }
     }
 

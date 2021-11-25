@@ -18,6 +18,7 @@ namespace Formulario.Deuda2
         private PagoNegocio pagoNegocio;
         private List<PagoMorosos> listapago;
         private PagoModel pagoModel;
+        //private PagoMorosos _pagomorosos;
 
         public Form1()
         {
@@ -27,6 +28,7 @@ namespace Formulario.Deuda2
             //_lstServicios.Add(new Servicio(2, "Expensas", 5.20));
             //_lstServicios.Add(new Servicio(3, "Telecom", 2.21));
             pagoNegocio = new PagoNegocio();
+            //_pagomorosos = new PagoMorosos();
             listapago = new List<PagoMorosos>();
             pagoModel = new PagoModel(listapago);
         }
@@ -137,10 +139,16 @@ namespace Formulario.Deuda2
                     DateTime SalidaV = DateTime.Now;
                    Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
                     Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
-                pagoNegocio.Insertar(servicio, SalidaV, SalidaF, SalidaD);
+
+                PagoMorosos pagomorosos = new PagoMorosos(servicio.Id,SalidaV,SalidaF,SalidaD);
+
+                //txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
+                txtImportetotal.Text = pagomorosos.ImporteTotal.ToString();
+                    
+
 
             }
-            catch
+            catch(Exception ex)
             {
 
             }
@@ -155,26 +163,42 @@ namespace Formulario.Deuda2
             try
             {
 
-                Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
-                int id = servicioseleccionado.Id;
-                int idcliente = 1;
-                DateTime fechav = Convert.ToDateTime(txtfechavencimiento.Text);
-                DateTime fechapago = Convert.ToDateTime(txtFechapago.Text);
-            double SalidaD = 0;
-            Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
-            double importeadeudado = SalidaD;
-            double SalidaI = 0;
-            Validaciones.ValidarDouble(txtInterespunitorio.Text, ref SalidaI);
-            double interesespunitorio = SalidaD;
-            //double interesespunitorio = Convert.ToDouble(txtInterespunitorio);
-                TransactionResult resultado = null;
-                //resultado = pagoNegocio.Insertar(id, idcliente, fechav, fechapago, importeadeudado, interesespunitorio);
-                CargarLista();
-                CargarDatos();
+                //    Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
+                //    int id = servicioseleccionado.Id;
+                //    int idcliente = 1;
+                //    DateTime fechav = Convert.ToDateTime(txtfechavencimiento.Text);
+                //    DateTime fechapago = Convert.ToDateTime(txtFechapago.Text);
+                //double SalidaD = 0;
+                //Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
+                //double importeadeudado = SalidaD;
+                //double SalidaI = 0;
+                //Validaciones.ValidarDouble(txtInterespunitorio.Text, ref SalidaI);
+                //double interesespunitorio = SalidaD;
+                ////double interesespunitorio = Convert.ToDouble(txtInterespunitorio);
+                //    TransactionResult resultado = null;
+                //    //resultado = pagoNegocio.Insertar(id, idcliente, fechav, fechapago, importeadeudado, interesespunitorio);
+                //    CargarLista();
+                //    CargarDatos();
+
+                Servicio servicio = (Servicio)cmbServicio.SelectedItem;
+                double SalidaD = 0;
+                Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
+                DateTime SalidaF = DateTime.Now;
+                DateTime SalidaV = DateTime.Now;
+                Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
+                Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
+
+                PagoMorosos pagomorosos = new PagoMorosos(servicio.Id, SalidaV, SalidaF, SalidaD);
+
+                txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
+                txtImportetotal.Text = pagomorosos.ImporteTotal.ToString();
+                pagoNegocio.Insertar(pagomorosos);
 
 
-        }
-            catch(Exception ex)
+
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
