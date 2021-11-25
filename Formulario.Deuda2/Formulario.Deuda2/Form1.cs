@@ -55,6 +55,8 @@ namespace Formulario.Deuda2
             //cmbServicio.DataSource = this._lstServicios;
             cmbServicio.DataSource = null;
             cmbServicio.DataSource = ServicioHelper.GetServicos();
+            cmbServicio.DisplayMember = "Nombre";
+            cmbServicio.ValueMember = "Id";
 
 
         }
@@ -101,30 +103,46 @@ namespace Formulario.Deuda2
 
 
             //txtImportetotal.Text = (resultado).ToString("0.00");
+            //try
+            //{
+            //    DateTime SalidaF = DateTime.Now;
+            //    DateTime SalidaV = DateTime.Now;
+            //    Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
+            //    Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
+
+            //    int dias = (SalidaF - SalidaV).Days;
+
+            //    Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
+            //    double interesdia = servicioseleccionado.PunitoiroDiario;
+
+            //    double resultadodia = dias * interesdia;
+            //    txtInterespunitorio.Text = resultadodia.ToString("0.00");
+
+            //    double SalidaD = 0;
+            //    Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
+            //    double resultado = resultadodia + SalidaD;
+            //    txtImportetotal.Text = (resultado).ToString("0.00");
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
             try
             {
-                DateTime SalidaF = DateTime.Now;
-                DateTime SalidaV = DateTime.Now;
-                Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
-                Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
-
-                int dias = (SalidaF - SalidaV).Days;
-
-                Servicio servicioseleccionado = (Servicio)cmbServicio.SelectedItem;
-                double interesdia = servicioseleccionado.PunitoiroDiario;
-
-                double resultadodia = dias * interesdia;
-                txtInterespunitorio.Text = resultadodia.ToString("0.00");
-
+                Servicio servicio = (Servicio)cmbServicio.SelectedItem;
                 double SalidaD = 0;
                 Validaciones.ValidarDouble(txtImporteadeudado.Text, ref SalidaD);
-                double resultado = resultadodia + SalidaD;
-                txtImportetotal.Text = (resultado).ToString("0.00");
+                DateTime SalidaF = DateTime.Now;
+                    DateTime SalidaV = DateTime.Now;
+                   Validaciones.ValidarFecha(txtFechapago.Text, ref SalidaF);
+                    Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
+                pagoNegocio.Insertar(servicio, SalidaV, SalidaF, SalidaD);
 
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+
             }
 
 
@@ -150,7 +168,7 @@ namespace Formulario.Deuda2
             double interesespunitorio = SalidaD;
             //double interesespunitorio = Convert.ToDouble(txtInterespunitorio);
                 TransactionResult resultado = null;
-                resultado = pagoNegocio.Insertar(id, idcliente, fechav, fechapago, importeadeudado, interesespunitorio);
+                //resultado = pagoNegocio.Insertar(id, idcliente, fechav, fechapago, importeadeudado, interesespunitorio);
                 CargarLista();
                 CargarDatos();
 

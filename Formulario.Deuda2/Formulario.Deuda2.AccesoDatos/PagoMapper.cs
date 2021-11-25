@@ -26,7 +26,7 @@ namespace Formulario.Deuda2.AccesoDatos
         public TransactionResult Insertar(PagoMorosos pagomorosos)
         {
             NameValueCollection obj = ReverseMap(pagomorosos);
-            string json = WebHelper.Post("pagomorosos", obj);
+            string json = WebHelper.Post("PagoMorosos", obj);
             TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
             return lst;
         }
@@ -34,12 +34,13 @@ namespace Formulario.Deuda2.AccesoDatos
         {
             NameValueCollection n = new NameValueCollection();
             n.Add("idServicio", pagomorosos.IdServicio.ToString());
-            n.Add("idCliente", pagomorosos.IdCliente.ToString());
+            n.Add("idCliente", "0");
             n.Add("fechaVencimiento", pagomorosos.FechaVencimiento.ToString("yyyy-MM-dd"));
             n.Add("fechaPago",pagomorosos.FechaVencimiento.ToString("yyyy-MM-dd"));
             n.Add("importeAdeudado", pagomorosos.ImporteAdeudado.ToString("0.00"));
             n.Add("interesPunitorio", pagomorosos.InteresesPunitorios.ToString("0.00"));
             n.Add("usuario", "880671");
+            n.Add("id", pagomorosos.Id.ToString());
 
             return n;
         }

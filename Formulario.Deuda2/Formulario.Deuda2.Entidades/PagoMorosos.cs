@@ -14,7 +14,7 @@ namespace Formulario.Deuda2.Entidades
         private DateTime _fechaVencimiento;
         private DateTime _fechaPago;
         private double _importeAdeudado;
-        private double _interesespunitorios;
+        //private double _interesespunitorios;
         private double _importetotal;
         
         private string _usuario;
@@ -28,6 +28,8 @@ namespace Formulario.Deuda2.Entidades
         public double ImporteAdeudado { get => _importeAdeudado; set => _importeAdeudado = value; }
         //public double InteresesPunitorios { get => _interesesPunitorios; set => _interesesPunitorios = value; }
         //public double ImporteTotal { get => _importeTotal; set => _importeTotal = value; }
+        public string Usuario { get => _usuario; set => _usuario = value; }
+        public Servicio Servicio { get => _servicio; set => _servicio = value; }
         public double InteresesPunitorios
         {
             get
@@ -43,8 +45,22 @@ namespace Formulario.Deuda2.Entidades
                 return ImporteAdeudado + InteresesPunitorios;
             }
         }
-        public string Usuario { get => _usuario; set => _usuario = value; }
-        public Servicio Servicio { get => _servicio; set => _servicio = value; }
+        public double AtrasoDias
+        {
+            get
+            {
+                return (FechaPago - FechaVencimiento).Days;
+            }
+        }
+        
+
+        public override string ToString()
+        {
+            return string.Format("{0}){1}-{2}-{3}", this.Id,this.Servicio.Nombre,this.ImporteTotal,this.AtrasoDias);
+            
+
+        }
+
 
         //public List<Servicio> CargarServicio { get }
     }
