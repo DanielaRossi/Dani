@@ -142,9 +142,10 @@ namespace Formulario.Deuda2
                 DateTime SalidaF = Validaciones.ValidarFecha(txtFechapago.Text, ref salida);
                 DateTime SalidaV = Validaciones.ValidarFecha(txtfechavencimiento.Text, ref salidaV);
 
-
+                
 
                 PagoMorosos pagomorosos = new PagoMorosos(servicio.Id,SalidaV,SalidaF,SalidaD);
+                pagomorosos.Servicio = (Servicio)cmbServicio.SelectedItem;
 
                 txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
                 txtImportetotal.Text = pagomorosos.ImporteTotal.ToString();
@@ -193,12 +194,14 @@ namespace Formulario.Deuda2
                 Validaciones.ValidarFecha(txtfechavencimiento.Text, ref SalidaV);
 
                 PagoMorosos pagomorosos = new PagoMorosos(servicio.Id, SalidaV, SalidaF, SalidaD);
+                pagomorosos.Servicio = (Servicio)cmbServicio.SelectedItem;
 
                 txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
                 txtImportetotal.Text = pagomorosos.ImporteTotal.ToString();
                 pagoNegocio.Insertar(pagomorosos);
 
-
+                MessageBox.Show("El pago se realizò con exito.");
+                CargarLista();
 
 
             }

@@ -28,7 +28,7 @@ namespace Formulario.Deuda2.Entidades
             _fechaVencimiento = fechaVencimiento;
             _fechaPago = fechaPago;
             _importeAdeudado = importeAdeudado;
-            _servicio = new Servicio();
+            
             
         }
 
@@ -75,7 +75,8 @@ namespace Formulario.Deuda2.Entidades
 
         public override string ToString()
         {
-            return string.Format("{0}){1}-{2}-{3}", this.Id,this.Servicio.Nombre,this.ImporteTotal,this.AtrasoDias);
+            //return string.Format("{0}){1}-{2}-{3}", this.Id,this.Servicio.Nombre,this.ImporteTotal,this.AtrasoDias);
+            return $"{this.Id},{this.Servicio.Nombre},{this.ImporteTotal},{this.AtrasoDias}";
             
 
         }
