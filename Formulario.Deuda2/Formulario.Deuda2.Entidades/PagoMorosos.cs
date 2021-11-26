@@ -76,7 +76,7 @@ namespace Formulario.Deuda2.Entidades
         public override string ToString()
         {
             //return string.Format("{0}){1}-{2}-{3}", this.Id,this.Servicio.Nombre,this.ImporteTotal,this.AtrasoDias);
-            return $"{this.Id},{this.Servicio.Nombre},{this.ImporteTotal},{this.AtrasoDias}";
+            return $"{this.Id},{this.Servicio.Nombre},{this.ImporteTotal.ToString("0.00")},{this.AtrasoDias}";
             
 
         }
