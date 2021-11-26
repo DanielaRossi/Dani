@@ -17,8 +17,9 @@ namespace Formulario.Deuda2
         //private List<Servicio> _lstServicios;
         private PagoNegocio pagoNegocio;
         private List<PagoMorosos> listapago;
-        private PagoModel pagoModel;
+        //private PagoModel pagoModel;
         //private PagoMorosos _pagomorosos;
+
 
         public Form1()
         {
@@ -30,7 +31,7 @@ namespace Formulario.Deuda2
             pagoNegocio = new PagoNegocio();
             //_pagomorosos = new PagoMorosos();
             listapago = new List<PagoMorosos>();
-            pagoModel = new PagoModel(listapago);
+            //pagoModel = new PagoModel(listapago);
         }
 
         private void txtPunitorio_TextChanged(object sender, EventArgs e)
@@ -149,13 +150,13 @@ namespace Formulario.Deuda2
 
                 txtInterespunitorio.Text = pagomorosos.InteresesPunitorios.ToString();
                 txtImportetotal.Text = pagomorosos.ImporteTotal.ToString();
-                    
 
+               
 
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
 
 
@@ -202,7 +203,7 @@ namespace Formulario.Deuda2
 
                 MessageBox.Show("El pago se realizò con exito.");
                 CargarLista();
-
+                CargarDatos();
 
             }
             catch (Exception ex)
@@ -217,8 +218,9 @@ namespace Formulario.Deuda2
         }
         private void CargarDatos()
         {
-            txtInteréspromedio.Text = pagoModel.InteresPromedio.ToString("0.00");
-            txtDíasatraso.Text = pagoModel.Diasatraso.ToString("0.00");
+            PagoModel pagomodel = new PagoModel(listapago);
+            txtInteréspromedio.Text = pagomodel.InteresPromedio.ToString("0.00");
+            txtDíasatraso.Text = pagomodel.Diasatraso.ToString("0.00");
             
                 
         }

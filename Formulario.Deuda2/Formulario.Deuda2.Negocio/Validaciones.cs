@@ -25,7 +25,7 @@ namespace Formulario.Deuda2.Negocio
             }
             else if (Salida <= 0)
             {
-                throw new Exception("El valor debe ser positivo" + System.Environment.NewLine);
+                throw new Exception("El valor debe ser positivo");
             }
         }
         public static void ValidarDouble(string Valor, ref double Salida)
@@ -34,7 +34,7 @@ namespace Formulario.Deuda2.Negocio
 
             if (!double.TryParse(Valor, out Salida))
             {
-                throw new Exception("El valor debe ser númerico" + System.Environment.NewLine);
+                throw new Exception("El valor debe ser númerico");
             }
             else if (Salida <= 0)
             {
@@ -60,7 +60,7 @@ namespace Formulario.Deuda2.Negocio
 
             if (!DateTime.TryParse(Valor, out Salida))
             {
-                throw new Exception("El valor debe ser una fecha" + System.Environment.NewLine);
+                throw new Exception("El valor debe ser una fecha");
             }
             return Salida;
 
