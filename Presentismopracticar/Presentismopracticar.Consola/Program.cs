@@ -12,10 +12,12 @@ namespace Presentismopracticar.Consola
     {
         static  bool _consolaActiva;
         private static Presentismo _presentismo;
+        static List<Asistencia> _asistencias;
         static Program()
         {
             _presentismo = new Presentismo();
             _consolaActiva = true;
+            
         }
         static void Main(string[] args)
         {
@@ -78,8 +80,8 @@ namespace Presentismopracticar.Consola
                     {
 
                         Console.WriteLine(l.ToString());
-                        string presente = Validaciones.PedirString("si está presente");
-                        bool presentebool = Convert.ToBoolean(presente);
+                        
+                        bool presentebool = Validaciones.PedirBool("si está presente o no");
 
                         Asistencia a = _presentismo.Agregar(fecha, p, l, presentebool);
                         asistenciasLista.Add(a);
@@ -91,7 +93,7 @@ namespace Presentismopracticar.Consola
                     }
                 }
                 // agrego la lista de asistencia
-                _presentismo.AgregarAsistencia(asistenciasLista, fecha);
+                //_presentismo.AgregarAsistencia(asistenciasLista, fecha);
             }
             catch(Exception ex)
             {
@@ -108,7 +110,11 @@ namespace Presentismopracticar.Consola
                 DateTime fechaN = Validaciones.PedirFecha("una fecha");
                 string fecha = fechaN.ToString("yyyy-MM-dd");
                 // muestro el toString de cada asistencia
-                _presentismo.GetAsistenciasPorFecha(fecha);
+                _asistencias = _presentismo.GetAsistenciasPorFecha(fecha);
+                foreach(Asistencia a in _asistencias)
+                {
+                    Console.WriteLine(a.ToString());
+                }
             }
             catch(Exception ex)
             {

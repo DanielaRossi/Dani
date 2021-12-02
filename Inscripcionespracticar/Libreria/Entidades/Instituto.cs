@@ -137,6 +137,12 @@ namespace Inscripcionespracticar
            
 
         }
+        public override bool Equals(object obj)
+        {
+            bool igual = false;
+            Estudiante o = (Estudiante)obj;
+           
+        }
         public List<Inscripcion> GetInscripcionesPorFecha( DateTime fecha)
         {
             List<Inscripcion> ins = null;

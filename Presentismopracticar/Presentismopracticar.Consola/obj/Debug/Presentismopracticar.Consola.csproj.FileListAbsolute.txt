@@ -1,0 +1,12 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\Presentismopracticar.Consola.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\Presentismopracticar.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\Presentismopracticar.Consola.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\ConsolaUtils.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\Negocio.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\ConsolaUtils.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\bin\Debug\Negocio.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\obj\Debug\Presentismopracticar.Consola.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\obj\Debug\Presentismopracticar.Consola.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\obj\Debug\Presentismopracticar.Consola.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\obj\Debug\Presentismopracticar.Consola.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\Presentismopracticar.Consola\obj\Debug\Presentismopracticar.Consola.pdb

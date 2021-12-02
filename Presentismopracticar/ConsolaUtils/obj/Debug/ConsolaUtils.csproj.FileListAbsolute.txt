@@ -1,0 +1,6 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\ConsolaUtils\bin\Debug\ConsolaUtils.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\ConsolaUtils\bin\Debug\ConsolaUtils.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\ConsolaUtils\obj\Debug\ConsolaUtils.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\ConsolaUtils\obj\Debug\ConsolaUtils.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\ConsolaUtils\obj\Debug\ConsolaUtils.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Presentismopracticar\ConsolaUtils\obj\Debug\ConsolaUtils.pdb

@@ -128,13 +128,42 @@ namespace Presentismopracticar.Consola
             }
             return flag;
         }
+        //public static bool PedirBool(string mensaje)
+        //{
+        //    bool flag = true;
+        //    string valor;
+        //    do
+        //    {
+        //        Console.WriteLine("Ingrese true o false de " + mensaje);
+        //        valor = Console.ReadLine();
+        //        flag = ValidarBool(valor);
+        //    } while (flag == false);
+
+        //    return Convert.ToBoolean(valor);
+
+        //}
+        //public static bool ValidarBool(string valor)
+        //{
+        //    bool flag = false;
+        //    if (!Boolean.TryParse(valor, out Boolean Salida))
+        //    {
+        //        Console.WriteLine("El valor ingresado no es un bool.");
+        //    }
+
+
+        //    else
+        //    {
+        //        flag = true;
+        //    }
+        //    return flag;
+        //}
         public static bool PedirBool(string mensaje)
         {
             bool flag = true;
             string valor;
             do
             {
-                Console.WriteLine("Ingrese true o false de " + mensaje);
+                Console.WriteLine("Ingrese true o false " + mensaje);
                 valor = Console.ReadLine();
                 flag = ValidarBool(valor);
             } while (flag == false);
