@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsolaUtils
 {
-    static class Validaciones
+    public static class Validar
     {
         public static string PedirString(string mensaje)
         {

@@ -33,11 +33,21 @@ namespace Negocio.Entidades
         {
             return GetDetalle();
         }
-        //public override bool Equals(object obj)
-        //{
-        //    bool igual = false;
-        //    return base.Equals(obj);
-        //}
+        public override bool Equals(object obj)
+        {
+            
+            if (!(obj is Indumentaria))
+                return false;
+
+            
+            Indumentaria objetoACompararCasteado = (Indumentaria)obj;
+
+            // comparamos el objeto a comparar con el obj propio
+            if (objetoACompararCasteado.Codigo == this.Codigo)
+                return true;
+            else
+                return false;
+        }
         public abstract string GetDetalle(); 
     }
 }

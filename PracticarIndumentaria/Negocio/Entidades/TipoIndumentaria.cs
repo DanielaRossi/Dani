@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public abstract class TipoIndumentaria
+    public class TipoIndumentaria
     {
         private string _origen;
         private double _porcentajeAlgodon;
 
-        protected TipoIndumentaria(string origen, double porcentajeAlgodon)
+        public TipoIndumentaria(string origen, double porcentajeAlgodon)
         {
             _origen = origen;
             _porcentajeAlgodon = porcentajeAlgodon;
