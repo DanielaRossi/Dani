@@ -28,7 +28,7 @@ namespace Inscripcionespracticar
 
         public override string ToString()
         {
-            return $"{this._fechaInscripcion}-{this._estudiante.Mostrar()} inscripto a {this._materia.ToString()}";
+            return $"{this.FechaInscripcion}-{this.Estudiante.Mostrar()} inscripto a {this.Materia.ToString()}";
         }
     }
 }

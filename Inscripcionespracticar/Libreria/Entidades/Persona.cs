@@ -12,23 +12,25 @@ namespace Inscripcionespracticar
         private string _apellido;
         private string _email;
 
+        public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Apellido { get => _apellido; set => _apellido = value; }
+        public string Email { get => _email; set => _email = value; }
+
         public Persona(string nombre, string apellido, string email)
         {
-            _nombre = nombre;
-            _apellido = apellido;
-            _email = email;
+            Nombre = this.Nombre;
+            Apellido = apellido;
+            Email = email;
         }
 
         public  Persona(string nombre, string apellido)
         {
-            _nombre = nombre;
-            _apellido = apellido;
+            Nombre = nombre;
+            Apellido = apellido;
             
         }
 
-        public string Nombre { get => _nombre; set => _nombre = value; }
-        public string Apellido { get => _apellido; set => _apellido = value; }
-        public string Email { get => _email; set => _email = value; }
+       
 
         public override string ToString()
         {

@@ -10,9 +10,11 @@ namespace Inscripcionespracticar
     {
         private int _legajo;
 
+        
+
         public Profesor(int legajo, string nombre, string apellido): base(nombre, apellido)
         {
-            _legajo = legajo;
+            Legajo = legajo;
         }
 
         public int Legajo { get => _legajo; set => _legajo = value; }

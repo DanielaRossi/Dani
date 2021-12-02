@@ -14,6 +14,7 @@ namespace Inscripcionespracticar
         static bool _consolaActiva;
         static List<Estudiante> _estudiantes;
         static List<Materia> _materias;
+        static List<Inscripcion> _inscripciones;
 
         static Program()
         {
@@ -100,7 +101,11 @@ namespace Inscripcionespracticar
             {
                 DateTime fecha = Validaciones.PedirFecha("una fecha");
                 // muestro el toString de cada inscripción
-                _instituto.GetInscripcionesPorFecha(fecha);
+                _inscripciones= _instituto.GetInscripcionesPorFecha(fecha);
+                foreach( Inscripcion i in _inscripciones)
+                {
+                    Console.WriteLine(i.ToString());
+                }
             }
             catch (Exception ex)
             {

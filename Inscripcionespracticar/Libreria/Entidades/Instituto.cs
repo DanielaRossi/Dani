@@ -44,7 +44,7 @@ namespace Inscripcionespracticar
 
         
 
-        public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Nombre { get => _nombre;  }
 
         public Profesor GetProfesor( int legajo)
         {
@@ -119,16 +119,23 @@ namespace Inscripcionespracticar
                 {
                     foreach (Inscripcion i in _inscripciones)
                     {
-                        if (inscripcion.Estudiante == i.Estudiante && inscripcion.Materia == i.Materia)
+
+                        if (inscripcion.Estudiante.Equals(i.Estudiante) && inscripcion.Materia.Equals(i.Materia))
                         {
                             throw new EstudianteInscriptoException();
                         }
                     }
+                }
+
+                
+                
+                    
 
                     
 
-                }
+                
                 _inscripciones.Add(inscripcion);
+                
             }
             catch(Exception ex)
             {
@@ -137,12 +144,7 @@ namespace Inscripcionespracticar
            
 
         }
-        public override bool Equals(object obj)
-        {
-            bool igual = false;
-            Estudiante o = (Estudiante)obj;
-           
-        }
+       
         public List<Inscripcion> GetInscripcionesPorFecha( DateTime fecha)
         {
             List<Inscripcion> ins = null;
