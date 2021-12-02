@@ -12,6 +12,8 @@ namespace Inscripcionespracticar
     {
         private static Instituto _instituto;
         static bool _consolaActiva;
+        static List<Estudiante> _estudiantes;
+        static List<Materia> _materias;
 
         static Program()
         {
@@ -57,21 +59,29 @@ namespace Inscripcionespracticar
         static void InscribirEstudiante(Profesor p)
         {
             // Listar los estudiantes
-            _instituto.GetEstudiantes();
+            _estudiantes =_instituto.GetEstudiantes();
             // Listar las materias
-            _instituto.GetMaterias();
+            _materias= _instituto.GetMaterias();
             // Intento cargar la Inscripción
             // Error: mostrar el error y que luego muestre el menú nuevamente
             try
             {
-                string materiadescripcion = Validaciones.PedirString(" una materia");
+                
+                
                 string apellido = Validaciones.PedirString(" su apellido");
-
-                Materia materia = _instituto.GetMateriaspornombre(materiadescripcion);
                 Estudiante estudiante = _instituto.GetEstudianteporapellido(apellido);
+
+               foreach(Materia m in _materias)
+                {
+                    Console.WriteLine(m.ToString());
+                }
+                int materiaCodigo = Validaciones.PedirInt(" el codigo de la materia a la que se quiere inscribir");
+                Materia materia = _instituto.GetMateriasporcodigo(materiaCodigo);
+
+                
                 
 
-                Inscripcion inscripcion = new Inscripcion(DateTime.Now, p, estudiante, materia);
+                Inscripcion inscripcion = new Inscripcion(p, estudiante, materia);
 
                 _instituto.CargarInscripcion(inscripcion);
 

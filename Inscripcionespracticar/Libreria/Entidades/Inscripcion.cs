@@ -13,9 +13,9 @@ namespace Inscripcionespracticar
         private Estudiante _estudiante;
         private Materia _materia;
 
-        public Inscripcion(DateTime fechaInscripcion, Profesor profesor, Estudiante estudiante, Materia materia)
+        public Inscripcion( Profesor profesor, Estudiante estudiante, Materia materia)
         {
-            FechaInscripcion = fechaInscripcion;
+            FechaInscripcion = DateTime.Today;
             Profesor = profesor;
             Estudiante = estudiante;
             Materia = materia;

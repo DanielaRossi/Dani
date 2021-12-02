@@ -64,12 +64,12 @@ namespace Inscripcionespracticar
         {
             return _materias;
         }
-        public Materia GetMateriaspornombre(string nombre)
+        public Materia GetMateriasporcodigo(int codigo)
         {
             Materia materia = null;
             foreach(Materia m in _materias)
             {
-                if(m.Descripcion == nombre)
+                if(m.Codigo == codigo)
                 {
                     materia = m;
                 }
