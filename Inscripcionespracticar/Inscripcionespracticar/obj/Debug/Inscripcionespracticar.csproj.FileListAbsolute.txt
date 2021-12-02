@@ -1,0 +1,10 @@
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\bin\Debug\Inscripcionespracticar.exe.config
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\bin\Debug\Inscripcionespracticar.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\bin\Debug\Inscripcionespracticar.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\bin\Debug\Libreria.dll
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\bin\Debug\Libreria.pdb
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\obj\Debug\Inscripcionespracticar.csproj.AssemblyReference.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\obj\Debug\Inscripcionespracticar.csproj.CoreCompileInputs.cache
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\obj\Debug\Inscripcionespracticar.csproj.CopyComplete
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\obj\Debug\Inscripcionespracticar.exe
+C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Inscripcionespracticar\obj\Debug\Inscripcionespracticar.pdb
