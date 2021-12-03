@@ -14,10 +14,10 @@ namespace Negocio.Entidades
         private Alumno _alumno;
         private bool _estaPresente;
 
-        public Asistencia(string fechaReferencia, DateTime fechaHoraReal, Preceptor preceptor, Alumno alumno, bool estaPresente)
+        public Asistencia(string fechaReferencia, Preceptor preceptor, Alumno alumno, bool estaPresente)
         {
             _fechaReferencia = fechaReferencia;
-            _fechaHoraReal = fechaHoraReal;
+            _fechaHoraReal = DateTime.Today;
             _preceptor = preceptor;
             _alumno = alumno;
             _estaPresente = estaPresente;

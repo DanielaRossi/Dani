@@ -20,5 +20,6 @@ namespace Negocio.Entidades
         {
             return $"{this.Nombre}({this._registro})";
         }
+        
     }
 }

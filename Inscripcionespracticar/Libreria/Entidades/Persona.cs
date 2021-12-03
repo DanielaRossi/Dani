@@ -29,6 +29,10 @@ namespace Inscripcionespracticar
             Apellido = apellido;
             
         }
+        public Persona()
+        {
+
+        }
 
        
 

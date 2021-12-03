@@ -21,5 +21,6 @@ namespace Negocio.Entidades
         {
             return $"{this.Apellido}-{this._legajo}";
         }
+
     }
 }

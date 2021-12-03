@@ -38,5 +38,19 @@ namespace Inscripcionespracticar
             else
                 return false;
         }
+        //public override bool Equals(object obj)
+        //{
+        //    if (!(obj is Estudiante))
+        //        return false;
+
+        //    Estudiante estudienteacompararcasterado = (Estudiante)obj;
+
+        //    if (estudienteacompararcasterado.Registro == this.Registro)
+        //        return true;
+        //    else
+        //        return false;
+
+            
+        //}
     }
 }

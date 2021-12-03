@@ -8,7 +8,8 @@ namespace Inscripcionespracticar.Exceptiones
 {
     class EstudianteInhabilitadoException : Exception
     {
-        public EstudianteInhabilitadoException():base("El estudiante está inhabilitado por superar la cantidad de cursos tomados.") { }
-        
+        public EstudianteInhabilitadoException(string message) : base(message)
+        {
+        }
     }
 }

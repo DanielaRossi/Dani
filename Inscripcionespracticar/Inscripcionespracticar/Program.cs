@@ -20,6 +20,7 @@ namespace Inscripcionespracticar
         {
             _instituto = new Instituto("Nombre");
             _consolaActiva = true;
+            
         }
         static void Main(string[] args)
         {
@@ -67,32 +68,50 @@ namespace Inscripcionespracticar
             // Error: mostrar el error y que luego muestre el menú nuevamente
             try
             {
-                
-                
+
+
                 string apellido = Validaciones.PedirString(" su apellido");
                 Estudiante estudiante = _instituto.GetEstudianteporapellido(apellido);
 
-               foreach(Materia m in _materias)
+                foreach (Materia m in _materias)
                 {
                     Console.WriteLine(m.ToString());
                 }
                 int materiaCodigo = Validaciones.PedirInt(" el codigo de la materia a la que se quiere inscribir");
                 Materia materia = _instituto.GetMateriasporcodigo(materiaCodigo);
 
-                
-                
+
+
 
                 Inscripcion inscripcion = new Inscripcion(p, estudiante, materia);
 
                 _instituto.CargarInscripcion(inscripcion);
 
-
+                Console.WriteLine("El estudiante se inscribió con exito.");
 
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+            //try
+            //{
+            //    string apellido = Validaciones.PedirString("una apellido");
+            //    Estudiante estudiante = _instituto.GetEstudianteporapellido(apellido);
+
+            //    foreach(Materia m in _materias)
+            //    {
+            //        Console.WriteLine(m.ToString());
+            //    }
+            //    int codigo = Validaciones.PedirInt("el codigo de la materia");
+            //    Materia materia = _instituto.GetMateriasporcodigo(codigo);
+
+            //    Inscripcion inscripcion = new Inscripcion(p, estudiante, materia);
+
+            //    _instituto.CargarInscripcion(inscripcion);
+            //    Console.WriteLine("El alumno se inscribió con exito.");
+
+        
         }
         static void MostrarInscripciones()
         {
@@ -112,6 +131,16 @@ namespace Inscripcionespracticar
                 Console.WriteLine(ex.Message);
             }
 
+            //try
+            //{
+            //    DateTime fecha = Validaciones.PedirFecha("una fecha");
+
+            //    _inscripciones= _instituto.GetInscripcionesPorFecha(fecha);
+
+            //    foreach(Inscripcion i in _inscripciones)
+            //    {
+            //        Console.WriteLine(i.ToString());
+            //    }
 
 
         }

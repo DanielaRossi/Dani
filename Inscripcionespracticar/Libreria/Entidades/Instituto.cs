@@ -48,7 +48,7 @@ namespace Inscripcionespracticar
 
         public Profesor GetProfesor( int legajo)
         {
-            Profesor profesor = null;
+            Profesor profesor = new Profesor();
             foreach(Profesor p in _profesores)
             {
                 if (p.Legajo == legajo)
@@ -59,6 +59,9 @@ namespace Inscripcionespracticar
 
             }
             return profesor;
+
+            
+                
         }
         public List<Materia> GetMaterias()
         {
@@ -66,7 +69,7 @@ namespace Inscripcionespracticar
         }
         public Materia GetMateriasporcodigo(int codigo)
         {
-            Materia materia = null;
+            Materia materia = new Materia();
             foreach(Materia m in _materias)
             {
                 if(m.Codigo == codigo)
@@ -101,19 +104,19 @@ namespace Inscripcionespracticar
             {
                 throw new Exception("El estudiante no existe.");
             }
+
             return estudiante;
         }
         public void CargarInscripcion(Inscripcion inscripcion)
         {
-            try
-            {
+            
                 if (inscripcion.Estudiante is EstudianteRecursante)
                 {
                     EstudianteRecursante recursante = (EstudianteRecursante)inscripcion.Estudiante;
                     if (recursante.CantidadCursosTomados >= 3)
                     {
-                        throw new EstudianteInhabilitadoException();
-                    }
+                    throw new EstudianteInhabilitadoException("El estudiante està inhabilitado.");
+                }
                 }
                 else
                 {
@@ -127,6 +130,22 @@ namespace Inscripcionespracticar
                     }
                 }
 
+                foreach( Inscripcion i in _inscripciones)
+            {
+                if(inscripcion.Estudiante.Equals( i.Estudiante) && inscripcion.Materia.Equals( i.Materia))
+                {
+                    throw new EstudianteInscriptoException();
+                }
+            }
+
+            //    if(inscripcion.Estudiante is EstudianteRecursante)
+            //{
+            //    EstudianteRecursante e = (EstudianteRecursante)inscripcion.Estudiante;
+            //    if (e.CantidadCursosTomados > 3)
+            //    {
+            //        throw new EstudianteInhabilitadoException("El estudiante està inhabilitado.");
+            //    }
+            //}
                 
                 
                     
@@ -136,21 +155,18 @@ namespace Inscripcionespracticar
                 
                 _inscripciones.Add(inscripcion);
                 
-            }
-            catch(Exception ex)
-            {
-                throw new Exception("No se puede cargar la inscripción");
-            }
+            
+            
            
 
         }
-       
-        public List<Inscripcion> GetInscripcionesPorFecha( DateTime fecha)
+
+        public List<Inscripcion> GetInscripcionesPorFecha(DateTime fecha)
         {
-            List<Inscripcion> ins = null;
-            foreach( Inscripcion i in _inscripciones)
+            List<Inscripcion> ins = new List<Inscripcion>();
+            foreach (Inscripcion i in _inscripciones)
             {
-                if( i.FechaInscripcion== fecha)
+                if (i.FechaInscripcion == fecha)
                 {
                     ins.Add(i);
                 }

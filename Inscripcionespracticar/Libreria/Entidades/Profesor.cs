@@ -16,6 +16,10 @@ namespace Inscripcionespracticar
         {
             Legajo = legajo;
         }
+        public Profesor()
+        {
+            
+        }
 
         public int Legajo { get => _legajo; set => _legajo = value; }
 

@@ -11,17 +11,36 @@ namespace Inscripcionespracticar
         private int _codigo;
         private string _descripcion;
 
-        
-        public string Descripcion { get => _descripcion; set => _descripcion = value; }
         public int Codigo { get => _codigo; set => _codigo = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
 
         public Materia(int codigo, string descripcion)
         {
-            Codigo = codigo;
-            Descripcion = descripcion;
+            _codigo = codigo;
+            _descripcion = descripcion;
+        }
+        public Materia()
+        {
+
         }
 
-        
+
+
+
+
+
+
+
+        //public string Descripcion { get => _descripcion; set => _descripcion = value; }
+        //public int Codigo { get => _codigo; set => _codigo = value; }
+
+        //public Materia(int codigo, string descripcion)
+        //{
+        //    Codigo = codigo;
+        //    Descripcion = descripcion;
+        //}
+
+
 
         public override string ToString()
         {

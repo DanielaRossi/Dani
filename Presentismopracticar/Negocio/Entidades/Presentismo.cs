@@ -74,6 +74,13 @@ namespace Negocio.Entidades
             //    }
             //}
             //return _alumnos;
+            foreach(string f in _fechas)
+            {
+                if(fecha == f)
+                {
+                    throw new AsistenciaExistenteEseDiaException();
+                }
+            }
             return _alumnos;
         }
         //public List<Alumno> ListaAlumnosRegulares()
@@ -94,12 +101,20 @@ namespace Negocio.Entidades
             {
                 throw new AsistenciaInconsistenteException();
             }
+            foreach(Asistencia a in _asistencias)
+            {
+                if(a.FechaReferencia== fecha)
+                {
+                    throw new AsistenciaExistenteEseDiaException();
+                }
+            }
+            _asistencias.Add(lst);
+
         }
-        public Asistencia Agregar(string fechareferencia,Preceptor preceptor, Alumno alumno, bool estapresente)
-        {
-            Asistencia a = new Asistencia(fechareferencia, DateTime.Now, preceptor, alumno, estapresente);
-            return a;
-        }
+        //public void CargarAsistencia (Asistencia asistencia)
+        //{
+        //    _asistencias.Add(asistencia);
+        //}
         public List<Asistencia> GetAsistenciasPorFecha(string fecha)
         {
             List<Asistencia> lst = new List<Asistencia>();

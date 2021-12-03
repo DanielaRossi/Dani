@@ -13,6 +13,7 @@ namespace Presentismopracticar.Consola
         static  bool _consolaActiva;
         private static Presentismo _presentismo;
         static List<Asistencia> _asistencias;
+        static List<Alumno> _alumnos;
         static Program()
         {
             _presentismo = new Presentismo();
@@ -65,11 +66,14 @@ namespace Presentismopracticar.Consola
                 //string fecha = DateTime.Now.ToString("yyyy-MM-dd");
                 DateTime fechaN = Validaciones.PedirFecha("una fecha");
                 string fecha = fechaN.ToString("yyyy-MM-dd");
+
                 // Listar los alumnos
-                List<Alumno> lst = _presentismo.GetListaAlumnos(fecha);
+                _alumnos = _presentismo.GetListaAlumnos(fecha);
+
+
                 // para cada alumno solo preguntar si está presente
                 List<Asistencia> asistenciasLista = new List<Asistencia>();
-                foreach (Alumno l in lst)
+                foreach (Alumno l in _alumnos)
                 {
                     if (l is AlumnoOyente)
                     {
@@ -83,7 +87,9 @@ namespace Presentismopracticar.Consola
                         
                         bool presentebool = Validaciones.PedirBool("si está presente o no");
 
-                        Asistencia a = _presentismo.Agregar(fecha, p, l, presentebool);
+
+                        Asistencia a = new Asistencia(fecha, p, l, presentebool);
+
                         asistenciasLista.Add(a);
 
 
@@ -93,7 +99,8 @@ namespace Presentismopracticar.Consola
                     }
                 }
                 // agrego la lista de asistencia
-                //_presentismo.AgregarAsistencia(asistenciasLista, fecha);
+                _presentismo.AgregarAsistencia(asistenciasLista, fecha);
+
             }
             catch(Exception ex)
             {
@@ -120,6 +127,17 @@ namespace Presentismopracticar.Consola
             {
                 Console.WriteLine(ex.Message);
             }
+            //try
+            //{
+            //    DateTime fecha = Validaciones.PedirFecha("una fecha");
+            //    string fechaS = fecha.ToString("yyyy-MM-dd");
+
+            //    _asistencias= _presentismo.GetAsistenciasPorFecha(fechaS);
+            //    foreach(Asistencia a in _asistencias)
+            //    {
+            //        Console.WriteLine(a.ToString());
+            //    }
+            //}
             
         }
     }
