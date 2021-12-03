@@ -1,6 +1,0 @@
-C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Libreria\bin\Debug\Libreria.dll
-C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Libreria\bin\Debug\Libreria.pdb
-C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Libreria\obj\Debug\Libreria.csproj.CoreCompileInputs.cache
-C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Libreria\obj\Debug\Libreria.dll
-C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Libreria\obj\Debug\Libreria.pdb
-C:\Users\danir\OneDrive\Escritorio\CAI\Dani\Inscripcionespracticar\Libreria\obj\Debug\Libreria.csproj.AssemblyReference.cache

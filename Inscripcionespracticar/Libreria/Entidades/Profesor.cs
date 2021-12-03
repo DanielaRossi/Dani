@@ -27,5 +27,15 @@ namespace Inscripcionespracticar
         {
             return $"{this.Apellido}-{this.Legajo}";
         }
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Profesor))
+                return false;
+            Profesor inscripcionaacomparar = (Profesor)obj;
+            if (inscripcionaacomparar.Legajo == this.Legajo)
+                return true;
+            else
+                return false;
+        }
     }
 }

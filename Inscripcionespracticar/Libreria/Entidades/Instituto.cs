@@ -173,6 +173,26 @@ namespace Inscripcionespracticar
             }
             return ins;
         }
+        public void EliminarInscripcion(Inscripcion inscripcion)
+        {
+            Inscripcion inscripcionaeliminar = null;
+            foreach( Inscripcion i in _inscripciones)
+            {
+                if (inscripcion.Estudiante.Equals(i.Estudiante)&& inscripcion.Materia.Equals(i.Materia)&& inscripcion.Profesor.Equals(i.Profesor))
+                {
+                    inscripcionaeliminar = i;
+                }
+                else{
+                    throw new Exception("No hay una inscripcion que coincida");
+
+                }
+
+                
+            }
+            _inscripciones.Remove(inscripcionaeliminar);
+            
+
+        }
         
     }
 }

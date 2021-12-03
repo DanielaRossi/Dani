@@ -41,6 +41,8 @@ namespace Inscripcionespracticar
                     case "2":
                         MostrarInscripciones();
                         break;
+                    case "3":
+                        EliminarInscripcion(profesor);
                     case "X":
                         _consolaActiva = false;
                         break;
@@ -56,6 +58,7 @@ namespace Inscripcionespracticar
         {
             Console.WriteLine("1) Inscribir Estudiante");
             Console.WriteLine("2) Mostrar Inscripciones");
+            Console.WriteLine("3) Eliminar Inscripciones");
             Console.WriteLine("X: Terminar");
         }
         static void InscribirEstudiante(Profesor p)
@@ -141,6 +144,32 @@ namespace Inscripcionespracticar
             //    {
             //        Console.WriteLine(i.ToString());
             //    }
+
+
+        }
+        static void EliminarInscripcion(Profesor p)
+        {
+            _estudiantes = _instituto.GetEstudiantes();
+            // Listar las materias
+            _materias = _instituto.GetMaterias();
+
+            string apellido = Validaciones.PedirString(" su apellido");
+            Estudiante estudiante = _instituto.GetEstudianteporapellido(apellido);
+
+            foreach (Materia m in _materias)
+            {
+                Console.WriteLine(m.ToString());
+            }
+            int materiaCodigo = Validaciones.PedirInt(" el codigo de la materia a la que se quiere inscribir");
+            Materia materia = _instituto.GetMateriasporcodigo(materiaCodigo);
+
+            
+
+            Inscripcion inscripcion = new Inscripcion(p, estudiante, materia);
+            
+            _instituto.EliminarInscripcion(inscripcion);
+            
+
 
 
         }

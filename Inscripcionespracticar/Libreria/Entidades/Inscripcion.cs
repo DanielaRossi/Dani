@@ -30,5 +30,6 @@ namespace Inscripcionespracticar
         {
             return $"{this.FechaInscripcion}-{this.Estudiante.Mostrar()} inscripto a {this.Materia.ToString()}";
         }
+        
     }
 }
