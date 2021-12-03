@@ -43,6 +43,7 @@ namespace Inscripcionespracticar
                         break;
                     case "3":
                         EliminarInscripcion(profesor);
+                        break;
                     case "X":
                         _consolaActiva = false;
                         break;
