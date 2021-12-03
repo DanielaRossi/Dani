@@ -108,6 +108,7 @@ namespace Negocio.Entidades
                     throw new AsistenciaExistenteEseDiaException();
                 }
             }
+            _fechas.Add(fecha);
             _asistencias.Add(lst);
 
         }
