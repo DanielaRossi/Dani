@@ -12,8 +12,8 @@ namespace Presentismopracticar.Consola
     {
         static  bool _consolaActiva;
         private static Presentismo _presentismo;
-        static List<Asistencia> _asistencias;
-        static List<Alumno> _alumnos;
+        //static List<Asistencia> _asistencias;
+        //static List<Alumno> _alumnos;
         static Program()
         {
             _presentismo = new Presentismo();
@@ -25,27 +25,36 @@ namespace Presentismopracticar.Consola
             while (_consolaActiva)
             {
 
-
-                Preceptor preceptorActivo = _presentismo.GetPreceptorActivo();
-                DesplegarOpcionesMenu();
-                string opcionMenu = Validaciones.PedirString("una opción de menù");
-                switch (opcionMenu)
+                try
                 {
-                    case "1":
-                        TomarAsistencia(preceptorActivo);
-                        break;
-                    case "2":
-                        MostrarAsistencia();
-                        break;
-                    case "X":
-                        _consolaActiva = false;
-                        break;
-                    default:
-                        Console.WriteLine("Opciòn incorrecta.");
-                        break;
+                    Preceptor preceptorActivo = _presentismo.GetPreceptorActivo();
+
+
+
+                    DesplegarOpcionesMenu();
+                    string opcionMenu = Validaciones.PedirString("una opción de menù");
+                    switch (opcionMenu)
+                    {
+                        case "1":
+                            TomarAsistencia(preceptorActivo);
+                            break;
+                        case "2":
+                            MostrarAsistencia();
+                            break;
+                        case "X":
+                            _consolaActiva = false;
+                            break;
+                        default:
+                            Console.WriteLine("Opciòn incorrecta.");
+                            break;
+                    }
+                    Console.WriteLine("Presione una tecla para continuar.");
+                    Console.ReadLine();
                 }
-                Console.WriteLine("Presione una tecla para continuar.");
-                Console.ReadLine();
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
             
 
@@ -68,6 +77,7 @@ namespace Presentismopracticar.Consola
                 string fecha = fechaN.ToString("yyyy-MM-dd");
 
                 // Listar los alumnos
+                List<Alumno> _alumnos = new List<Alumno>();
                 _alumnos = _presentismo.GetListaAlumnos(fecha);
 
 
@@ -117,6 +127,7 @@ namespace Presentismopracticar.Consola
                 DateTime fechaN = Validaciones.PedirFecha("una fecha");
                 string fecha = fechaN.ToString("yyyy-MM-dd");
                 // muestro el toString de cada asistencia
+                List<Asistencia> _asistencias = new List<Asistencia>();
                 _asistencias = _presentismo.GetAsistenciasPorFecha(fecha);
                 foreach(Asistencia a in _asistencias)
                 {

@@ -59,7 +59,14 @@ namespace Negocio.Entidades
             Preceptor preceptoractivo = null;
             foreach(Preceptor p in _preceptores)
             {
-                preceptoractivo = p;
+                if (p.Legajo == 5)
+                {
+                    preceptoractivo = p;
+                }
+            }
+            if (preceptoractivo == null)
+            {
+                throw new Exception("No se encontrò el preceptor.");
             }
             return preceptoractivo;
         }
@@ -109,7 +116,7 @@ namespace Negocio.Entidades
                 }
             }
             _fechas.Add(fecha);
-            _asistencias.Add(lst);
+            _asistencias.AddRange(lst);
 
         }
         //public void CargarAsistencia (Asistencia asistencia)

@@ -12,9 +12,9 @@ namespace Inscripcionespracticar
     {
         private static Instituto _instituto;
         static bool _consolaActiva;
-        static List<Estudiante> _estudiantes;
-        static List<Materia> _materias;
-        static List<Inscripcion> _inscripciones;
+        //static List<Estudiante> _estudiantes;
+        //static List<Materia> _materias;
+        //static List<Inscripcion> _inscripciones;
 
         static Program()
         {
@@ -64,8 +64,10 @@ namespace Inscripcionespracticar
         static void InscribirEstudiante(Profesor p)
         {
             // Listar los estudiantes
+            List<Estudiante> _estudiantes = new List<Estudiante>();
             _estudiantes =_instituto.GetEstudiantes();
             // Listar las materias
+            List<Materia> _materias = new List<Materia>();
             _materias= _instituto.GetMaterias();
             // Intento cargar la Inscripción
             // Error: mostrar el error y que luego muestre el menú nuevamente
@@ -123,6 +125,7 @@ namespace Inscripcionespracticar
             {
                 DateTime fecha = Validaciones.PedirFecha("una fecha");
                 // muestro el toString de cada inscripción
+                List<Inscripcion> _inscripciones = new List<Inscripcion>();
                 _inscripciones= _instituto.GetInscripcionesPorFecha(fecha);
                 foreach( Inscripcion i in _inscripciones)
                 {
@@ -149,8 +152,10 @@ namespace Inscripcionespracticar
         }
         static void EliminarInscripcion(Profesor p)
         {
+            List<Estudiante> _estudiantes = new List<Estudiante>();
             _estudiantes = _instituto.GetEstudiantes();
             // Listar las materias
+            List<Materia> _materias = new List<Materia>();
             _materias = _instituto.GetMaterias();
 
             string apellido = Validaciones.PedirString(" su apellido");
