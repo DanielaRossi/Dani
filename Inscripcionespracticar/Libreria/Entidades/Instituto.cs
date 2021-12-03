@@ -48,7 +48,7 @@ namespace Inscripcionespracticar
 
         public Profesor GetProfesor( int legajo)
         {
-            Profesor profesor = new Profesor();
+            Profesor profesor = null;
             foreach(Profesor p in _profesores)
             {
                 if (p.Legajo == legajo)
@@ -57,6 +57,10 @@ namespace Inscripcionespracticar
                 }
                
 
+            }
+            if (profesor == null)
+            {
+                throw new Exception("No se encuentra el profesor");
             }
             return profesor;
 

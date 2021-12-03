@@ -24,34 +24,43 @@ namespace Inscripcionespracticar
         }
         static void Main(string[] args)
         {
-            //traemos el profesor de turno por legajo (elegir el que quieran)
-            Profesor profesor = _instituto.GetProfesor(5);
-            while (_consolaActiva)
+            try
             {
 
-
-
-                DesplegarOpcionesMenu();
-                string opcionMenu = Validaciones.PedirString("una opcion");
-                switch (opcionMenu)
+                //traemos el profesor de turno por legajo (elegir el que quieran)
+                Profesor profesor = _instituto.GetProfesor(1);
+                while (_consolaActiva)
                 {
-                    case "1":
-                        InscribirEstudiante(profesor);
-                        break;
-                    case "2":
-                        MostrarInscripciones();
-                        break;
-                    case "3":
-                        EliminarInscripcion(profesor);
-                        break;
-                    case "X":
-                        _consolaActiva = false;
-                        break;
-                    default:
-                        Console.WriteLine("Opción incorrecta.");
-                        break;
+
+
+
+                    DesplegarOpcionesMenu();
+                    string opcionMenu = Validaciones.PedirString("una opcion");
+                    switch (opcionMenu)
+                    {
+                        case "1":
+                            InscribirEstudiante(profesor);
+                            break;
+                        case "2":
+                            MostrarInscripciones();
+                            break;
+                        case "3":
+                            EliminarInscripcion(profesor);
+                            break;
+                        case "X":
+                            _consolaActiva = false;
+                            break;
+                        default:
+                            Console.WriteLine("Opción incorrecta.");
+                            break;
+                    }
+                    Console.WriteLine("Presione una tecla para continuar.");
+                    Console.ReadLine();
                 }
-                Console.WriteLine("Presione una tecla para continuar.");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
                 Console.ReadLine();
             }
         }
