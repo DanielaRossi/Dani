@@ -50,6 +50,7 @@
     <Compile Include="Entidades\Materia.cs" />
     <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Entidades\Profesor.cs" />
+    <Compile Include="Enums\TiposEnum.cs" />
     <Compile Include="Exceptiones\EstudianteInhabilitadoException.cs" />
     <Compile Include="Exceptiones\EstudianteInscriptoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

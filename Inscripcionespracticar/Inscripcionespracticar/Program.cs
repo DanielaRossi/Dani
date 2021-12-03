@@ -1,4 +1,5 @@
 ﻿using Libreria;
+using Libreria.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace Inscripcionespracticar
             {
 
                 //traemos el profesor de turno por legajo (elegir el que quieran)
-                Profesor profesor = _instituto.GetProfesor(1);
+                Profesor profesor = _instituto.GetProfesor(5);
                 while (_consolaActiva)
                 {
 
@@ -73,6 +74,27 @@ namespace Inscripcionespracticar
         }
         static void InscribirEstudiante(Profesor p)
         {
+            foreach (TiposEnum t in Enum.GetValues(typeof(TiposEnum)))
+            {
+                Console.WriteLine("el enum " + t.ToString() + " tiene como valor " + ((int)t).ToString());
+            }
+            int valor = Validaciones.PedirInt("un valor de enum");
+            TiposEnum tipo = 0;
+
+            if (valor == (int)TiposEnum.Alfa)
+            {
+                tipo = TiposEnum.Alfa;
+            }
+            if (valor == (int)TiposEnum.Beta)
+            {
+                tipo = TiposEnum.Beta;
+            }
+            if (valor == (int)TiposEnum.Gamma)
+            {
+                tipo = TiposEnum.Gamma;
+            }
+            Console.WriteLine(tipo);
+
             // Listar los estudiantes
             List<Estudiante> _estudiantes = new List<Estudiante>();
             _estudiantes =_instituto.GetEstudiantes();

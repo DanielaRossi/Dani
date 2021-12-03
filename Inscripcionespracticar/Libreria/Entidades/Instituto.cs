@@ -134,13 +134,13 @@ namespace Inscripcionespracticar
                     }
                 }
 
-                foreach( Inscripcion i in _inscripciones)
-            {
-                if(inscripcion.Estudiante.Equals( i.Estudiante) && inscripcion.Materia.Equals( i.Materia))
-                {
-                    throw new EstudianteInscriptoException();
-                }
-            }
+            //    foreach( Inscripcion i in _inscripciones)
+            //{
+            //    if(inscripcion.Estudiante.Equals( i.Estudiante) && inscripcion.Materia.Equals( i.Materia))
+            //    {
+            //        throw new EstudianteInscriptoException();
+            //    }
+            //}
 
             //    if(inscripcion.Estudiante is EstudianteRecursante)
             //{

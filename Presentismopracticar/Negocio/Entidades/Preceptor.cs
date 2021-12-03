@@ -10,9 +10,9 @@ namespace Negocio.Entidades
     {
         private int _legajo;
 
-        public Preceptor(int legajo, string nombre, string apellido): base(nombre, apellido)
+        public Preceptor(int legajo, string nombre, string apellido) : base(nombre, apellido)
         {
-            Legajo = legajo;
+            this._legajo = legajo;
         }
 
         public int Legajo { get => _legajo; set => _legajo = value; }
